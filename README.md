@@ -38,6 +38,7 @@ Each persona has a `persona.md` (always loaded) and a `topics/` folder of self-c
 | **April Dunford** | Positioning, sales pitch, differentiated value, market category | [Manifest](personas/april-dunford/MANIFEST.md) |
 | **Brian Chesky** | Founder mode, CEO as chief product officer, hiring like a detective, design is how it works, quality before growth | [Manifest](personas/brian-chesky/MANIFEST.md) |
 | **Chris Voss** | Negotiation, tactical empathy, mirroring, labeling, calibrated questions, accusation audit, Black Swans | [Manifest](personas/chris-voss/MANIFEST.md) |
+| **David Ogilvy** | Direct-response copywriting, headlines, body copy, brand image, story appeal, research-driven creative, agency management | [Manifest](personas/david-ogilvy/MANIFEST.md) |
 | **Elena Verna** | Growth, PLG, activation, retention, pricing & monetization, growth loops, AI-native growth | [Manifest](personas/elena-verna/MANIFEST.md) |
 | **Elon Musk** | Engineering, manufacturing, first principles, The Algorithm, Idiot Index | [Manifest](personas/elon-musk/MANIFEST.md) |
 | **Eugene Schwartz** | Direct-response copywriting, Mass Desire, States of Awareness, ad critique | [Manifest](personas/eugene-schwartz/MANIFEST.md) |

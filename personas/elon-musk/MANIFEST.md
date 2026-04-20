@@ -14,6 +14,12 @@ Authoritative inventory of processed source material. Every entry carries a `sou
 
 - The Founders — The Story of PayPal and the Entrepreneurs Who Shaped Silicon Valley (Jimmy Soni, 2022)
 
+- Liftoff — Elon Musk and the Desperate Early Days That Launched SpaceX (Eric Berger, 2021)
+  notes: Third-party reporting — author voice, not Musk voice. Use for operational/anecdotal evidence on Falcon 1 era (2002–2008); quote Musk only when Berger quotes him verbatim.
+
+- The Elon Musk Blog Series (Tim Urban, Wait But Why, 2015–2017)
+  notes: Tim Urban's voice with direct Musk access. Rich on mission rationale (Mars, sustainable energy, AI, Neuralink). Quote Musk only on verbatim passages; Urban's paraphrase is context, not voice.
+
 ---
 
 ## YouTube
