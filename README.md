@@ -2,7 +2,7 @@
 
 A Claude skill that turns Claude into a panel of expert advisors — each one speaking in their actual voice, applying their actual frameworks, willing to disagree with you and with each other.
 
-![Neo: I know Kung Fu](https://static0.srcdn.com/wordpress/wp-content/uploads/2020/12/Matrix-Neo-Quotes-Kung-Fu.jpg?q=50&fit=crop&w=825&dpr=1.5)
+![Neo: I know Kung Fu](assets/matrix-i-know-kung-fu.jpg)
 
 The name comes from *The Matrix* — Neo gets the kung fu loaded into his brain, opens his eyes, says *"I know Kung Fu."* That's the experience we're after. Install the dojo, ask a question, get the actual expert.
 
