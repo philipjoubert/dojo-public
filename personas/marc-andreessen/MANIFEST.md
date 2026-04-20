@@ -61,7 +61,7 @@
 **Big Companies (2 parts):** 1–2
 **Misc:** no_such_thing_as_web_20, why_ning, best_book_for_tech_entrepreneurs_this_year, three_kinds_of_platforms_you_meet_on_the_internet, 11_lessons_learned_about_blogging, ok_it_IS_a_bubble, counterpoint_ben_horowitz, an_hour_and_a_half_with_barack_obama
 
-All in `content/articles/pmarchive.com-*.md`.
+All in .
 
 ## Skipped
 

@@ -7,56 +7,25 @@
 
 ## Books
 
-- title: The Cold Start Problem: How to Start and Scale Network Effects (Andrew Chen, 2021, Harper Business)
-  source: content/sources/the-cold-start-problem.epub (gitignored)
-  extracted: content/sources/the-cold-start-problem.md (gitignored — 102,243 words)
-  added: 2026-04-19
+- The Cold Start Problem: How to Start and Scale Network Effects (Andrew Chen, 2021, Harper Business)
   notes: Core reference. 6 parts, 34 chapters. Primary source for framework extraction.
 
 ## YouTube
 
-- title: Andrew Chen — Growth Secrets from Uber, Exploring the Metaverse, Startup Investing, and More
-  source: https://www.youtube.com/watch?v=gYXjR7Y7_uw
-  video_id: gYXjR7Y7_uw
-  extracted: content/youtube/gYXjR7Y7_uw.md
-  added: 2026-04-19
+- Andrew Chen — Growth Secrets from Uber, Exploring the Metaverse, Startup Investing, and More
   notes: Tim Ferriss interview. Long-form, wide-ranging.
 
-- title: Andrew Chen: How to make big career decisions | Maven Lightning Lesson
-  source: https://www.youtube.com/watch?v=wkNVDllhVu0
-  video_id: wkNVDllhVu0
-  extracted: content/youtube/wkNVDllhVu0.md
-  added: 2026-04-19
+- Andrew Chen: How to make big career decisions | Maven Lightning Lesson
 
-- title: Marc Andreessen & Andrew Chen Talk Creative Computers
-  source: https://www.youtube.com/watch?v=EpvhuaD5Kk0
-  video_id: EpvhuaD5Kk0
-  extracted: content/youtube/EpvhuaD5Kk0.md
-  added: 2026-04-19
+- Marc Andreessen & Andrew Chen Talk Creative Computers
 
-- title: How To Solve The Cold Start Problem with Andrew Chen
-  source: https://www.youtube.com/watch?v=h__Eg_IwSSs
-  video_id: h__Eg_IwSSs
-  extracted: content/youtube/h__Eg_IwSSs.md
-  added: 2026-04-19
+- How To Solve The Cold Start Problem with Andrew Chen
 
-- title: Andrew Chen | The Cold Start Problem — Talks at Google
-  source: https://www.youtube.com/watch?v=TSnYO34b3TA
-  video_id: TSnYO34b3TA
-  extracted: content/youtube/TSnYO34b3TA.md
-  added: 2026-04-19
+- Andrew Chen | The Cold Start Problem — Talks at Google
 
-- title: Andrew Chen on the Cold Start Problem — Upfront Summit 2022
-  source: https://www.youtube.com/watch?v=-ILjMq1T13g
-  video_id: -ILjMq1T13g
-  extracted: content/youtube/-ILjMq1T13g.md
-  added: 2026-04-19
+- Andrew Chen on the Cold Start Problem — Upfront Summit 2022
 
-- title: Andrew Chen — What's Next in Growth?
-  source: https://www.youtube.com/watch?v=7Uhu2PEJ2Yk
-  video_id: 7Uhu2PEJ2Yk
-  extracted: content/youtube/7Uhu2PEJ2Yk.md
-  added: 2026-04-19
+- Andrew Chen — What's Next in Growth?
 
 ## Articles — andrewchen.com
 
