@@ -98,6 +98,14 @@ Then in Claude: **Settings → Capabilities → Skills → Upload skill**, and s
 
 To update: delete the old skill in settings and re-upload the new zip.
 
+### ChatGPT
+
+ChatGPT now supports the same `SKILL.md` standard. Use the same zip.
+
+In ChatGPT: **Skills → New skill → Upload from your computer**, and select `dojo/dojo.zip`.
+
+> Heads up: the ChatGPT Skills upload UI is currently rolling out on Business, Enterprise, and EDU workspaces. Individual Plus and Pro plans may not have it yet.
+
 The dojo is a single skill with all personas inside — not one skill per persona. Upload once.
 
 ## How it's built
