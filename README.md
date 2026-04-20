@@ -1,29 +1,28 @@
 # Dojo
 
-**A panel of expert advisors, loaded into Claude.** Each one speaks in their own voice. Each one applies their own frameworks. They will disagree with you — and with each other.
+**A panel of expert advisors, loaded into Claude.** Ask Bezos about a new product and he'll ask if you've written the PR-FAQ first. Ask Lulu Cheng about a hit piece and she'll tell you to go direct. Ask Shane Parrish about a hard decision and he'll find the ordinary moment under it before answering.
 
 ![Neo: I know Kung Fu](assets/matrix-i-know-kung-fu.jpg)
+*Install the dojo. Open your eyes. You know positioning.*
 
-Neo gets the kung fu loaded into his brain, opens his eyes, says *"I know Kung Fu."* That's the experience we're after. Install the dojo, ask a question, and the actual expert answers.
+Why "dojo"? Neo downloads kung fu, opens his eyes, says *"I know Kung Fu."* Install this and you can say the same about positioning, negotiation, or founder mode. Fourteen experts, their actual frameworks and voices, willing to disagree with you — and each other.
 
 ---
 
-## What's different about this
+## What's in each persona
 
-Most "expert chatbot" projects do the same thing: dump a stack of transcripts, books, and articles into the context window and let you chat with it. The result is transcript-search dressed up as expertise. The bot can quote the source. It does not *think* in the source's frameworks, does not *speak* in the source's voice, and will not push back when you bring it a bad question.
+For each expert, the corpus — books, interviews, talks, articles — is processed into structured artifacts:
 
-This is different. For each expert, the corpus is processed into structured artifacts:
-
-- **Core beliefs** — what this person actually thinks is true, with the antagonist they push against
+- **Core beliefs** — what this person thinks is true, and the antagonist they push against
 - **Reasoning moves** — the mental patterns they run before reaching for any specific framework
 - **Rules** — the things they will not recommend, each with the reason and the exception
-- **Frameworks** — their actual mental models, as standalone files loaded only when relevant
+- **Frameworks** — their mental models, as standalone files loaded only when relevant
 - **Voice samples** — real prose from their own writing, so Claude imitates rhythm and word choice rather than describing it
-- **Example exchanges** — Q&A pairs across modes (pointed / drafting / refusing the premise / coaching) so the *shape* of their answers stays right
+- **Example exchanges** — Q&A pairs across modes so the *shape* of their answers stays right
 
-Result: ask Lulu Cheng about a hit piece, and she answers like Lulu — she'll tell you the comms firm is the wrong move, name the antagonist, and push you to go direct. Ask Bezos about a new product and he'll ask if you've written the PR-FAQ first. Ask Shane Parrish about a hard decision and he'll find the ordinary moment under it before answering.
+This is not transcript search. The bot does not quote the source at you. It thinks in the source's frameworks, speaks in the source's voice, and pushes back when you bring it a bad question.
 
-The skill is also *selective*. Every question is classified by mode — Pointed, Coaching, Review, Drafting, Emergency, Strategic — and only the relevant framework files load. Pointed questions stay light (~14K tokens). Strategic questions pull the heavy lenses.
+Every question is classified by mode — pointed, coaching, review, drafting, emergency, strategic — and only the relevant framework files load. Pointed questions stay light. Strategic questions pull the heavy lenses.
 
 ---
 
@@ -33,22 +32,22 @@ Each persona has a `persona.md` (always loaded) and a `topics/` folder of self-c
 
 | Expert | Domain | Source corpus |
 |---|---|---|
-| **Andrew Carnegie** | Industrial operating, vertical integration, partnership model, Gospel of Wealth | [Manifest](personas/andrew-carnegie/MANIFEST.md) |
-| **Andrew Chen** | Network effects, Cold Start Problem, marketplaces, consumer growth | [Manifest](personas/andrew-chen/MANIFEST.md) |
-| **April Dunford** | Positioning, sales pitch, differentiated value, market category | [Manifest](personas/april-dunford/MANIFEST.md) |
-| **Brian Chesky** | Founder mode, CEO as chief product officer, hiring like a detective, design is how it works, quality before growth | [Manifest](personas/brian-chesky/MANIFEST.md) |
-| **Chris Voss** | Negotiation, tactical empathy, mirroring, labeling, calibrated questions, accusation audit, Black Swans | [Manifest](personas/chris-voss/MANIFEST.md) |
-| **David Ogilvy** | Direct-response copywriting, headlines, body copy, brand image, story appeal, research-driven creative, agency management | [Manifest](personas/david-ogilvy/MANIFEST.md) |
-| **Elena Verna** | Growth, PLG, activation, retention, pricing & monetization, growth loops, AI-native growth | [Manifest](personas/elena-verna/MANIFEST.md) |
-| **Elon Musk** | Engineering, manufacturing, first principles, The Algorithm, Idiot Index | [Manifest](personas/elon-musk/MANIFEST.md) |
-| **Eugene Schwartz** | Direct-response copywriting, Mass Desire, States of Awareness, ad critique | [Manifest](personas/eugene-schwartz/MANIFEST.md) |
-| **Jeff Bezos** | Mechanism design, working backwards, PR-FAQ, Day 1 vs Day 2 | [Manifest](personas/jeff-bezos/MANIFEST.md) |
-| **Keith Rabois** | Operating, hiring, barrels and ammunition, value creation vs protection, CEO as editor, culture as cult | [Manifest](personas/keith-rabois/MANIFEST.md) |
-| **Lulu Cheng** | Communications, PR, crisis, going direct, hit pieces, founder voice | [Manifest](personas/lulu-cheng/MANIFEST.md) |
-| **Marc Andreessen** | Product/market fit, startup strategy, raising VC, techno-optimism | [Manifest](personas/marc-andreessen/MANIFEST.md) |
-| **Shane Parrish** | Clear thinking, decision-making, four defaults, mental-models latticework | [Manifest](personas/shane-parrish/MANIFEST.md) |
+| **Andrew Carnegie** | Industrial operating, vertical integration, partnership model, Gospel of Wealth | [See sources](personas/andrew-carnegie/MANIFEST.md) |
+| **Andrew Chen** | Network effects, Cold Start Problem, marketplaces, consumer growth | [See sources](personas/andrew-chen/MANIFEST.md) |
+| **April Dunford** | Positioning, sales pitch, differentiated value, market category | [See sources](personas/april-dunford/MANIFEST.md) |
+| **Brian Chesky** | Founder mode, CEO as chief product officer, hiring like a detective, design is how it works, quality before growth | [See sources](personas/brian-chesky/MANIFEST.md) |
+| **Chris Voss** | Negotiation, tactical empathy, mirroring, labeling, calibrated questions, accusation audit, Black Swans | [See sources](personas/chris-voss/MANIFEST.md) |
+| **David Ogilvy** | Direct-response copywriting, headlines, body copy, brand image, story appeal, research-driven creative, agency management | [See sources](personas/david-ogilvy/MANIFEST.md) |
+| **Elena Verna** | Growth, PLG, activation, retention, pricing & monetization, growth loops, AI-native growth | [See sources](personas/elena-verna/MANIFEST.md) |
+| **Elon Musk** | Engineering, manufacturing, first principles, The Algorithm, Idiot Index | [See sources](personas/elon-musk/MANIFEST.md) |
+| **Eugene Schwartz** | Direct-response copywriting, Mass Desire, States of Awareness, ad critique | [See sources](personas/eugene-schwartz/MANIFEST.md) |
+| **Jeff Bezos** | Mechanism design, working backwards, PR-FAQ, Day 1 vs Day 2 | [See sources](personas/jeff-bezos/MANIFEST.md) |
+| **Keith Rabois** | Operating, hiring, barrels and ammunition, value creation vs protection, CEO as editor, culture as cult | [See sources](personas/keith-rabois/MANIFEST.md) |
+| **Lulu Cheng** | Communications, PR, crisis, going direct, hit pieces, founder voice | [See sources](personas/lulu-cheng/MANIFEST.md) |
+| **Marc Andreessen** | Product/market fit, startup strategy, raising VC, techno-optimism | [See sources](personas/marc-andreessen/MANIFEST.md) |
+| **Shane Parrish** | Clear thinking, decision-making, four defaults, mental-models latticework | [See sources](personas/shane-parrish/MANIFEST.md) |
 
-More experts being ported. Each one takes about a week of focused work to do properly.
+More experts on the way. Each one takes weeks of reading and structuring — the corpus for a single persona runs to hundreds of pages before any writing starts.
 
 ---
 
@@ -112,38 +111,25 @@ The dojo is a single skill with all personas inside — not one skill per person
 
 ## How it's built
 
-For anyone curious about the methodology — not required reading to use the skill.
+For anyone curious — not required reading.
 
-For each expert:
+Per expert, at a high level:
 
-1. **Build the corpus.** Books, long-form interviews where they're talking (not where they're hosting someone else), articles, talks, podcasts. Tag every source by voice provenance (`solo` / `interview-guest` / `interview-host`) — voice samples can only come from sources where the expert is the one speaking. Manifests track every input.
+1. **Build the corpus.** Books, long-form interviews where they're speaking (not hosting), articles, talks, podcasts. Every source tagged by who's actually talking, so voice samples come only from the expert's own words.
 
-2. **Classify the grain.** Some thinkers are framework-heavy (April Dunford, Chris Voss). Some are principle-heavy (Naval, Graham). Some are mental-model-cataloguers (Munger, Shane). The persona structure follows the grain — one file per framework for framework thinkers, fewer denser files for principle thinkers.
+2. **Extract the way they think.** Core beliefs and the antagonists they push against. Reasoning moves — the mental patterns they run before reaching for any specific framework. Rules, each with a reason and an exception.
 
-3. **Extract the philosophy.** Core beliefs (with the antagonist they oppose), reasoning moves (how they think before answering anything), rules (each with *Why* and *Exception*).
+3. **Break frameworks into files.** Each framework — positioning, mirroring, The Algorithm, PR-FAQ — gets its own self-contained file with triggers, examples, and anti-patterns. Only the files relevant to your question get loaded.
 
-4. **Shard the frameworks.** Each framework becomes a self-contained topic file with triggers, when-it-applies, when-it-fails, core concept, how to apply, examples, and tactical anti-patterns.
+4. **Pull real voice samples.** Three prose excerpts per expert, from their own writing, across different modes. Real prose, not paraphrased. Voice fidelity comes from demonstration, not description.
 
-5. **Pull real voice samples.** 3 prose excerpts from the expert's own writing, 300–500 words each, covering different modes (manifesto, diagnostic, tactical, storytelling). Real prose. Not paraphrased. Voice fidelity is downstream of demonstration, not description.
-
-6. **Demonstrate range with example exchanges.** 4 Q&A pairs across modes — pointed, drafting, refusing the premise, coaching — with deliberately varied shapes so Claude doesn't ritualize one ending pattern.
-
-7. **Build the topic routing.** Map situations and frameworks to files so the router knows what to load for what question.
-
-8. **Test the 4 modes.** Ask one question per mode through the dojo and check whether the voice survives. Iterate the voice samples if it doesn't.
-
-The detailed build process lives in the private working repo. This public repo is the deliverable.
+The detailed build process lives in the private working repo.
 
 ---
 
 ## Now
 
-Install it. Ask it something hard.
-
-```bash
-git clone https://github.com/philipjoubert/dojo-public.git
-cp -R dojo-public/dojo/skill ~/.claude/skills/dojo
-```
+Install it (instructions above). Then ask it the hardest question on your plate this week.
 
 ---
 
