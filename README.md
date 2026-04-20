@@ -1,18 +1,18 @@
 # Dojo
 
-A Claude skill that turns Claude into a panel of expert advisors — each one speaking in their actual voice, applying their actual frameworks, willing to disagree with you and with each other.
+**A panel of expert advisors, loaded into Claude.** Each one speaks in their own voice. Each one applies their own frameworks. They will disagree with you — and with each other.
 
 ![Neo: I know Kung Fu](assets/matrix-i-know-kung-fu.jpg)
 
-The name comes from *The Matrix* — Neo gets the kung fu loaded into his brain, opens his eyes, says *"I know Kung Fu."* That's the experience we're after. Install the dojo, ask a question, get the actual expert.
+Neo gets the kung fu loaded into his brain, opens his eyes, says *"I know Kung Fu."* That's the experience we're after. Install the dojo, ask a question, and the actual expert answers.
 
 ---
 
 ## What's different about this
 
-Most "expert chatbot" projects do one thing: dump a stack of transcripts, books, or articles into the context window and let you chat with it. The result is transcript-search dressed up as expertise. The bot can quote the source, but it doesn't *think* in the source's frameworks, doesn't *speak* in the source's voice, and won't push back when you bring it a bad question.
+Most "expert chatbot" projects do the same thing: dump a stack of transcripts, books, and articles into the context window and let you chat with it. The result is transcript-search dressed up as expertise. The bot can quote the source. It does not *think* in the source's frameworks, does not *speak* in the source's voice, and will not push back when you bring it a bad question.
 
-This is different. For each expert, we processed the corpus into structured artifacts:
+This is different. For each expert, the corpus is processed into structured artifacts:
 
 - **Core beliefs** — what this person actually thinks is true, with the antagonist they push against
 - **Reasoning moves** — the mental patterns they run before reaching for any specific framework
@@ -21,9 +21,9 @@ This is different. For each expert, we processed the corpus into structured arti
 - **Voice samples** — real prose from their own writing, so Claude imitates rhythm and word choice rather than describing it
 - **Example exchanges** — Q&A pairs across modes (pointed / drafting / refusing the premise / coaching) so the *shape* of their answers stays right
 
-Result: ask Lulu Cheng about a hit piece, and she answers like Lulu — she'll tell you the comms firm is the wrong move, name the antagonist, and push you to go direct. Ask Bezos about a new product, and he'll ask if you've written the PR-FAQ first. Ask Shane Parrish about a hard decision, and he'll find the ordinary moment under it before answering.
+Result: ask Lulu Cheng about a hit piece, and she answers like Lulu — she'll tell you the comms firm is the wrong move, name the antagonist, and push you to go direct. Ask Bezos about a new product and he'll ask if you've written the PR-FAQ first. Ask Shane Parrish about a hard decision and he'll find the ordinary moment under it before answering.
 
-The skill is also *selective*. Each question gets classified by mode — Pointed, Coaching, Review, Drafting, Emergency, Strategic — and only the relevant framework files load. Pointed questions stay light (~14K tokens). Strategic questions pull the heavy lenses.
+The skill is also *selective*. Every question is classified by mode — Pointed, Coaching, Review, Drafting, Emergency, Strategic — and only the relevant framework files load. Pointed questions stay light (~14K tokens). Strategic questions pull the heavy lenses.
 
 ---
 
@@ -93,9 +93,20 @@ cd dojo-public && git pull
 cp -R dojo/skill ~/.claude/skills/dojo
 ```
 
-### Other Claude surfaces
+### Claude Desktop / Claude.ai
 
-The dojo is built around filesystem skill loading, so it's Claude Code first. Adapting to Claude.ai or the desktop app would mean zipping the whole `dojo/skill/` directory and treating it as one skill — possible, not currently supported.
+Desktop and web take skills as zip uploads. Zip the skill directory and upload:
+
+```bash
+cd dojo/skill
+zip -r ../dojo.zip .
+```
+
+Then in Claude: **Settings → Capabilities → Skills → Upload skill**, and select `dojo/dojo.zip`.
+
+To update: delete the old skill in settings and re-upload the new zip.
+
+The dojo is a single skill with all personas inside — not one skill per persona. Upload once.
 
 ---
 
@@ -122,6 +133,17 @@ For each expert:
 8. **Test the 4 modes.** Ask one question per mode through the dojo and check whether the voice survives. Iterate the voice samples if it doesn't.
 
 The detailed build process lives in the private working repo. This public repo is the deliverable.
+
+---
+
+## Now
+
+Install it. Ask it something hard.
+
+```bash
+git clone https://github.com/philipjoubert/dojo-public.git
+cp -R dojo-public/dojo/skill ~/.claude/skills/dojo
+```
 
 ---
 
