@@ -32,21 +32,21 @@ Each persona has a `persona.md` (always loaded) and a `topics/` folder of self-c
 
 | Expert | Domain | Source corpus |
 |---|---|---|
-| **Andrew Carnegie** | Industrial operating, vertical integration, partnership model, Gospel of Wealth | [See sources](personas/andrew-carnegie/MANIFEST.md) |
-| **Andrew Chen** | Network effects, Cold Start Problem, marketplaces, consumer growth | [See sources](personas/andrew-chen/MANIFEST.md) |
-| **April Dunford** | Positioning, sales pitch, differentiated value, market category | [See sources](personas/april-dunford/MANIFEST.md) |
-| **Brian Chesky** | Founder mode, CEO as chief product officer, hiring like a detective, design is how it works, quality before growth | [See sources](personas/brian-chesky/MANIFEST.md) |
-| **Chris Voss** | Negotiation, tactical empathy, mirroring, labeling, calibrated questions, accusation audit, Black Swans | [See sources](personas/chris-voss/MANIFEST.md) |
-| **David Ogilvy** | Direct-response copywriting, headlines, body copy, brand image, story appeal, research-driven creative, agency management | [See sources](personas/david-ogilvy/MANIFEST.md) |
-| **Elena Verna** | Growth, PLG, activation, retention, pricing & monetization, growth loops, AI-native growth | [See sources](personas/elena-verna/MANIFEST.md) |
-| **Elon Musk** | Engineering, manufacturing, first principles, The Algorithm, Idiot Index | [See sources](personas/elon-musk/MANIFEST.md) |
-| **Eugene Schwartz** | Direct-response copywriting, Mass Desire, States of Awareness, ad critique | [See sources](personas/eugene-schwartz/MANIFEST.md) |
-| **Jeff Bezos** | Mechanism design, working backwards, PR-FAQ, Day 1 vs Day 2 | [See sources](personas/jeff-bezos/MANIFEST.md) |
-| **Julia Galef** | Rationality, scout vs soldier mindset, calibration, changing your mind, productive disagreement, holding identity lightly | [See sources](personas/julia-galef/MANIFEST.md) |
-| **Keith Rabois** | Operating, hiring, barrels and ammunition, value creation vs protection, CEO as editor, culture as cult | [See sources](personas/keith-rabois/MANIFEST.md) |
-| **Lulu Cheng** | Communications, PR, crisis, going direct, hit pieces, founder voice | [See sources](personas/lulu-cheng/MANIFEST.md) |
-| **Marc Andreessen** | Product/market fit, startup strategy, raising VC, techno-optimism | [See sources](personas/marc-andreessen/MANIFEST.md) |
-| **Shane Parrish** | Clear thinking, decision-making, four defaults, mental-models latticework | [See sources](personas/shane-parrish/MANIFEST.md) |
+| **Andrew Carnegie** | Industrial operating, vertical integration, partnership model, Gospel of Wealth | [See sources](sources/andrew-carnegie/MANIFEST.md) |
+| **Andrew Chen** | Network effects, Cold Start Problem, marketplaces, consumer growth | [See sources](sources/andrew-chen/MANIFEST.md) |
+| **April Dunford** | Positioning, sales pitch, differentiated value, market category | [See sources](sources/april-dunford/MANIFEST.md) |
+| **Brian Chesky** | Founder mode, CEO as chief product officer, hiring like a detective, design is how it works, quality before growth | [See sources](sources/brian-chesky/MANIFEST.md) |
+| **Chris Voss** | Negotiation, tactical empathy, mirroring, labeling, calibrated questions, accusation audit, Black Swans | [See sources](sources/chris-voss/MANIFEST.md) |
+| **David Ogilvy** | Direct-response copywriting, headlines, body copy, brand image, story appeal, research-driven creative, agency management | [See sources](sources/david-ogilvy/MANIFEST.md) |
+| **Elena Verna** | Growth, PLG, activation, retention, pricing & monetization, growth loops, AI-native growth | [See sources](sources/elena-verna/MANIFEST.md) |
+| **Elon Musk** | Engineering, manufacturing, first principles, The Algorithm, Idiot Index | [See sources](sources/elon-musk/MANIFEST.md) |
+| **Eugene Schwartz** | Direct-response copywriting, Mass Desire, States of Awareness, ad critique | [See sources](sources/eugene-schwartz/MANIFEST.md) |
+| **Jeff Bezos** | Mechanism design, working backwards, PR-FAQ, Day 1 vs Day 2 | [See sources](sources/jeff-bezos/MANIFEST.md) |
+| **Julia Galef** | Rationality, scout vs soldier mindset, calibration, changing your mind, productive disagreement, holding identity lightly | [See sources](sources/julia-galef/MANIFEST.md) |
+| **Keith Rabois** | Operating, hiring, barrels and ammunition, value creation vs protection, CEO as editor, culture as cult | [See sources](sources/keith-rabois/MANIFEST.md) |
+| **Lulu Cheng** | Communications, PR, crisis, going direct, hit pieces, founder voice | [See sources](sources/lulu-cheng/MANIFEST.md) |
+| **Marc Andreessen** | Product/market fit, startup strategy, raising VC, techno-optimism | [See sources](sources/marc-andreessen/MANIFEST.md) |
+| **Shane Parrish** | Clear thinking, decision-making, four defaults, mental-models latticework | [See sources](sources/shane-parrish/MANIFEST.md) |
 
 More experts on the way. Each one takes weeks of reading and structuring — the corpus for a single persona runs to hundreds of pages before any writing starts.
 
