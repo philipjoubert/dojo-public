@@ -7,6 +7,7 @@ Per-expert source corpora are listed in each persona's manifest:
 - [Andrew Carnegie](personas/andrew-carnegie/MANIFEST.md)
 - [Andrew Chen](personas/andrew-chen/MANIFEST.md)
 - [April Dunford](personas/april-dunford/MANIFEST.md)
+- [Elena Verna](personas/elena-verna/MANIFEST.md)
 - [Elon Musk](personas/elon-musk/MANIFEST.md)
 - [Eugene Schwartz](personas/eugene-schwartz/MANIFEST.md)
 - [Jeff Bezos](personas/jeff-bezos/MANIFEST.md)
@@ -21,6 +22,7 @@ This is not exhaustive — manifests have the full inventory. Listed here are th
 - **Andrew Carnegie** — *The Autobiography of Andrew Carnegie*; *The Gospel of Wealth and Other Essays*; collected speeches and letters.
 - **Andrew Chen** — *The Cold Start Problem* (Harper Business, 2021); fs.blog and andrewchen.com essays.
 - **April Dunford** — *Obviously Awesome* (2019); *Sales Pitch* (2023); *The Positioning Show* podcast; workshop materials.
+- **Elena Verna** — Substack essays at elenaverna.substack.com; long-form interviews (Lenny's Podcast, Product Drive, Reforge); conference talks.
 - **Elon Musk** — *Elon Musk* by Walter Isaacson (Simon & Schuster, 2023); *Elon Musk* by Ashlee Vance; long-form interviews and talks.
 - **Eugene Schwartz** — *Breakthrough Advertising* (1966); collected ads and lectures.
 - **Jeff Bezos** — Amazon shareholder letters (1997–2020); *Invent & Wander* (2021); *Working Backwards* by Colin Bryar and Bill Carr.

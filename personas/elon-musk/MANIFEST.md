@@ -1,6 +1,6 @@
 # Elon Musk — Source Manifest
 
-Inventory of source material processed into the dojo persona.
+Authoritative inventory of processed source material. Every entry carries a `source` (URL or original filename) and an `extracted` path so the inbox can be diffed against it. For YouTube entries, `video_id` is required — URLs vary, IDs are stable.
 
 ## Books
 

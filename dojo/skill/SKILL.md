@@ -43,7 +43,17 @@ description: |
   of safety, first principles, inversion, second-order thinking, circle
   of competence, probabilistic thinking, latticework of mental models,
   handling mistakes, separating decision quality from outcome quality,
-  wanting what matters).
+  wanting what matters); Elena Verna (growth, PLG, product-led growth,
+  product-led sales, activation Setup/Aha/Habit, retention, churn,
+  monetization, pricing, reverse trials, growth loops vs funnels, the
+  Growth Matrix 3x3, squad sequencing — activation before monetization
+  before acquisition before retention, experimentation OS — 50% failure
+  rate / Weekly Metrics Review / three Slack channels / DRI, AI-native
+  growth, the PMF treadmill, Disruption Risk Matrix, trust as the moat,
+  distribution collapse, satellite apps, founder-led social, the Pride
+  Test — anti-dark-patterns, Four W's of product-led sales, PQA scoring,
+  growth teams — Founder Mode / org charts / hiring HoG, revenue
+  addiction, PLG layering not switching, fix the bucket before you fill it).
   More experts added over time.
 ---
 
@@ -147,6 +157,7 @@ Currently loaded:
 - **Jeff Bezos** (`personas/jeff-bezos/`) — product strategy, mechanism design, working backwards, PR-FAQ, six-pager, Day 1 vs Day 2, two-pizza teams, single-threaded leader, two-way doors, 70% rule, disagree and commit, flywheel, OP1/OP2, bar raiser, mechanisms over good intentions, resist proxies, input metrics, high standards, missionaries vs mercenaries, long-term invariants, customer obsession
 - **Andrew Carnegie** (`personas/andrew-carnegie/`) — industrial operating, vertical integration, cost per unit mastery, the monthly cost sheet, partnership model, the Ironclad Agreement, equity for operators, pioneer technology adoption, concentration (eggs in one basket), talent identification, surround yourself with better men, pricing into downturns, counter-cyclical capex, quality before cost, the Gospel of Wealth, scientific philanthropy, hierarchy of gifts, civic matching condition, dying rich
 - **Shane Parrish** (`personas/shane-parrish/`) — clear thinking, decision-making, the four defaults (emotion / ego / social / inertia), the four strengths (self-accountability / self-knowledge / self-control / self-confidence), the five safeguards (HALT, automatic rules, friction, checklists, perspective-shifting), the decision process (define → explore → evaluate → do → margin of safety → learn), ordinary moments, positioning, the space between stimulus and response, environment over willpower, outcome over ego, the wrong side of right, rules over decisions, premortem, handling mistakes, separating decision quality from outcome quality, wanting what matters (values), and the multidisciplinary mental-models latticework — first principles, inversion, second-order thinking, circle of competence, probabilistic thinking, margin of safety, map-is-not-territory
+- **Elena Verna** (`personas/elena-verna/`) — growth operator and PLG expert (SurveyMonkey, Miro, Amplitude, Dropbox, now Head of Growth at Lovable). Loops vs funnels, the Growth Matrix (3×3: Acquisition/Retention/Monetization × Product-led/Marketing-led/Sales-led), activation Setup/Aha/Habit, retention and churn diagnostics, pricing and monetization (value metrics, Monetization Council, AI pricing, pricing page anatomy), reverse trials, product-led sales (Four W's, PQA scoring), squad sequencing (activation → monetization → acquisition → retention), experimentation OS (50% failure rate, Weekly Metrics Review, DRI, three Slack channels), AI-native growth (PMF treadmill, Disruption Risk Matrix, trust-as-moat, distribution collapse, satellite apps, founder-led social), Pride Test (anti-dark-patterns), growth team design (Founder Mode, org charts, hiring HoG, JD red flags), revenue addiction, "fix the bucket before you fill it," layering PLG not switching to it
 
 ---
 

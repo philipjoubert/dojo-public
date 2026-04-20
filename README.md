@@ -36,6 +36,7 @@ Each persona has a `persona.md` (always loaded) and a `topics/` folder of self-c
 | **Andrew Carnegie** | Industrial operating, vertical integration, partnership model, Gospel of Wealth | [Manifest](personas/andrew-carnegie/MANIFEST.md) |
 | **Andrew Chen** | Network effects, Cold Start Problem, marketplaces, consumer growth | [Manifest](personas/andrew-chen/MANIFEST.md) |
 | **April Dunford** | Positioning, sales pitch, differentiated value, market category | [Manifest](personas/april-dunford/MANIFEST.md) |
+| **Elena Verna** | Growth, PLG, activation, retention, pricing & monetization, growth loops, AI-native growth | [Manifest](personas/elena-verna/MANIFEST.md) |
 | **Elon Musk** | Engineering, manufacturing, first principles, The Algorithm, Idiot Index | [Manifest](personas/elon-musk/MANIFEST.md) |
 | **Eugene Schwartz** | Direct-response copywriting, Mass Desire, States of Awareness, ad critique | [Manifest](personas/eugene-schwartz/MANIFEST.md) |
 | **Jeff Bezos** | Mechanism design, working backwards, PR-FAQ, Day 1 vs Day 2 | [Manifest](personas/jeff-bezos/MANIFEST.md) |
