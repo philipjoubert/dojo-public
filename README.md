@@ -7,8 +7,6 @@
 
 Just like Neo downloads kung fu, you can do the same with positioning, negotiation, founder mode — any of fifteen experts, in their own voice, willing to disagree with you and each other.
 
----
-
 ## What's in each persona
 
 For each expert, the corpus — books, interviews, talks, articles — is processed into structured artifacts:
@@ -20,11 +18,9 @@ For each expert, the corpus — books, interviews, talks, articles — is proces
 - **Voice samples** — real prose from their own writing, so Claude imitates rhythm and word choice rather than describing it
 - **Example exchanges** — Q&A pairs across modes so the *shape* of their answers stays right
 
-This is not transcript search. The bot does not quote the source at you. It thinks in the source's frameworks, speaks in the source's voice, and pushes back when you bring it a bad question.
+This is not transcript search. The expert does not quote the source at you. They think in the source's frameworks, speak in the source's voice, and push back when you bring them a bad question.
 
 Every question is classified by mode — pointed, coaching, review, drafting, emergency, strategic — and only the relevant framework files load. Pointed questions stay light. Strategic questions pull the heavy lenses.
-
----
 
 ## Available experts
 
@@ -32,25 +28,23 @@ Each persona has a `persona.md` (always loaded) and a `topics/` folder of self-c
 
 | Expert | Domain | Source corpus |
 |---|---|---|
-| **Andrew Carnegie** | Industrial operating, vertical integration, partnership model, Gospel of Wealth | [See sources](sources/andrew-carnegie/MANIFEST.md) |
-| **Andrew Chen** | Network effects, Cold Start Problem, marketplaces, consumer growth | [See sources](sources/andrew-chen/MANIFEST.md) |
-| **April Dunford** | Positioning, sales pitch, differentiated value, market category | [See sources](sources/april-dunford/MANIFEST.md) |
-| **Brian Chesky** | Founder mode, CEO as chief product officer, hiring like a detective, design is how it works, quality before growth | [See sources](sources/brian-chesky/MANIFEST.md) |
-| **Chris Voss** | Negotiation, tactical empathy, mirroring, labeling, calibrated questions, accusation audit, Black Swans | [See sources](sources/chris-voss/MANIFEST.md) |
-| **David Ogilvy** | Direct-response copywriting, headlines, body copy, brand image, story appeal, research-driven creative, agency management | [See sources](sources/david-ogilvy/MANIFEST.md) |
-| **Elena Verna** | Growth, PLG, activation, retention, pricing & monetization, growth loops, AI-native growth | [See sources](sources/elena-verna/MANIFEST.md) |
-| **Elon Musk** | Engineering, manufacturing, first principles, The Algorithm, Idiot Index | [See sources](sources/elon-musk/MANIFEST.md) |
-| **Eugene Schwartz** | Direct-response copywriting, Mass Desire, States of Awareness, ad critique | [See sources](sources/eugene-schwartz/MANIFEST.md) |
-| **Jeff Bezos** | Mechanism design, working backwards, PR-FAQ, Day 1 vs Day 2 | [See sources](sources/jeff-bezos/MANIFEST.md) |
-| **Julia Galef** | Rationality, scout vs soldier mindset, calibration, changing your mind, productive disagreement, holding identity lightly | [See sources](sources/julia-galef/MANIFEST.md) |
-| **Keith Rabois** | Operating, hiring, barrels and ammunition, value creation vs protection, CEO as editor, culture as cult | [See sources](sources/keith-rabois/MANIFEST.md) |
-| **Lulu Cheng** | Communications, PR, crisis, going direct, hit pieces, founder voice | [See sources](sources/lulu-cheng/MANIFEST.md) |
-| **Marc Andreessen** | Product/market fit, startup strategy, raising VC, techno-optimism | [See sources](sources/marc-andreessen/MANIFEST.md) |
-| **Shane Parrish** | Clear thinking, decision-making, four defaults, mental-models latticework | [See sources](sources/shane-parrish/MANIFEST.md) |
+| **Andrew Carnegie** | Industrial operating, vertical integration, partnership model, Gospel of Wealth | [Sources](sources/andrew-carnegie/MANIFEST.md) |
+| **Andrew Chen** | Network effects, Cold Start Problem, marketplaces, consumer growth | [Sources](sources/andrew-chen/MANIFEST.md) |
+| **April Dunford** | Positioning, sales pitch, differentiated value, market category | [Sources](sources/april-dunford/MANIFEST.md) |
+| **Brian Chesky** | Founder mode, CEO as chief product officer, hiring like a detective, design is how it works, quality before growth | [Sources](sources/brian-chesky/MANIFEST.md) |
+| **Chris Voss** | Negotiation, tactical empathy, mirroring, labeling, calibrated questions, accusation audit, Black Swans | [Sources](sources/chris-voss/MANIFEST.md) |
+| **David Ogilvy** | Direct-response copywriting, headlines, body copy, brand image, story appeal, research-driven creative, agency management | [Sources](sources/david-ogilvy/MANIFEST.md) |
+| **Elena Verna** | Growth, PLG, activation, retention, pricing & monetization, growth loops, AI-native growth | [Sources](sources/elena-verna/MANIFEST.md) |
+| **Elon Musk** | Engineering, manufacturing, first principles, The Algorithm, Idiot Index | [Sources](sources/elon-musk/MANIFEST.md) |
+| **Eugene Schwartz** | Direct-response copywriting, Mass Desire, States of Awareness, ad critique | [Sources](sources/eugene-schwartz/MANIFEST.md) |
+| **Jeff Bezos** | Mechanism design, working backwards, PR-FAQ, Day 1 vs Day 2 | [Sources](sources/jeff-bezos/MANIFEST.md) |
+| **Julia Galef** | Rationality, scout vs soldier mindset, calibration, changing your mind, productive disagreement, holding identity lightly | [Sources](sources/julia-galef/MANIFEST.md) |
+| **Keith Rabois** | Operating, hiring, barrels and ammunition, value creation vs protection, CEO as editor, culture as cult | [Sources](sources/keith-rabois/MANIFEST.md) |
+| **Lulu Cheng** | Communications, PR, crisis, going direct, hit pieces, founder voice | [Sources](sources/lulu-cheng/MANIFEST.md) |
+| **Marc Andreessen** | Product/market fit, startup strategy, raising VC, techno-optimism | [Sources](sources/marc-andreessen/MANIFEST.md) |
+| **Shane Parrish** | Clear thinking, decision-making, four defaults, mental-models latticework | [Sources](sources/shane-parrish/MANIFEST.md) |
 
 More experts on the way. Each one takes weeks of reading and structuring — the corpus for a single persona runs to hundreds of pages before any writing starts.
-
----
 
 ## How to use it
 
@@ -68,8 +62,6 @@ Or invoke explicitly:
 - *"Ask Shane and Marc about ..."* — multi-expert; each answers in their own voice, no blending
 
 When multiple experts respond, you get separate sections. They can disagree. The contradictions are the point.
-
----
 
 ## Install
 
@@ -108,8 +100,6 @@ To update: delete the old skill in settings and re-upload the new zip.
 
 The dojo is a single skill with all personas inside — not one skill per persona. Upload once.
 
----
-
 ## How it's built
 
 For anyone curious — not required reading.
@@ -126,21 +116,15 @@ Per expert, at a high level:
 
 The detailed build process lives in the private working repo.
 
----
-
 ## Now
 
 Install it (instructions above). Then ask it the hardest question on your plate this week.
-
----
 
 ## Credits
 
 Every expert in this dojo is a real person who built their thinking over decades and shared it publicly. The skill is a structured digest of their public work — books, talks, articles, podcasts. Per-expert source corpora are in each persona's `MANIFEST.md` (linked from the table above).
 
 If you're an expert in this dojo (or represent one) and want a change made — a framework refined, a sample replaced, the persona removed — open an issue.
-
----
 
 ## License
 
