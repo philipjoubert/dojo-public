@@ -6,95 +6,118 @@ Everything that went into the book. Check new content against this list to avoid
 
 ---
 
-## Books (5 files, ~368K words)
+## Books
 
-- *Clear Thinking: Turning Ordinary Moments into Extraordinary Results* (Shane Parrish, 2023) — 66,579 words
-- *The Great Mental Models, Vol. 1: General Thinking Concepts* (Shane Parrish) — 39,887 words
-- *The Great Mental Models, Vol. 2: Physics, Chemistry, and Biology* (Shane Parrish) — 85,174 words
-- *The Great Mental Models, Vol. 3: Systems and Mathematics* (Shane Parrish) — 82,125 words
-- *The Great Mental Models, Vol. 4: Economics and Art* (Shane Parrish) — 94,215 words
+- clear-thinking
 
-Added 2026-04-19. Source epubs kept alongside markdowns in `sources/` (gitignored).
+- great-mental-models-vol1
 
----
+- great-mental-models-vol2
 
-## YouTube Transcripts (9 files, ~127K words)
+- great-mental-models-vol3
 
-All fetched via yt-dlp auto-subs on 2026-04-19.
-
-- "Shane Parrish (Farnam St) on Finding Clarity and Making Better Decisions" (Daily Stoic) — 23,238 words
-- "Shane Parrish | Rules for Better Thinking, How to Reduce Blind Spots, & More" (Tim Ferriss) — 21,344 words
-- "A Former Spy On How To Think Smarter" (Rich Roll) — 20,843 words
-- "How to Make Good Decisions" (10% Happier, Dan Harris) — 14,857 words
-- "Mastering Clear Thinking w/ Shane Parrish" (The Psychology Podcast) — 12,294 words
-- "Shane Parrish: How To Live Life On Your Own Terms" (High Performance) — 11,922 words
-- "Clear Thinking w/ Shane Parrish (TIP580)" (The Investor's Podcast) — 11,133 words
-- "Mental Models, Good Decisions & Better Content" (Modern Wisdom #334) — 10,000 words
-- "How to Think Better According to Shane Parrish" (Farnam Street own channel) — 1,519 words
-
-**Voice note:** 8 of 9 are guest appearances where Shane accommodates the host's frame. Only the Farnam Street own-channel video is unfiltered voice — but it's short. Use these for framework content and diagnostic examples, not for the voice style guide (books + fs.blog essays are truer voice).
+- great-mental-models-vol4
 
 ---
 
-## Articles (40 files, ~98K words)
+## YouTube
 
-All fetched via Firecrawl from fs.blog on 2026-04-19. 40 live articles; 6 URLs from my flagship-essays seed list (pre-mortem, decision-fatigue, forcing-function, chauffeur-knowledge, good-decisions-vs-good-outcomes, three-buckets-of-knowledge) returned 404 — slugs likely renamed or removed on current fs.blog. Not backfilled; the hub essay and remaining 40 are more than sufficient. The topics themselves are covered in the books.
+- [Rules for Better Thinking, How to Reduce Blind Spots, & More | Shane Parrish | The Tim Ferriss Show](https://www.youtube.com/watch?v=-T30rY6Nqrc)
 
-### Master overview
-- "The Great Mental Models" (hub essay, all sections) — 113KB, comprehensive overview
+- [Shane Parrish: How To Live Life On Your Own Terms](https://www.youtube.com/watch?v=Tvs906Gya0k)
 
-### General Thinking Tools (9)
-- Map and Territory
-- Circle of Competence
-- First Principles
-- Thought Experiment
-- Second Order Thinking
-- Probabilistic Thinking
-- Inversion
-- Occams Razor
-- Mental Model Hanlons Razor
+- [Clear Thinking w/ Shane Parrish (TIP580)](https://www.youtube.com/watch?v=U9SY_M5CXTo)
 
-### Physics / Chemistry / Biology (6)
-- Galilean Relativity
-- Reciprocity
-- Speed Velocity
-- Leverage
-- Activation Energy
-- The Red Queen Effect
+- [Mastering Clear Thinking w/ Shane Parrish | The Psychology Podcast](https://www.youtube.com/watch?v=UtfN3zfC6BU)
 
-### Systems / Economics (3)
-- Bias Incentives Reinforcement
-- Mental Model Feedback Loops
-- Margin of Safety
+- [A Former Spy On How To Think Smarter: Shane Parrish | Rich Roll Podcast](https://www.youtube.com/watch?v=iHHJfwmR-RQ)
 
-### Military and War (2)
-- Counterinsurgency
-- Mutually Assured Destruction
+- [How to Make Good Decisions | Shane Parrish | Podcast Interview with Dan Harris](https://www.youtube.com/watch?v=m807mHp936w)
 
-### Human Nature and Judgment — biases (15)
-- Mental Model Bias Envy Jealousy
-- Mental Model Bias from Liking Loving
-- Mental Model Availability Bias
-- Mental Model Bias from Insensitivity to Base Rates
-- Mental Model Social Proof
-- Narrative Fallacy
-- Mental Model Bias from Insensitivity to Sample Size
-- Commitment Consistency Bias
-- What is Hindsight Bias
-- Kantian Fairness Tendency
-- Fundamental Attribution Error
-- Survivorship Bias
-- Do Something Syndrome
-- Peter Cathcart Wason Falsification
-- Confirmation Bias
+- [Shane Parrish (Farnam St) on Finding Clarity and Making Better Decisions](https://www.youtube.com/watch?v=v_VrVrKU9A8)
 
-### Additional flagship essays (4)
-- The Work Required to Have an Opinion
-- Feynman Technique
-- Daniel Kahneman the Two Systems
--  long-form interview-style essay; high-density voice sample
+- [How to Think Better According to Shane Parrish](https://www.youtube.com/watch?v=zkSTWoyXz8o)
 
 ---
 
-## Podcasts
-_(pending — 1 Good Life Project URL queued; Knowledge Project selections TBD)_
+## Articles
+
+- [Activation Energy: Why Getting Started Is the Hardest Part](https://fs.blog/activation-energy/)
+
+- [Incentives: The Hidden Forces That Shape Behavior](https://fs.blog/bias-incentives-reinforcement/)
+
+- [Mastering Success: Navigating Within Your Circle of Competence](https://fs.blog/circle-of-competence/)
+
+- [Commitment and Consistency Bias](https://fs.blog/commitment-consistency-bias/)
+
+- [Confirmation Bias And the Power of Disconfirming Evidence](https://fs.blog/confirmation-bias/)
+
+- [Counterinsurgency: Fighting Back](https://fs.blog/counterinsurgency/)
+
+- [Daniel Kahneman Explains The Machinery of Thought](https://fs.blog/daniel-kahneman-the-two-systems/)
+
+- [Do Something Syndrome: When Movement Trumps Results](https://fs.blog/do-something-syndrome/)
+
+- [Feynman Technique: The Ultimate Guide to Learning Anything Faster](https://fs.blog/feynman-technique/)
+
+- [What is First Principles Thinking?](https://fs.blog/first-principles/)
+
+- [The Fundamental Attribution Error: Why Predicting Behavior is so Hard](https://fs.blog/fundamental-attribution-error/)
+
+- [Galilean Relativity and the Invasion of Scotland](https://fs.blog/galilean-relativity/)
+
+- [Inversion: The Power of Avoiding Stupidity](https://fs.blog/inversion/)
+
+- [Kantian Fairness Tendency: The World Isn’t Fair](https://fs.blog/kantian-fairness-tendency/)
+
+- [Leverage: Gaining Disproportionate Strength](https://fs.blog/leverage/)
+
+- [The Map Is Not the Territory](https://fs.blog/map-and-territory/)
+
+- [Margin of Safety: Expect the Unexpected](https://fs.blog/margin-of-safety/)
+
+- [3 Things Everyone Should Know About the Availability Heuristic](https://fs.blog/mental-model-availability-bias/)
+
+- [Mental Model: Bias from Envy and Jealousy](https://fs.blog/mental-model-bias-envy-jealousy/)
+
+- [Insensitivity To Base Rates: An Introduction](https://fs.blog/mental-model-bias-from-insensitivity-to-base-rates/)
+
+- [Bias from Insensitivity to Sample Size](https://fs.blog/mental-model-bias-from-insensitivity-to-sample-size/)
+
+- [Bias from Liking/Loving: Why We Comply With Those We Love](https://fs.blog/mental-model-bias-from-liking-loving/)
+
+- [An Introduction to Feedback Loops](https://fs.blog/mental-model-feedback-loops/)
+
+- [Hanlon’s Razor: Not Everyone is Out to Get You](https://fs.blog/mental-model-hanlons-razor/)
+
+- [Social Proof: Why We Look to Others For What We Should Think and Do](https://fs.blog/mental-model-social-proof/)
+
+- [Mental Models: The Best Way to Make Intelligent Decisions (~100 Models Explained)](https://fs.blog/mental-models/)
+
+- [Mutually Assured Destruction: When Not to Play](https://fs.blog/mutually-assured-destruction/)
+
+- [Avoiding Falling Victim to The Narrative Fallacy](https://fs.blog/narrative-fallacy/)
+
+- [How to Use Occam’s Razor Without Getting Cut](https://fs.blog/occams-razor/)
+
+- [Falsification: How to Destroy Incorrect Ideas](https://fs.blog/peter-cathcart-wason-falsification/)
+
+- [The Value of Probabilistic Thinking: Spies, Crime, and Lightning Strikes](https://fs.blog/probabilistic-thinking/)
+
+- [Reciprocity: Getting What You Give](https://fs.blog/reciprocity/)
+
+- [Second-Order Thinking: What Smart People Use to Outperform](https://fs.blog/second-order-thinking/)
+
+- [Shane Parrish on Mental Models, Decision Making, & More](https://fs.blog/shane-parrish-mental-models/)
+
+- [The Difference Between Speed and Velocity: Getting Stuff Done](https://fs.blog/speed-velocity/)
+
+- [Survivorship Bias: The Tale of Forgotten Failures](https://fs.blog/survivorship-bias/)
+
+- [The Red Queen Effect: Avoid Running Faster to Stay in the Same Place](https://fs.blog/the-red-queen-effect/)
+
+- [The Work Required to Have an Opinion](https://fs.blog/the-work-required-to-have-an-opinion/)
+
+- [Thought Experiment: How Einstein Solved Difficult Problems](https://fs.blog/thought-experiment/)
+
+- [Hindsight Bias — An Introduction | Farnam Street](https://fs.blog/what-is-hindsight-bias/)
