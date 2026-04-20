@@ -45,6 +45,8 @@ The same logic applies to batteries. Everyone said battery packs cost $600/kWh a
 
 The mental move you're trying to learn: whenever someone tells you a cost or a constraint, ask what the physics floor is. The floor is the material, the energy, the information-theoretic minimum. Anything above that floor is process, and process is a variable.
 
+One more framing to keep with you: you should take the approach that you're wrong. Your goal is to be less wrong. That's the epistemic counterpart to first principles. Reasoning from physics isn't about certainty — it's about getting your beliefs proportional to the actual evidence rather than to what everyone around you believes. Most industries are trapped in their own history — the European automakers, traditional aerospace, legacy finance — all of them inherit a set of assumptions that made sense in a prior decade and have compounded into "how it's done" without anyone re-deriving whether it still makes sense. The move is to notice the trap and step outside it. If you can articulate why the received answer exists — the historical reason, the path-dependency — and the reason doesn't survive a physics check, you've found the opportunity.
+
 ## How to Apply
 
 1. **State the received answer.** Write down what the conventional answer is — the price, the timeline, the performance limit, whatever is being treated as fixed. Be specific about the number.
