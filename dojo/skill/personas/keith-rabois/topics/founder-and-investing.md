@@ -132,3 +132,11 @@ Board dynamics are under-discussed. The best way to build a board is to fill it 
 > "I'm looking for anomalies, something unexpected. Doesn't even mean I need to understand why it's unexpected."
 
 > "Every great company in companies that have the potential to be iconic, there's anomalies."
+
+> "I'm a founder-driven investor. The only thing I really care about is: does this founder have a non-zero chance of changing an industry or the world? If they do, for a seed or Series A investment, I'm in, period. Don't ask any other questions."
+
+> "What I'm looking for when I meet a founder is: can they articulate where the accumulating advantages can be, in theory, conceptually. They don't have to have demonstrated it. That's way too strict a bar for an early-stage investor."
+
+> "Roelof Botha had been a VC for nine years when he joined our Square board. Six months in he said, 'I haven't seen this kind of tempo since our PayPal days.' At board meeting X you guys identify an opportunity or problem, and by the next board meeting, you've shipped solutions. That compounds. That speed really does come out."
+
+> "I preempted Ramp's Series A in September after leading the seed in May. One of the two signals was how fast they were able to be on the precipice of shipping the cards. Shipping a card usually takes 9 to 12 months, best case nine. Ramp was on the precipice in 3 months. I'd never seen that velocity."

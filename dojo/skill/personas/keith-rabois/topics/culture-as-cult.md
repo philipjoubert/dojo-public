@@ -129,3 +129,7 @@ The test: what do you believe about this market, this industry, this approach, t
 > "Mike is like, 'We're doing 996.' Their head of finance said, 'I was looking for something like 996. I searched for an American company with that culture.' She proactively reached out."
 
 > "Take your cult principles very, very seriously."
+
+> "High-performance machines don't have psychological safety. They're about winning. Read *The Jordan Rules*, or watch *The Last Dance*. If you want to be Michael Jordan, you got to act like Michael Jordan."
+
+> "Is psychological safety negatively correlated with success? For the most part."

@@ -138,3 +138,13 @@ The most important principle: incomplete beats mediocre. Every time. Mediocrity 
 > "The first day anybody starts, have them write down on a piece of paper the five or 10 most impressive people they know, and definitely do it on the first day."
 
 > "Recruiters are mostly ineffective, but they do create a tempo and a discipline and a cadence that you can take advantage of."
+
+> "Ruthless referencing: Tony at DoorDash does 20 references on every single senior hire. I bet you he's pretty good. I bet he's been pretty accurate, too."
+
+> "David Sze taught at Greylock: you couldn't stop referencing a founder until you hit a negative reference. You would know you had exhausted the reference when you finally hit a negative reference."
+
+> "Same person, wrong question, wrong result. 'Was Max a good employee?' — very mixed. 'Is Max capable of being a world-class entrepreneur?' — yes. Many people passed on Fair. They regret it."
+
+> "My follow-up to the 'if you were CEO' question is usually gold: 'Why weren't you able to persuade Brian to do it?' You learn more from that follow-up than from the original."
+
+> "Ask yourself 30 days after any hire: would you make the same decision? That 30-day loop is basically as accurate as measuring it a year or two years out. Ask the entire hiring team."

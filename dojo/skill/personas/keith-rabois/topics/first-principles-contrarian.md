@@ -115,3 +115,13 @@ The acid test for being a good investor is this: do half your VC friends laugh a
 > "Life is path dependent and optimizing for option value won't take you far."
 
 > "The whole point of being an investor is you've got to be perceived as ridiculous and wrong for a long time."
+
+> "I hate talking to customers. I refuse to allow colleagues of mine to talk to customers. Customers don't know what they want. It's a subconscious decision, especially for consumers. Ask anybody who drives a super fancy car like a Porsche or a Lamborghini why they bought it. 99% of the time they will tell you every reason except the real reason."
+
+> "Hardcore enterprise customer development works — there's a decision-maker making utilitarian decisions. But a consumer, SMB, micro-merchant product — unmitigated disaster."
+
+> "Everything important you need to learn about humans was written by Shakespeare. Just read Shakespeare. That's better than all the customer research."
+
+> "When I make a seed or Series A investment, I want half of my friends who are VCs to laugh at me — literally laugh. Because it's an ugly baby, and ugly babies are the ones where there's real alpha."
+
+> "You start Airbnb with a contrarian take, but eventually if the company's going to succeed, it has to become consensus. You don't want to just have contrarian takes and then nobody believes it. So you do need a refresh rate."

@@ -57,5 +57,6 @@ Everything that went into the book. Check new content against this list to avoid
 - "Keith Rabois: Negotiation Lessons From the Startup Trenches"
 - "Comparative Advantages | Keith Rabois, Managing Director at Khosla Ventures | Ep. 2"
 - "Keith Rabois on How He Invests, Forming a Founding Team, and Funding 'Ridiculous' Ideas"
+- "Hard truths about building in the AI era | Keith Rabois (Khosla Ventures)"
 - "What Does a Trump Presidency Mean for Silicon Valley?"
 - "Keith Rabois w/ Semil Shah, Lessons from OpenDoor Launch"

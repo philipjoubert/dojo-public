@@ -103,3 +103,7 @@ The second thing editors do is enforce consistent voice. Pick up any article in 
 > "Ideally your company should feel like on your website, in your PR release, on your packaging if it's a physical product, anywhere on your recruiting pages should feel like it was written by one person. That's extremely difficult to do."
 
 > "Andy Grove estimated that you can improve performance by 30 to 50% [from clarity and simplification]."
+
+> "Criticize people in public. When you decompose the logic, it's so obviously true, but almost no one does this and very few people talk about it. When you give people negative feedback individually, you're optimizing for the atomic unit, not the system."
+
+> "The reason to do it in public is: it's more important for all the colleagues to understand there's an issue, it's being addressed. Otherwise they have suspicions — they don't know that you're aware and on top of it. It also lets other people raise their hand and say, 'you know what, I can kind of help with that.' So it becomes a team-building exercise versus 'you have this deficiency, go fix it yourself.'"

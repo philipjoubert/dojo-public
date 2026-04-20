@@ -103,3 +103,7 @@ Stripe is the clarifying counterexample. They hired their general counsel among 
 > "If you're trying to create something and forge something from scratch, experience is often a handicap."
 
 > "Some of the most interesting people that create the most innovation have a screw loose one way or the other, and if you over-react to that screw loose you're going to miss some of the most important, most talented people on the planet."
+
+> "Most of the companies I work with that are thriving have basically skipped hiring senior people. It's mostly internally grown talent. It's definitely true of Ramp, definitely true of Trade Republic."
+
+> "I've watched people use even chief of staff roles to groom talent. The CMO who's performing miraculously was his last chief of staff. His new head of product is his current chief of staff. He's created a factory where he can absorb ambitious talented people, and over one or two years by osmosis train them to be senior successful leaders."

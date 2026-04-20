@@ -108,3 +108,11 @@ And the last piece: in any system there is a limiting step. The slowest step in 
 > "Every production line's throughput is constrained by its slowest step. Identify the limiting step in your top priority and dedicate 20 to 80% of your time to it."
 
 > "Don't accept the excuse of complexity. A lot of people will tell you this is too challenging, this is too complicated. They're wrong. You can change the world in 140 characters."
+
+> "Mike Moritz was asked what the most common denominator of the best CEOs ever is. He said: it's the relentless application of force. That's the job of the CEO. The better you're doing, the more the CEO should push."
+
+> "When a company's struggling, I'm actually usually very non-critical — more like a coach and supporter. The founder knows they're struggling. Being critical doesn't help them solve their problems. But when the company's thriving, it's really important to be critical and isolate things that will eventually be problems while everybody is happy and borderline complacent. You want to be the opposite as a default."
+
+> "Really talented people are like superb athletes. When things are going well and people are coasting, they're not happy. Morale actually goes down for the best people in the world when people are skating."
+
+> "A company can skate on autopilot for a while. Venture, you really can't ever skate."

@@ -108,3 +108,7 @@ The highest compliment is "relentlessly resourceful." Paul Graham's phrase. It's
 > "These people have more potential. My job is to make sure the company is so interesting, so valuable, and such a challenge for any of the employees, they don't want to leave."
 
 > "Very few companies track the false negatives very well — the people they didn't hire that could have been great. Those actually arguably are more important than the mistakes you make."
+
+> "Most recruiting at large organizations becomes a homogeneous function. If you understand why this person is going to get thrown into a black box and not get processed accurately, it's pretty easy. Younger people, by definition, have less data. It's like FICO scores for employment. By the time you're over 30-some-odd, there's so many data points that this black-box machine is going to process you like many other people. If there's no data points, it's very hard for a black-box machine to evaluate you. So there is alpha, by definition, for people that have no data points."
+
+> "They're also not maybe the people you want. It's a salary cap. Most sports these days have salary caps. When you're a startup, not only do you have a salary cap, you probably have one-tenth the salary cap of the people you're competing with. So you've got to figure out how to leverage less assets to more success."

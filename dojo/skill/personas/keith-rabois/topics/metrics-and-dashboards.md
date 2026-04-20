@@ -121,3 +121,5 @@ And finally, **anomaly detection**. The most valuable signal in your data is the
 > "List 2-3 main risks or challenges of your startup, find a directly responsible individual (DRI) for solving and delivering each challenge."
 
 > "Jeff Bezos has argued that managing purely to outputs causes talented people to gravitate toward safe, short-term projects. Managing to inputs encourages ambitious experiments with higher potential upside."
+
+> "At Ramp, every board meeting starts with the first slide: day 1,184. If you go to days.ramp.com, it's the number of days since they launched. They're always looking at that number."

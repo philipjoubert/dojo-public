@@ -97,3 +97,11 @@ Any one barrel you find, you hire instantly. Regardless of whether you have mone
 > "The reason why people talk about the PayPal team is there's a fair number of people — like probably 25 to 30 people — that were just exceptional all within 254 people in Mountain View."
 
 > "I can definitely tell you the people who created the most value in the history of PayPal are the weirdest people that worked at PayPal."
+
+> "Basically, we're going up — there's a hill over there. That's the hill. Get us over that hill. And one way or the other, they will motivate people if they need to. They will accumulate resources if they need to. They will measure what they need to. And they're going to get your company across that hill. That's a barrel. Anything less than that is not a barrel."
+
+> "It's that skill of: 'I'm going to take this off your plate. You can fire and forget and this is going to happen. And if it's not going to happen, I am going to come back to you proactively with the issues I'm confronting, what I've already tried, the diagnosis of the root causes, and ask for your help with sufficient time for you to intervene.'"
+
+> "At PayPal, we had about 254 people. There's between 12 to 17 barrels in the organization. That's like an infinite number. I once asked Jack Altman on a podcast at Glaum how many barrels are in the company. The answer was two. That's a more common answer for a very good company."
+
+> "I had this intern named Taylor Francis. It was like his second day and he's like, 'I'll solve it.' I was like, 'Okay, kid, good luck with that.' 9:00 arrives and lo and behold, smoothies show up at 9:00 p.m. delivered on the standing desk table where the engineers would congregate. They're cold. They taste great. And I'm like, 'Oh my god, I found a barrel.' And I later gave him almost everything to do."
