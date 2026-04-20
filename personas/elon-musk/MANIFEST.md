@@ -14,40 +14,25 @@ Authoritative inventory of processed source material. Every entry carries a `sou
 
 ## YouTube
 
-- Joe Rogan Experience #2404 - Elon Musk
+- [Joe Rogan Experience #2404 - Elon Musk](https://www.youtube.com/watch?v=O4wBUysNe2k)
+- [Joe Rogan Experience #2054 - Elon Musk](https://www.youtube.com/watch?v=tAJUwiAqW38)
+- [Elon Musk – "In 36 months, the cheapest place to put AI will be space"](https://www.youtube.com/watch?v=BYXbuik3dgA)
+- [Elon Musk Interview — 1-on-1 with Sandy Munro](https://www.youtube.com/watch?v=YAtLTLiqNwg)
+- [Young Elon Musk - Interview 2007 - Full Version](https://www.youtube.com/watch?v=iaLhVwOf9Vk)
+- [The First Principles Method Explained by Elon Musk](https://www.youtube.com/watch?v=NV3sBlRgzTI)
+- [The Book of Elon with Eric Jorgenson](https://www.youtube.com/watch?v=<unknown>)
+# video ID not recorded; transcript exists on disk
 
-- Joe Rogan Experience #2054 - Elon Musk
-
-- Elon Musk – "In 36 months, the cheapest place to put AI will be space"
-
-- Elon Musk Interview — 1-on-1 with Sandy Munro
-
-- Young Elon Musk - Interview 2007 - Full Version
-
-- The First Principles Method Explained by Elon Musk
-
-- The Book of Elon with Eric Jorgenson
-
-- How SpaceX Works
-
-- How Elon Works
-
-- Elon Musk and The Early Days of SpaceX
-
-- How Elon Thinks
-
-- Elon Musk's 2003 Stanford University Entrepreneurial Thought Leaders Lecture
-
+- [How SpaceX Works](https://www.youtube.com/watch?v=owZ6xh_gOdY)
+- [How Elon Works](https://www.youtube.com/watch?v=aStHTTPxlis)
+- [Elon Musk and The Early Days of SpaceX](https://www.youtube.com/watch?v=2hSdEkDe87s)
+- [How Elon Thinks](https://www.youtube.com/watch?v=CdBcZSau5iA)
+- [Elon Musk's 2003 Stanford University Entrepreneurial Thought Leaders Lecture](https://www.youtube.com/watch?v=afZTrfvB2AQ)
 ## Articles
 
-- Elon Musk's Framework for Thinking (Farnam Street)
-
-- First Principles Thinking — Key Concepts & Examples (James Clear)
-
-- Elon Musk Key Statements from Lex Fridman Podcast #438 (Neuralink)
-
-- Atoms Are Cheap, Process Is Pricey (Future Blind)
-
-- Starbase Tour and Interview with Elon Musk (Everyday Astronaut)
-
-- How Elon Musk Solves Problems — 4 Key Frameworks (Forbes, Jodie Cook)
+- [Elon Musk's Framework for Thinking (Farnam Street)](https://fs.blog/elon-musk-framework-thinking/)
+- [First Principles Thinking — Key Concepts & Examples (James Clear)](https://jamesclear.com/first-principles)
+- [Elon Musk Key Statements from Lex Fridman Podcast #438 (Neuralink)](https://lexfridman.com/elon-musk-and-neuralink-team-transcript)
+- [Atoms Are Cheap, Process Is Pricey (Future Blind)](https://futureblind.com/p/atoms-are-cheap-process-is-pricey)
+- [Starbase Tour and Interview with Elon Musk (Everyday Astronaut)](https://everydayastronaut.com/starbase-tour-and-interview-with-elon-musk/)
+- [How Elon Musk Solves Problems — 4 Key Frameworks (Forbes, Jodie Cook)](https://www.forbes.com/sites/jodiecook/2022/12/01/how-elon-musk-solves-problems-4-key-frameworks/)
