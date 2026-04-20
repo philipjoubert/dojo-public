@@ -123,7 +123,7 @@ The detailed build process lives in the private working repo. This public repo i
 
 ## Credits
 
-Every expert in this dojo is a real person who built their thinking over decades and shared it publicly. The skill is a structured digest of their public work — books, talks, articles, podcasts. Source attribution lives in [`ATTRIBUTIONS.md`](ATTRIBUTIONS.md) and per-expert manifests.
+Every expert in this dojo is a real person who built their thinking over decades and shared it publicly. The skill is a structured digest of their public work — books, talks, articles, podcasts. Per-expert source corpora are in each persona's `MANIFEST.md` (linked from the table above).
 
 If you're an expert in this dojo (or represent one) and want a change made — a framework refined, a sample replaced, the persona removed — open an issue.
 
