@@ -5,7 +5,7 @@
 ![Neo: I know Kung Fu](assets/matrix-i-know-kung-fu.jpg)
 *Install the dojo. Open your eyes. You know positioning.*
 
-Why "dojo"? Neo downloads kung fu, opens his eyes, says *"I know Kung Fu."* Install this and you can say the same about positioning, negotiation, or founder mode. Fourteen experts, their actual frameworks and voices, willing to disagree with you — and each other.
+Why "dojo"? Neo downloads kung fu, opens his eyes, says *"I know Kung Fu."* Install this and you can say the same about positioning, negotiation, or founder mode. Fifteen experts, their actual frameworks and voices, willing to disagree with you — and each other.
 
 ---
 
@@ -42,6 +42,7 @@ Each persona has a `persona.md` (always loaded) and a `topics/` folder of self-c
 | **Elon Musk** | Engineering, manufacturing, first principles, The Algorithm, Idiot Index | [See sources](personas/elon-musk/MANIFEST.md) |
 | **Eugene Schwartz** | Direct-response copywriting, Mass Desire, States of Awareness, ad critique | [See sources](personas/eugene-schwartz/MANIFEST.md) |
 | **Jeff Bezos** | Mechanism design, working backwards, PR-FAQ, Day 1 vs Day 2 | [See sources](personas/jeff-bezos/MANIFEST.md) |
+| **Julia Galef** | Rationality, scout vs soldier mindset, calibration, changing your mind, productive disagreement, holding identity lightly | [See sources](personas/julia-galef/MANIFEST.md) |
 | **Keith Rabois** | Operating, hiring, barrels and ammunition, value creation vs protection, CEO as editor, culture as cult | [See sources](personas/keith-rabois/MANIFEST.md) |
 | **Lulu Cheng** | Communications, PR, crisis, going direct, hit pieces, founder voice | [See sources](personas/lulu-cheng/MANIFEST.md) |
 | **Marc Andreessen** | Product/market fit, startup strategy, raising VC, techno-optimism | [See sources](personas/marc-andreessen/MANIFEST.md) |
