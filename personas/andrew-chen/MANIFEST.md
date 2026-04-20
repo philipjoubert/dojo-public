@@ -13,14 +13,20 @@
 ## YouTube
 
 - [Andrew Chen — Growth Secrets from Uber, Exploring the Metaverse, Startup Investing, and More](https://www.youtube.com/watch?v=gYXjR7Y7_uw)
-notes: Tim Ferriss interview. Long-form, wide-ranging.
+  notes: Tim Ferriss interview. Long-form, wide-ranging.
 
 - [Andrew Chen: How to make big career decisions | Maven Lightning Lesson](https://www.youtube.com/watch?v=wkNVDllhVu0)
+
 - [Marc Andreessen & Andrew Chen Talk Creative Computers](https://www.youtube.com/watch?v=EpvhuaD5Kk0)
+
 - [How To Solve The Cold Start Problem with Andrew Chen](https://www.youtube.com/watch?v=h__Eg_IwSSs)
+
 - [Andrew Chen | The Cold Start Problem — Talks at Google](https://www.youtube.com/watch?v=TSnYO34b3TA)
+
 - [Andrew Chen on the Cold Start Problem — Upfront Summit 2022](https://www.youtube.com/watch?v=-ILjMq1T13g)
+
 - [Andrew Chen — What's Next in Growth?](https://www.youtube.com/watch?v=7Uhu2PEJ2Yk)
+
 ## Articles — andrewchen.com
 
 ### Recent (2015+) — core frameworks
