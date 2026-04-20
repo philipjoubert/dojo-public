@@ -53,7 +53,37 @@ description: |
   distribution collapse, satellite apps, founder-led social, the Pride
   Test — anti-dark-patterns, Four W's of product-led sales, PQA scoring,
   growth teams — Founder Mode / org charts / hiring HoG, revenue
-  addiction, PLG layering not switching, fix the bucket before you fill it).
+  addiction, PLG layering not switching, fix the bucket before you fill it);
+  Keith Rabois (operating and hiring for startups, barrels and ammunition,
+  undiscovered talent, value creation vs value protection, CEO as editor,
+  task-relevant maturity and the rope-extension 2x2, radical transparency,
+  paired metrics and DRI, Peter Thiel's one-thing mandate, Reid Hoffman's
+  priority-first decisions, calendar audit, the smoothie test, six-months-
+  ahead test, 50-50 internal/external hires, culture as cult, first
+  principles and contrarian thinking, secrets, path dependency over option
+  value, what could go right, spike on one dimension, fragmented low-NPS
+  markets and vertical integration, board dynamics, founder assessment,
+  PayPal Mafia operator turned Founders Fund investor); Brian Chesky
+  (founder mode, CEO as chief product officer, presence not absence,
+  being in the details, functional vs divisional org, Navy SEALs not the
+  Navy, one shared roadmap, skip-leveling, co-hiring directs-to-directs,
+  no annual plan, no recurring 1:1s, communication tax, hiring like a
+  detective — guilty until proven innocent, two-follow-up rule, references
+  over interviews, Shackleton close, scaling assessment, 11-star experience,
+  design is how it works, simplification as distillation, do things that
+  don't scale, storyboard and blueprint / wrapping your arms around the
+  company, stacking the bricks, start with marketing, quality before
+  growth, permission to innovate, culture is a thousand things a thousand
+  times, don't fuck up the culture, the 20-year filter, principle vs
+  business decisions, burning house test, Andy Grove — great companies
+  are defined by crisis, board dynamics, courtside seats analogy);
+  Chris Voss (negotiation, difficult conversations, salary negotiation,
+  sales negotiation, client conflict, getting buy-in, reading counterparts,
+  tactical empathy, mirroring, labeling, calibrated questions, accusation
+  audit, that's right vs you're right, Ackerman model, Black Swans,
+  three negotiator types (Analyst / Accommodator / Assertive), voice and
+  delivery, late-night FM DJ voice, no-oriented questions, 7-38-55, never
+  split the difference, hostage negotiation applied to business).
   More experts added over time.
 ---
 
@@ -158,6 +188,9 @@ Currently loaded:
 - **Andrew Carnegie** (`personas/andrew-carnegie/`) — industrial operating, vertical integration, cost per unit mastery, the monthly cost sheet, partnership model, the Ironclad Agreement, equity for operators, pioneer technology adoption, concentration (eggs in one basket), talent identification, surround yourself with better men, pricing into downturns, counter-cyclical capex, quality before cost, the Gospel of Wealth, scientific philanthropy, hierarchy of gifts, civic matching condition, dying rich
 - **Shane Parrish** (`personas/shane-parrish/`) — clear thinking, decision-making, the four defaults (emotion / ego / social / inertia), the four strengths (self-accountability / self-knowledge / self-control / self-confidence), the five safeguards (HALT, automatic rules, friction, checklists, perspective-shifting), the decision process (define → explore → evaluate → do → margin of safety → learn), ordinary moments, positioning, the space between stimulus and response, environment over willpower, outcome over ego, the wrong side of right, rules over decisions, premortem, handling mistakes, separating decision quality from outcome quality, wanting what matters (values), and the multidisciplinary mental-models latticework — first principles, inversion, second-order thinking, circle of competence, probabilistic thinking, margin of safety, map-is-not-territory
 - **Elena Verna** (`personas/elena-verna/`) — growth operator and PLG expert (SurveyMonkey, Miro, Amplitude, Dropbox, now Head of Growth at Lovable). Loops vs funnels, the Growth Matrix (3×3: Acquisition/Retention/Monetization × Product-led/Marketing-led/Sales-led), activation Setup/Aha/Habit, retention and churn diagnostics, pricing and monetization (value metrics, Monetization Council, AI pricing, pricing page anatomy), reverse trials, product-led sales (Four W's, PQA scoring), squad sequencing (activation → monetization → acquisition → retention), experimentation OS (50% failure rate, Weekly Metrics Review, DRI, three Slack channels), AI-native growth (PMF treadmill, Disruption Risk Matrix, trust-as-moat, distribution collapse, satellite apps, founder-led social), Pride Test (anti-dark-patterns), growth team design (Founder Mode, org charts, hiring HoG, JD red flags), revenue addiction, "fix the bucket before you fill it," layering PLG not switching to it
+- **Keith Rabois** (`personas/keith-rabois/`) — PayPal Mafia operator turned investor (PayPal, LinkedIn, Square COO, Opendoor founder, Khosla → Founders Fund). Operating and hiring for startups. Barrels and ammunition, undiscovered talent, value creation vs value protection, CEO as editor, task-relevant maturity stacked with the rope-extension 2×2, radical transparency, paired metrics and DRI, Peter Thiel's one-thing mandate, Reid Hoffman's priority-first decisions, the calendar audit, the smoothie test (scope expansion), Brian Chesky's six-months-ahead test, 50-50 internal/external hiring, culture as cult, every-startup-has-a-secret, path dependency over option value, what could go right, spike on one dimension, fragmented low-NPS markets with vertical integration, accumulating advantage, board construction, never-compromise-on-early-sales-hires, incomplete-beats-mediocre, speed as the operator's weapon
+- **Chris Voss** (`personas/chris-voss/`) — former FBI lead international kidnapping negotiator, founder of The Black Swan Group, author of Never Split the Difference. Negotiation and high-stakes communication applied to business: salary, sales, client conflict, renewals, difficult conversations. Tactical empathy, mirroring, labeling, calibrated questions ("How am I supposed to do that?"), the accusation audit, getting to "that's right" (not "you're right"), voice and delivery (FM DJ / positive-playful / direct), the 7-38-55 rule, the Ackerman model (65 / 85 / 95 / 100 with non-round finals), saying no without saying no, Black Swans (the unknown unknowns), the three negotiator types (Analyst / Accommodator / Assertive), reading pronouns and the Pinocchio effect, technique selection decision tree. Never split the difference.
+- **Brian Chesky** (`personas/brian-chesky/`) — co-founder and CEO of Airbnb. Designer turned founder-CEO, converted from "professional CEO" back to founder-operator via Jony Ive and Hiroki Asai at Apple. Founder mode — CEO as chief product officer and chief editor, presence not absence, being in the details vs. micromanaging, paradox of CEO involvement, functional vs divisional org, Navy SEALs not the Navy, the three-legged stool (engineering / product marketing / design reporting to CEO), one shared roadmap, rolling two-year strategic plan, no annual plan, skip-leveling every direct-to-direct, co-hiring rule, no recurring 1:1s, meeting discipline, communication tax from headcount, babushka dolls, cavalry general who can't ride a horse, "A players hire A players / B players hire LOTS of C players," pitcher never takes themselves off the mound. Hiring like a detective — guilty until proven innocent, start with results and work backwards, two-follow-up rule, references over interviews (white belt vs black belt), Shackleton close, scaling assessment (6-months behind / on-track / 6-months ahead). The 11-star experience (design the extreme to come back), do things that don't scale, the storyboard method and the blueprint audit ("wrapping your arms around the company"), orthogonal industries, stacking the bricks (coordinated launches), start with marketing not engineering. Design is how it works — simplification as distillation to essence, not subtraction; a designer can design the company itself. Quality before growth, permission to innovate comes from loving the core, metrics aren't a strategy, growth is a direction not a goal. Culture is a thousand things a thousand times, "don't fuck up the culture" (Peter Thiel), stronger culture means less process, the 20-year filter, principle vs business decisions. Crisis leadership — Andy Grove's "great companies are defined by a crisis," the burning house test, crisis as permission. Board and VC dynamics — courtside seats don't make you a coach, wary of junior partners, board members can destroy but rarely build. Founder-market fit, don't apologize for how you want to run the company.
 
 ---
 

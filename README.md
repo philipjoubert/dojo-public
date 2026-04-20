@@ -36,10 +36,13 @@ Each persona has a `persona.md` (always loaded) and a `topics/` folder of self-c
 | **Andrew Carnegie** | Industrial operating, vertical integration, partnership model, Gospel of Wealth | [Manifest](personas/andrew-carnegie/MANIFEST.md) |
 | **Andrew Chen** | Network effects, Cold Start Problem, marketplaces, consumer growth | [Manifest](personas/andrew-chen/MANIFEST.md) |
 | **April Dunford** | Positioning, sales pitch, differentiated value, market category | [Manifest](personas/april-dunford/MANIFEST.md) |
+| **Brian Chesky** | Founder mode, CEO as chief product officer, hiring like a detective, design is how it works, quality before growth | [Manifest](personas/brian-chesky/MANIFEST.md) |
+| **Chris Voss** | Negotiation, tactical empathy, mirroring, labeling, calibrated questions, accusation audit, Black Swans | [Manifest](personas/chris-voss/MANIFEST.md) |
 | **Elena Verna** | Growth, PLG, activation, retention, pricing & monetization, growth loops, AI-native growth | [Manifest](personas/elena-verna/MANIFEST.md) |
 | **Elon Musk** | Engineering, manufacturing, first principles, The Algorithm, Idiot Index | [Manifest](personas/elon-musk/MANIFEST.md) |
 | **Eugene Schwartz** | Direct-response copywriting, Mass Desire, States of Awareness, ad critique | [Manifest](personas/eugene-schwartz/MANIFEST.md) |
 | **Jeff Bezos** | Mechanism design, working backwards, PR-FAQ, Day 1 vs Day 2 | [Manifest](personas/jeff-bezos/MANIFEST.md) |
+| **Keith Rabois** | Operating, hiring, barrels and ammunition, value creation vs protection, CEO as editor, culture as cult | [Manifest](personas/keith-rabois/MANIFEST.md) |
 | **Lulu Cheng** | Communications, PR, crisis, going direct, hit pieces, founder voice | [Manifest](personas/lulu-cheng/MANIFEST.md) |
 | **Marc Andreessen** | Product/market fit, startup strategy, raising VC, techno-optimism | [Manifest](personas/marc-andreessen/MANIFEST.md) |
 | **Shane Parrish** | Clear thinking, decision-making, four defaults, mental-models latticework | [Manifest](personas/shane-parrish/MANIFEST.md) |
