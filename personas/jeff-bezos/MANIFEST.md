@@ -56,31 +56,21 @@ Authoritative inventory of processed source material. Every entry carries a `sou
 ## Articles
 
 - [7 Mental Models Jeff Bezos Swears By](https://sketchyideas.substack.com/p/7-mental-models-jeff-bezos-swears)
-  notes: Source URL not captured at fetch time.
 
 - [Bezos Business Success](https://fs.blog/bezos-business-success/)
-  notes: Source URL not captured at fetch time.
 
 - [Bezos on Failure, Decision-Making, Life](https://www.leadingsapiens.com/bezos-on-failure-decision-making-life/)
-  notes: Source URL not captured at fetch time.
 
 - [Jeff Bezos Shareholder Letters Collection](https://quartr.com/insights/business-philosophy/collection-jeff-bezos-shareholder-letters)
-  notes: Source URL not captured at fetch time.
 
 - [Decisions by Jeff Bezos](https://www.founderstribune.org/p/decisions-by-jeff-bezos)
-  notes: Source URL not captured at fetch time.
 
 - [Jeff Bezos Writing Management Strategy](https://slab.com/blog/jeff-bezos-writing-management-strategy/)
-  notes: Source URL not captured at fetch time.
 
 - [Reversible and Irreversible Decisions](https://fs.blog/reversible-irreversible-decisions/)
-  notes: Source URL not captured at fetch time.
 
 - [Some Advice from Jeff Bezos](https://fs.blog/some-advice-from-jeff-bezos/)
-  notes: Source URL not captured at fetch time.
 
 - [The Everything Store (Farnam Street summary)](https://fs.blog/the-everything-store/)
-  notes: Source URL not captured at fetch time.
 
 - [Why I (Jeff Bezos) Keep Spending Billions on Amazon R&D (2011)](https://www.businessinsider.com/why-i-jeff-bezos-keep-spending-billions-on-amazon-rd-2011-4)
-  notes: Source URL not captured at fetch time.

@@ -6,39 +6,39 @@ Everything that went into the book. This file is generated from the database.
 
 ## YouTube
 
-- 10 Rules Every Founder Should Know: Inside Anduril’s Secret Comms Strategy
+- [10 Rules Every Founder Should Know: Inside Anduril’s Secret Comms Strategy](https://www.youtube.com/watch?v=gUrLI88eR5o)
 
-- Cult Leaders Have Terrible Pitches | Lulu Cheng Meservey
+- [Cult Leaders Have Terrible Pitches | Lulu Cheng Meservey](https://www.youtube.com/watch?v=I9Njb8Lw5Xc)
 
-- Going direct and fighting for your reputation -- with Anduril founder Palmer Luckey
+- [Going direct and fighting for your reputation -- with Anduril founder Palmer Luckey](https://www.youtube.com/watch?v=SeNMLKyiZiQ)
 
-- Helping Founders Go Direct in a New Era of PR & Comms with Lulu Cheng Meservey | Ep. 25
+- [Helping Founders Go Direct in a New Era of PR & Comms with Lulu Cheng Meservey | Ep. 25](https://www.youtube.com/watch?v=GRoU1T4E9rQ)
 
-- John Coogan and Lulu Meservey Talk Comms
+- [John Coogan and Lulu Meservey Talk Comms](https://www.youtube.com/watch?v=yWX3tGltDmU)
 
-- Leaking to the Press
+- [Leaking to the Press](https://www.youtube.com/watch?v=4XdHjvCpzas)
 
-- Learn Marketing in 80 Minutes — Lulu Cheng Meservey
+- [Learn Marketing in 80 Minutes — Lulu Cheng Meservey](https://www.youtube.com/watch?v=0EheiIUFjUI)
 
-- Lulu Cheng Meservey: Go Direct
+- [Lulu Cheng Meservey: Go Direct](https://www.youtube.com/watch?v=Y7HARsABDVc)
 
-- Lulu Cheng Meservey on Founder Mode, Attention as Currency, and Building the Future.
+- [Lulu Cheng Meservey on Founder Mode, Attention as Currency, and Building the Future.](https://www.youtube.com/watch?v=1D6uctSIae4)
 
-- Lulu Cheng Meservey: The New Rules of Founder Comms (Encore)
+- [Lulu Cheng Meservey: The New Rules of Founder Comms (Encore)](https://www.youtube.com/watch?v=v_509p043jc)
 
-- Lulu Meservey on How Media Has Changed
+- [Lulu Meservey on How Media Has Changed](https://www.youtube.com/watch?v=IXch3gN3zyw)
 
-- Meet Silicon Valley’s #1 PR Expert — Lulu Cheng Meservey
+- [Meet Silicon Valley’s #1 PR Expert — Lulu Cheng Meservey](https://www.youtube.com/watch?v=QDHWyuNhs-E)
 
-- Navigating comms and PR | Lulu Cheng Meservey (Substack, Activision Blizzard)
+- [Navigating comms and PR | Lulu Cheng Meservey (Substack, Activision Blizzard)](https://www.youtube.com/watch?v=LTSEOeKV_Hs)
 
-- Secrets of Reality Distortion Fields With Lulu Cheng Meservey
+- [Secrets of Reality Distortion Fields With Lulu Cheng Meservey](https://www.youtube.com/watch?v=Z1vqzWfC_sA)
 
-- The Knowledge Project — How To Build A Cult | Lulu Cheng Meservey — 2 hours into 6 minutes Summary
+- [The Knowledge Project — How To Build A Cult | Lulu Cheng Meservey — 2 hours into 6 minutes Summary](https://www.youtube.com/watch?v=ElRhoEdjyC0)
 
-- Top CEO Advisor Reveals How To Handle Mainstream Media
+- [Top CEO Advisor Reveals How To Handle Mainstream Media](https://www.youtube.com/watch?v=StBHLZK15nQ)
 
-- Zuck's PR Makeover and JD Vance's Couchgate
+- [Zuck's PR Makeover and JD Vance's Couchgate](https://www.youtube.com/watch?v=MiFJqTh2e8Y)
 
 ---
 

@@ -4,8 +4,6 @@ Everything that went into the book. Check new content against this list to avoid
 
 ---
 
----
-
 ## YouTube
 
 - [The new AI growth playbook for 2026 | How Lovable hit $200M ARR in one year](https://www.youtube.com/watch?v=6qAB6aUMIeA)

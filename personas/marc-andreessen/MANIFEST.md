@@ -95,7 +95,6 @@ Authoritative inventory of processed source material. Every entry carries a `sou
 - [Part 3 Pmarca Guide to Career Planning: Where to go and why](https://pmarchive.com/guide_to_career_planning_part3.html)
 
 - [Pmarchive — Guide to Personal Productivity](https://pmarchive.com/guide_to_personal_productivity.html)
-  notes: Per-essay source URL not captured.
 
 - [Part 1 Why not to do a startup](https://pmarchive.com/guide_to_startups_part1.html)
 
