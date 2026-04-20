@@ -1,11 +1,11 @@
 # Dojo
 
-**A panel of expert advisors, loaded into Claude.** Ask Bezos about a new product and he'll ask if you've written the PR-FAQ first. Ask Lulu Cheng about a hit piece and she'll tell you to go direct. Ask Shane Parrish about a hard decision and he'll find the ordinary moment under it before answering.
+**A panel of expert advisors, loaded into Claude or ChatGPT.**
 
 ![Neo: I know Kung Fu](assets/matrix-i-know-kung-fu.jpg)
 *Install the dojo. Open your eyes. You know positioning.*
 
-Why "dojo"? Neo downloads kung fu, opens his eyes, says *"I know Kung Fu."* Install this and you can say the same about positioning, negotiation, or founder mode. Fifteen experts, their actual frameworks and voices, willing to disagree with you — and each other.
+Just like Neo downloads kung fu, you can do the same with positioning, negotiation, founder mode — any of fifteen experts, in their own voice, willing to disagree with you and each other.
 
 ---
 
