@@ -88,22 +88,17 @@ cp -R dojo/skill ~/.claude/skills/dojo
 
 ### Claude Desktop / Claude.ai
 
-Desktop and web take skills as zip uploads. Zip the skill directory and upload:
+Desktop and web take skills as zip uploads. Download [`dojo.zip`](dojo.zip) from this repo.
 
-```bash
-cd dojo/skill
-zip -r ../dojo.zip .
-```
+Then in Claude: **Settings → Capabilities → Skills → Upload skill**, and select the file.
 
-Then in Claude: **Settings → Capabilities → Skills → Upload skill**, and select `dojo/dojo.zip`.
-
-To update: delete the old skill in settings and re-upload the new zip.
+To update: delete the old skill in settings, download the latest `dojo.zip`, and re-upload.
 
 ### ChatGPT
 
-ChatGPT now supports the same `SKILL.md` standard. Use the same zip.
+ChatGPT supports the same `SKILL.md` standard. Use the same zip.
 
-In ChatGPT: **Skills → New skill → Upload from your computer**, and select `dojo/dojo.zip`.
+In ChatGPT: **Skills → New skill → Upload from your computer**, and select `dojo.zip`.
 
 > Heads up: the ChatGPT Skills upload UI is currently rolling out on Business, Enterprise, and EDU workspaces. Individual Plus and Pro plans may not have it yet.
 
