@@ -5,7 +5,7 @@
 ![Neo: I know Kung Fu](assets/matrix-i-know-kung-fu.jpg)
 *Install the dojo. Open your eyes. You know positioning.*
 
-Just like Neo downloads kung fu, you can do the same with positioning, negotiation, founder mode — any of fifteen experts, in their own voice, willing to disagree with you and each other.
+Just like Neo downloads kung fu, you can do the same with positioning, negotiation, founder mode, SaaS GTM — a panel of experts, in their own voice, willing to disagree with you and each other.
 
 ## What's in each persona
 
@@ -37,6 +37,7 @@ Each persona has a `persona.md` (always loaded) and a `topics/` folder of self-c
 | **Elena Verna** | Growth, PLG, activation, retention, pricing & monetization, growth loops, AI-native growth | [Sources](sources/elena-verna/MANIFEST.md) |
 | **Elon Musk** | Engineering, manufacturing, first principles, The Algorithm, Idiot Index | [Sources](sources/elon-musk/MANIFEST.md) |
 | **Eugene Schwartz** | Direct-response copywriting, Mass Desire, States of Awareness, ad critique | [Sources](sources/eugene-schwartz/MANIFEST.md) |
+| **Jason Lemkin** | SaaS go-to-market, founder-led sales, VP hiring, LVR, PMF signals, fundraising, churn & NRR, AI-era GTM | [Sources](sources/jason-lemkin/MANIFEST.md) |
 | **Jeff Bezos** | Mechanism design, working backwards, PR-FAQ, Day 1 vs Day 2 | [Sources](sources/jeff-bezos/MANIFEST.md) |
 | **Julia Galef** | Rationality, scout vs soldier mindset, calibration, changing your mind, productive disagreement, holding identity lightly | [Sources](sources/julia-galef/MANIFEST.md) |
 | **Keith Rabois** | Operating, hiring, barrels and ammunition, value creation vs protection, CEO as editor, culture as cult | [Sources](sources/keith-rabois/MANIFEST.md) |
