@@ -1,4 +1,4 @@
-# Dojo
+# Dojo — Founder Mode for Your AI
 
 **A panel of expert advisors, loaded into Claude or ChatGPT.**
 
