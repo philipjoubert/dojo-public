@@ -40,6 +40,7 @@ Each persona has a `persona.md` (always loaded) and a `topics/` folder of self-c
 | **Hamilton Helmer** | Competitive strategy, the 7 Powers, Benefit/Barrier decomposition, 3 S's, Power Progression, Surplus Leader Margin, Counter-Positioning | [Sources](sources/hamilton-helmer/MANIFEST.md) |
 | **Jason Lemkin** | SaaS go-to-market, founder-led sales, VP hiring, LVR, PMF signals, fundraising, churn & NRR, AI-era GTM | [Sources](sources/jason-lemkin/MANIFEST.md) |
 | **Jeff Bezos** | Mechanism design, working backwards, PR-FAQ, Day 1 vs Day 2 | [Sources](sources/jeff-bezos/MANIFEST.md) |
+| **Jensen Huang** | Strategic inflections, accelerated computing, zero billion dollar markets, speed of light benchmarking, flat-org operations (60+ direct reports, T5s, no recurring 1:1s), pain and suffering as character advantage | [Sources](sources/jensen-huang/MANIFEST.md) |
 | **Julia Galef** | Rationality, scout vs soldier mindset, calibration, changing your mind, productive disagreement, holding identity lightly | [Sources](sources/julia-galef/MANIFEST.md) |
 | **Keith Rabois** | Operating, hiring, barrels and ammunition, value creation vs protection, CEO as editor, culture as cult | [Sources](sources/keith-rabois/MANIFEST.md) |
 | **Lulu Cheng** | Communications, PR, crisis, going direct, hit pieces, founder voice | [Sources](sources/lulu-cheng/MANIFEST.md) |
