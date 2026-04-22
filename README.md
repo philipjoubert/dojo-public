@@ -125,7 +125,7 @@ To update: delete the old skill in settings, download the latest zip, and re-upl
 
 ChatGPT supports the same `SKILL.md` standard. Use the same zips.
 
-In ChatGPT: **Skills → New skill → Upload from your computer**, and select the zip(s) you want.
+Go to [chatgpt.com/skills](https://chatgpt.com/skills) → **New skill → Upload from your computer**, and select the zip(s) you want.
 
 > Heads up: the ChatGPT Skills upload UI is currently rolling out on Business, Enterprise, and EDU workspaces. Individual Plus and Pro plans may not have it yet.
 
