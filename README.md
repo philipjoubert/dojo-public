@@ -29,7 +29,7 @@ The dojo ships as four independent skills, split by domain. Install the ones you
 | Skill | Purpose | Experts |
 |---|---|---|
 | **dojo-operators** | Founders and CEOs who built and ran companies | Jeff Bezos • Elon Musk • Brian Chesky • Jensen Huang • Patrick Collison • Andrew Carnegie • Jason Lemkin • Keith Rabois • Chris Voss |
-| **dojo-investors** | VCs, startup philosophers, capital allocators | Marc Andreessen |
+| **dojo-investors** | VCs, startup philosophers, capital allocators | Marc Andreessen • Ben Horowitz |
 | **dojo-marketing** | Positioning, copy, growth, PR, network effects | Lulu Cheng • April Dunford • Andrew Chen • Elena Verna • Eugene Schwartz • David Ogilvy |
 | **dojo-thinking** | Mental models, strategy frameworks, rationality | Shane Parrish • Julia Galef • Hamilton Helmer |
 
@@ -41,6 +41,7 @@ Each persona has a `persona.md` (always loaded) and a `topics/` folder of self-c
 |---|---|---|---|
 | **Andrew Carnegie** | operators | Industrial operating, vertical integration, partnership model, Gospel of Wealth | [Sources](sources/andrew-carnegie/MANIFEST.md) |
 | **Andrew Chen** | marketing | Network effects, Cold Start Problem, marketplaces, consumer growth | [Sources](sources/andrew-chen/MANIFEST.md) |
+| **Ben Horowitz** | investors | Wartime CEO, The Struggle, peacetime vs wartime, lead bullets, hiring for strength, firing / layoffs, culture is what you do, management debt, founder CEO advantage | [Sources](sources/ben-horowitz/MANIFEST.md) |
 | **April Dunford** | marketing | Positioning, sales pitch, differentiated value, market category | [Sources](sources/april-dunford/MANIFEST.md) |
 | **Brian Chesky** | operators | Founder mode, CEO as chief product officer, hiring like a detective, design is how it works, quality before growth | [Sources](sources/brian-chesky/MANIFEST.md) |
 | **Chris Voss** | operators | Negotiation, tactical empathy, mirroring, labeling, calibrated questions, accusation audit, Black Swans | [Sources](sources/chris-voss/MANIFEST.md) |
