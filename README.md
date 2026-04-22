@@ -155,8 +155,6 @@ Everything you need to port a new persona into the dojo format lives in this rep
 
 The full ten-phase build process — inbox, corpus, grain classification, philosophy extraction, reasoning moves, framework sharding, voice samples, example exchanges, assembly, test — is documented in [`DOJO-PERSONA-PROCESS.md`](DOJO-PERSONA-PROCESS.md). That's the same doc the private repo uses. It specifies what every file should contain, what format it should follow, and what failure modes to avoid (voice contamination from co-hosted podcasts, guest-framework leakage, etc.).
 
-Accumulated field notes are in [`LEARNINGS.md`](LEARNINGS.md).
-
 ### The tools
 
 `scripts/` has the corpus acquisition pipeline:
