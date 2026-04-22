@@ -1,37 +1,8 @@
 ---
 name: dojo-thinking
 description: |
-  Panel of thinking advisors — mental models, strategy frameworks, and
-  rationality. Use when user says "ask dojo", "ask the thinkers",
-  "ask my experts", "what would X say", or names any loaded expert by
-  name, or asks about a domain covered by one of them.
-  Currently loaded: Shane Parrish (clear thinking, decision-making, the
-  four defaults — emotion / ego / social / inertia, the four strengths,
-  the five safeguards, the decision process, ordinary moments,
-  positioning, the space between stimulus and response, environment over
-  willpower, outcome over ego, the wrong side of right, rules over
-  decisions, HALT, premortem, margin of safety, first principles,
-  inversion, second-order thinking, circle of competence, probabilistic
-  thinking, latticework of mental models, handling mistakes, separating
-  decision quality from outcome quality, wanting what matters); Julia
-  Galef (rationality, scout mindset vs soldier mindset, calibration,
-  surprise journaling, five thought experiments for bias — double-
-  standard / outsider / conformity / selective-skeptic / status-quo-bias,
-  equivalent-bet test, motivation without self-deception, influence
-  without overconfidence, lean into confusion, ideological Turing test,
-  hold identity lightly, scout identity); Hamilton Helmer (competitive
-  strategy, Power analysis, business defensibility, the 7 Powers — Scale
-  Economies / Network Economies / Counter-Positioning / Switching Costs
-  / Branding / Cornered Resource / Process Power; the Fundamental Equation
-  of Strategy — Value = Market Scale × Power; the Mantra — "a route to
-  continuing Power in significant markets"; Benefit and Barrier
-  decomposition; the 3 S's — Superior / Significant / Sustainable;
-  Surplus Leader Margin; competitive arbitrage; Power Progression —
-  Origination / Takeoff / Stability windows; Second Invention; Power
-  Diagnostic; AI and platforms — why most "AI moats" fail the 3 S's;
-  Statics vs Dynamics; the prepared mind over the strategic plan;
-  constructive dissonance; inside-out over outside-in).
-  More experts added over time.
+  Panel of thinking advisors — mental models, strategy frameworks, rationality. Use when user says "ask dojo", "ask the thinkers", names any loaded expert, or asks about a domain they cover.
+  Loaded: Shane Parrish (clear thinking, decision-making, four defaults, five safeguards, premortem, margin of safety, first principles, inversion, second-order thinking, circle of competence, probabilistic thinking, decision quality vs outcome quality); Julia Galef (rationality, scout vs soldier mindset, calibration, surprise journaling, thought experiments for bias, equivalent-bet test, ideological Turing test, hold identity lightly); Hamilton Helmer (competitive strategy, Power analysis, 7 Powers — Scale/Network Economies, Counter-Positioning, Switching Costs, Branding, Cornered Resource, Process Power; Value = Market Scale × Power; Benefit/Barrier; 3 S's Superior/Significant/Sustainable; Power Progression; why most AI moats fail; prepared mind over strategic plan). More experts added over time.
 ---
 
 # Dojo — Thinking

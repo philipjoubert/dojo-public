@@ -1,45 +1,8 @@
 ---
 name: dojo-marketing
 description: |
-  Panel of marketing advisors — positioning, copy, growth, PR, network
-  effects. Use when user says "ask dojo", "ask the marketers",
-  "ask my experts", "what would X say", or names any loaded expert by
-  name, or asks about a domain covered by one of them.
-  Currently loaded: Lulu Cheng (communications, PR, crisis comms, founder
-  positioning, hit pieces, going direct, media strategy, narrative control,
-  reputation management); April Dunford (positioning, sales pitch,
-  differentiated value, competitive alternatives, market category,
-  repositioning, first-call pitch, positioning vs strategy vs vision);
-  Andrew Chen (network effects, Cold Start Problem, atomic networks, hard
-  side / supply-side-is-king, trio of forces, marketplaces, consumer PMF
-  / retention, Trough of Sorrow, Next Feature Fallacy, Law of Shitty
-  Clickthroughs, paid marketing addiction, viral loop architecture, power
-  user curve, cherry-picking incumbents, Big Bang failures, Uber for X
-  diagnostics, forecasting honestly); Elena Verna (growth, PLG, product-
-  led growth, product-led sales, activation Setup/Aha/Habit, retention,
-  churn, monetization, pricing, reverse trials, growth loops vs funnels,
-  the Growth Matrix 3x3, squad sequencing, experimentation OS, AI-native
-  growth, the PMF treadmill, Disruption Risk Matrix, trust as the moat,
-  distribution collapse, satellite apps, founder-led social, the Pride
-  Test, Four W's of product-led sales, PQA scoring, growth teams, revenue
-  addiction, PLG layering not switching, fix the bucket before you fill
-  it); Eugene Schwartz (copywriting, direct-response advertising,
-  headlines, leads, body copy, Mass Desire, States of Awareness, States
-  of Sophistication, Mechanization, Identification, Channelization,
-  Gradualization, ad critique, drafting from a brief); David Ogilvy
-  (direct-response copywriting, brand building, long-copy advertising,
-  headlines, body copy, research-driven creative, story appeal, TV
-  commercials, agency management, the Big Idea, five tests for a big
-  idea, headline is 80 cents of your dollar, write 16 before choosing,
-  the more facts you tell the more you sell, positioning and promise,
-  brand image over decades, the Rolls-Royce electric-clock ad, the
-  Hathaway eye patch, Dove "Darling", research as the discipline of
-  knowledge over the anarchy of ignorance, do your homework before you
-  reach for your pen, direct response as the secret weapon, we sell or
-  else, the consumer is not a moron she is your wife, never bore people
-  into buying, hire people bigger than you, Matterhorn speech, Russian
-  dolls, never hire people you can't fire, refuse clients whose ethos you
-  can't stomach). More experts added over time.
+  Panel of marketing advisors — positioning, copy, growth, PR, network effects. Use when user says "ask dojo", "ask the marketers", names any loaded expert, or asks about a domain they cover.
+  Loaded: Lulu Cheng (comms, PR, crisis, founder positioning, going direct, narrative); April Dunford (positioning, sales pitch, differentiated value, competitive alternatives, market category, first-call pitch); Andrew Chen (network effects, Cold Start Problem, atomic networks, marketplaces, consumer PMF/retention, viral loops, power user curve); Elena Verna (growth, PLG, product-led sales, activation, retention, monetization, reverse trials, growth loops, experimentation, AI-native growth); Eugene Schwartz (copywriting, direct-response, headlines, leads, Mass Desire, States of Awareness/Sophistication); David Ogilvy (direct-response copy, brand, long-copy, Big Idea, research-driven creative, headline-is-80-cents, positioning). More experts added over time.
 ---
 
 # Dojo — Marketing
