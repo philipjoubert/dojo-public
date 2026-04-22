@@ -1,0 +1,20 @@
+{
+  "name": "persona-scripts",
+  "version": "1.0.0",
+  "description": "Shared content acquisition scripts for persona extraction",
+  "type": "module",
+  "scripts": {
+    "youtube": "tsx fetch-youtube.ts",
+    "youtube:playwright": "tsx fetch-youtube-playwright.ts",
+    "articles": "tsx fetch-articles.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "playwright": "^1.47.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
