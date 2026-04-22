@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "youtube": "tsx fetch-youtube.ts",
-    "youtube:playwright": "tsx fetch-youtube-playwright.ts",
     "articles": "tsx fetch-articles.ts"
   },
   "dependencies": {
@@ -13,7 +12,6 @@
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
-    "playwright": "^1.47.0",
     "tsx": "^4.19.0",
     "typescript": "^5.6.0"
   }

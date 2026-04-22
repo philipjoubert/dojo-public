@@ -30,15 +30,12 @@ npx tsx fetch-youtube.ts ../elena-verna/sources/youtube.txt ../elena-verna/conte
 
 Requires `yt-dlp` on PATH (`brew install yt-dlp`). Shells out to yt-dlp for title + auto-generated captions, then parses VTT to plain text. Previously tried `youtube-transcript` npm package — it breaks whenever YouTube changes internal endpoints. yt-dlp is actively maintained and much more robust.
 
-### 1b. YouTube Transcripts — Playwright fallback
 
 ```bash
-npx tsx fetch-youtube-playwright.ts ../lulu-cheng/sources/youtube.txt ../lulu-cheng/content/youtube/
 ```
 
 Fallback for when yt-dlp gets rate-limited (429) or blocked. Opens headless Chromium, loads each video, clicks "Show transcript", and scrapes the transcript panel. Same CLI and output format as `fetch-youtube.ts` — pick whichever works.
 
-First-time setup: `npm install && npx playwright install chromium`.
 
 ### 2. Articles (Firecrawl)
 
@@ -120,7 +117,6 @@ fetched: <YYYY-MM-DD>
 
 Per-fetcher output locations and filenames:
 
-- **YouTube** (`fetch-youtube.ts`, `fetch-youtube-playwright.ts`) → `{video_id}.md`. `source:` is `https://www.youtube.com/watch?v=<id>`.
 - **Articles** (`fetch-articles.ts`) → `{slug}.md`. `source:` is the original article URL.
 - **Apple Podcasts** (`apple-podcast-transcript.py`) → `{safe-title}.md`. `source:` is the Apple Podcasts episode URL.
 - **Generic audio** (`transcribe-audio.py`) → `{safe-title}.md`. `source:` is the audio URL passed on the CLI.
