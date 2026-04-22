@@ -22,31 +22,42 @@ This is not transcript search. The expert does not quote the source at you. They
 
 Every question is classified by mode — pointed, coaching, review, drafting, emergency, strategic — and only the relevant framework files load. Pointed questions stay light. Strategic questions pull the heavy lenses.
 
+## The four skills
+
+The dojo ships as four independent skills, split by domain. Install the ones you want.
+
+| Skill | Purpose | Experts |
+|---|---|---|
+| **dojo-operators** | Founders and CEOs who built and ran companies | Jeff Bezos • Elon Musk • Brian Chesky • Jensen Huang • Patrick Collison • Andrew Carnegie • Jason Lemkin • Keith Rabois • Chris Voss |
+| **dojo-investors** | VCs, startup philosophers, capital allocators | Marc Andreessen |
+| **dojo-marketing** | Positioning, copy, growth, PR, network effects | Lulu Cheng • April Dunford • Andrew Chen • Elena Verna • Eugene Schwartz • David Ogilvy |
+| **dojo-thinking** | Mental models, strategy frameworks, rationality | Shane Parrish • Julia Galef • Hamilton Helmer |
+
 ## Available experts
 
 Each persona has a `persona.md` (always loaded) and a `topics/` folder of self-contained framework files (loaded selectively). Click into the corpus column to see exactly what went into building each expert.
 
-| Expert | Domain | Source corpus |
-|---|---|---|
-| **Andrew Carnegie** | Industrial operating, vertical integration, partnership model, Gospel of Wealth | [Sources](sources/andrew-carnegie/MANIFEST.md) |
-| **Andrew Chen** | Network effects, Cold Start Problem, marketplaces, consumer growth | [Sources](sources/andrew-chen/MANIFEST.md) |
-| **April Dunford** | Positioning, sales pitch, differentiated value, market category | [Sources](sources/april-dunford/MANIFEST.md) |
-| **Brian Chesky** | Founder mode, CEO as chief product officer, hiring like a detective, design is how it works, quality before growth | [Sources](sources/brian-chesky/MANIFEST.md) |
-| **Chris Voss** | Negotiation, tactical empathy, mirroring, labeling, calibrated questions, accusation audit, Black Swans | [Sources](sources/chris-voss/MANIFEST.md) |
-| **David Ogilvy** | Direct-response copywriting, headlines, body copy, brand image, story appeal, research-driven creative, agency management | [Sources](sources/david-ogilvy/MANIFEST.md) |
-| **Elena Verna** | Growth, PLG, activation, retention, pricing & monetization, growth loops, AI-native growth | [Sources](sources/elena-verna/MANIFEST.md) |
-| **Elon Musk** | Engineering, manufacturing, first principles, The Algorithm, Idiot Index | [Sources](sources/elon-musk/MANIFEST.md) |
-| **Eugene Schwartz** | Direct-response copywriting, Mass Desire, States of Awareness, ad critique | [Sources](sources/eugene-schwartz/MANIFEST.md) |
-| **Hamilton Helmer** | Competitive strategy, the 7 Powers, Benefit/Barrier decomposition, 3 S's, Power Progression, Surplus Leader Margin, Counter-Positioning | [Sources](sources/hamilton-helmer/MANIFEST.md) |
-| **Jason Lemkin** | SaaS go-to-market, founder-led sales, VP hiring, LVR, PMF signals, fundraising, churn & NRR, AI-era GTM | [Sources](sources/jason-lemkin/MANIFEST.md) |
-| **Jeff Bezos** | Mechanism design, working backwards, PR-FAQ, Day 1 vs Day 2 | [Sources](sources/jeff-bezos/MANIFEST.md) |
-| **Jensen Huang** | Strategic inflections, accelerated computing, zero billion dollar markets, speed of light benchmarking, flat-org operations (60+ direct reports, T5s, no recurring 1:1s), pain and suffering as character advantage | [Sources](sources/jensen-huang/MANIFEST.md) |
-| **Julia Galef** | Rationality, scout vs soldier mindset, calibration, changing your mind, productive disagreement, holding identity lightly | [Sources](sources/julia-galef/MANIFEST.md) |
-| **Keith Rabois** | Operating, hiring, barrels and ammunition, value creation vs protection, CEO as editor, culture as cult | [Sources](sources/keith-rabois/MANIFEST.md) |
-| **Lulu Cheng** | Communications, PR, crisis, going direct, hit pieces, founder voice | [Sources](sources/lulu-cheng/MANIFEST.md) |
-| **Marc Andreessen** | Product/market fit, startup strategy, raising VC, techno-optimism | [Sources](sources/marc-andreessen/MANIFEST.md) |
-| **Patrick Collison** | Building companies at the infrastructure layer, zero billion dollar markets, the Curtain Phenomenon, pace layering, speed as strategy, caring as collective action, multiple mental models | [Sources](sources/patrick-collison/MANIFEST.md) |
-| **Shane Parrish** | Clear thinking, decision-making, four defaults, mental-models latticework | [Sources](sources/shane-parrish/MANIFEST.md) |
+| Expert | Skill | Domain | Source corpus |
+|---|---|---|---|
+| **Andrew Carnegie** | operators | Industrial operating, vertical integration, partnership model, Gospel of Wealth | [Sources](sources/andrew-carnegie/MANIFEST.md) |
+| **Andrew Chen** | marketing | Network effects, Cold Start Problem, marketplaces, consumer growth | [Sources](sources/andrew-chen/MANIFEST.md) |
+| **April Dunford** | marketing | Positioning, sales pitch, differentiated value, market category | [Sources](sources/april-dunford/MANIFEST.md) |
+| **Brian Chesky** | operators | Founder mode, CEO as chief product officer, hiring like a detective, design is how it works, quality before growth | [Sources](sources/brian-chesky/MANIFEST.md) |
+| **Chris Voss** | operators | Negotiation, tactical empathy, mirroring, labeling, calibrated questions, accusation audit, Black Swans | [Sources](sources/chris-voss/MANIFEST.md) |
+| **David Ogilvy** | marketing | Direct-response copywriting, headlines, body copy, brand image, story appeal, research-driven creative, agency management | [Sources](sources/david-ogilvy/MANIFEST.md) |
+| **Elena Verna** | marketing | Growth, PLG, activation, retention, pricing & monetization, growth loops, AI-native growth | [Sources](sources/elena-verna/MANIFEST.md) |
+| **Elon Musk** | operators | Engineering, manufacturing, first principles, The Algorithm, Idiot Index | [Sources](sources/elon-musk/MANIFEST.md) |
+| **Eugene Schwartz** | marketing | Direct-response copywriting, Mass Desire, States of Awareness, ad critique | [Sources](sources/eugene-schwartz/MANIFEST.md) |
+| **Hamilton Helmer** | thinking | Competitive strategy, the 7 Powers, Benefit/Barrier decomposition, 3 S's, Power Progression, Surplus Leader Margin, Counter-Positioning | [Sources](sources/hamilton-helmer/MANIFEST.md) |
+| **Jason Lemkin** | operators | SaaS go-to-market, founder-led sales, VP hiring, LVR, PMF signals, fundraising, churn & NRR, AI-era GTM | [Sources](sources/jason-lemkin/MANIFEST.md) |
+| **Jeff Bezos** | operators | Mechanism design, working backwards, PR-FAQ, Day 1 vs Day 2 | [Sources](sources/jeff-bezos/MANIFEST.md) |
+| **Jensen Huang** | operators | Strategic inflections, accelerated computing, zero billion dollar markets, speed of light benchmarking, flat-org operations (60+ direct reports, T5s, no recurring 1:1s), pain and suffering as character advantage | [Sources](sources/jensen-huang/MANIFEST.md) |
+| **Julia Galef** | thinking | Rationality, scout vs soldier mindset, calibration, changing your mind, productive disagreement, holding identity lightly | [Sources](sources/julia-galef/MANIFEST.md) |
+| **Keith Rabois** | operators | Operating, hiring, barrels and ammunition, value creation vs protection, CEO as editor, culture as cult | [Sources](sources/keith-rabois/MANIFEST.md) |
+| **Lulu Cheng** | marketing | Communications, PR, crisis, going direct, hit pieces, founder voice | [Sources](sources/lulu-cheng/MANIFEST.md) |
+| **Marc Andreessen** | investors | Product/market fit, startup strategy, raising VC, techno-optimism | [Sources](sources/marc-andreessen/MANIFEST.md) |
+| **Patrick Collison** | operators | Building companies at the infrastructure layer, zero billion dollar markets, the Curtain Phenomenon, pace layering, speed as strategy, caring as collective action, multiple mental models | [Sources](sources/patrick-collison/MANIFEST.md) |
+| **Shane Parrish** | thinking | Clear thinking, decision-making, four defaults, mental-models latticework | [Sources](sources/shane-parrish/MANIFEST.md) |
 
 More experts on the way. Each one takes weeks of reading and structuring — the corpus for a single persona runs to hundreds of pages before any writing starts.
 
@@ -54,10 +65,10 @@ More experts on the way. Each one takes weeks of reading and structuring — the
 
 Once installed (below), just ask in plain language. The router picks the right expert(s):
 
-- *"How should I respond to this hit piece?"* → Lulu
-- *"Should we write a PR-FAQ before building?"* → Bezos
-- *"Help me think through whether to take this job."* → Shane
-- *"Critique this positioning."* → April
+- *"How should I respond to this hit piece?"* → Lulu (marketing)
+- *"Should we write a PR-FAQ before building?"* → Bezos (operators)
+- *"Help me think through whether to take this job."* → Shane (thinking)
+- *"Critique this positioning."* → April (marketing)
 
 Or invoke explicitly:
 
@@ -65,7 +76,7 @@ Or invoke explicitly:
 - *"What would Bezos say about ..."*
 - *"Ask Shane and Marc about ..."* — multi-expert; each answers in their own voice, no blending
 
-When multiple experts respond, you get separate sections. They can disagree. The contradictions are the point.
+When multiple experts respond, you get separate sections. They can disagree. The contradictions are the point. Cross-skill queries (Bezos + Shane) work if both skills are installed.
 
 ## Install
 
@@ -73,10 +84,14 @@ When multiple experts respond, you get separate sections. They can disagree. The
 
 ```bash
 git clone https://github.com/philipjoubert/dojo-public.git
-cp -R dojo-public/dojo/skill ~/.claude/skills/dojo
+cd dojo-public
+cp -R dojo/operators/skill  ~/.claude/skills/dojo-operators
+cp -R dojo/investors/skill  ~/.claude/skills/dojo-investors
+cp -R dojo/marketing/skill  ~/.claude/skills/dojo-marketing
+cp -R dojo/thinking/skill   ~/.claude/skills/dojo-thinking
 ```
 
-That's it. Restart Claude Code (or start a new session). Try:
+Install only the skills you want — they're independent. Restart Claude Code (or start a new session). Try:
 
 ```
 ask the dojo: how do I think about this hard decision?
@@ -86,26 +101,34 @@ ask the dojo: how do I think about this hard decision?
 
 ```bash
 cd dojo-public && git pull
-cp -R dojo/skill ~/.claude/skills/dojo
+cp -R dojo/operators/skill  ~/.claude/skills/dojo-operators
+cp -R dojo/investors/skill  ~/.claude/skills/dojo-investors
+cp -R dojo/marketing/skill  ~/.claude/skills/dojo-marketing
+cp -R dojo/thinking/skill   ~/.claude/skills/dojo-thinking
 ```
 
 ### Claude Desktop / Claude.ai
 
-Desktop and web take skills as zip uploads. Download [`dojo.zip`](dojo.zip) from this repo.
+Desktop and web take skills as zip uploads. Download the skill(s) you want from this repo:
 
-Then in Claude: **Settings → Capabilities → Skills → Upload skill**, and select the file.
+- [`dojo-operators.zip`](dojo-operators.zip)
+- [`dojo-investors.zip`](dojo-investors.zip)
+- [`dojo-marketing.zip`](dojo-marketing.zip)
+- [`dojo-thinking.zip`](dojo-thinking.zip)
 
-To update: delete the old skill in settings, download the latest `dojo.zip`, and re-upload.
+Then in Claude: **Settings → Capabilities → Skills → Upload skill**, and select the zip(s).
+
+To update: delete the old skill in settings, download the latest zip, and re-upload.
 
 ### ChatGPT
 
-ChatGPT supports the same `SKILL.md` standard. Use the same zip.
+ChatGPT supports the same `SKILL.md` standard. Use the same zips.
 
-In ChatGPT: **Skills → New skill → Upload from your computer**, and select `dojo.zip`.
+In ChatGPT: **Skills → New skill → Upload from your computer**, and select the zip(s) you want.
 
 > Heads up: the ChatGPT Skills upload UI is currently rolling out on Business, Enterprise, and EDU workspaces. Individual Plus and Pro plans may not have it yet.
 
-The dojo is a single skill with all personas inside — not one skill per persona. Upload once.
+Each skill is self-contained — no cross-skill dependencies. Install only the ones you'll use.
 
 ## How it's built
 
@@ -125,7 +148,7 @@ The detailed build process lives in the private working repo.
 
 ## Now
 
-Install it (instructions above). Then ask it the hardest question on your plate this week.
+Install a skill (instructions above). Then ask it the hardest question on your plate this week.
 
 ## Credits
 
