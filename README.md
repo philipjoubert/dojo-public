@@ -5,7 +5,7 @@
 ![Neo: I know Kung Fu](assets/matrix-i-know-kung-fu.jpg)
 *Install the dojo. Open your eyes. You know positioning.*
 
-Just like Neo downloads kung fu, you can do the same with positioning, negotiation, founder mode, SaaS GTM — a panel of experts, in their own voice, willing to disagree with you and each other.
+Just like [Neo downloads kung fu](https://youtube.com/watch?t=13&v=0YhJxJZOWBw&feature=youtu.be), you can do the same with positioning, negotiation, founder mode, SaaS GTM — a panel of experts, in their own voice, willing to disagree with you and each other.
 
 ## What's in each persona
 
