@@ -2,11 +2,11 @@
 
 **A panel of expert advisors, loaded into Claude or ChatGPT.**
 
-[![Build your dojo at dojo-public.vercel.app](assets/dojo-builder-screenshot.png)](https://dojo-public.vercel.app/)
+[![Build your dojo at superdojo.xyz](assets/dojo-builder-screenshot.png)](https://superdojo.xyz/)
 
 ## Build your dojo
 
-👉 **[dojo-public.vercel.app](https://dojo-public.vercel.app/)**
+👉 **[superdojo.xyz](https://superdojo.xyz/)**
 
 Pick up to 8 experts. Download a skill zip. Upload it into Claude or ChatGPT.
 
@@ -31,7 +31,7 @@ Questions are classified by mode — pointed, coaching, review, drafting, emerge
 
 ## Available experts
 
-29 experts across four domains. Browse and pick at [dojo-public.vercel.app](https://dojo-public.vercel.app/).
+29 experts across four domains. Browse and pick at [superdojo.xyz](https://superdojo.xyz/).
 
 **Operators** — Andrew Carnegie · Brian Chesky · Chris Voss · Elon Musk · Jason Lemkin · Jeff Bezos · Jensen Huang · Keith Rabois · Patrick Collison · Steve Jobs · Tobi Lütke
 
