@@ -1,4 +1,4 @@
-import type { Persona } from "./personas.generated";
+import type { Domain, Persona } from "./personas.generated";
 
 export interface RenderInput {
   personas: Persona[];
@@ -6,15 +6,31 @@ export interface RenderInput {
   template: string;
 }
 
-/**
- * Extract the primary identifier used for the "Named:" example line and the
- * Multiple-experts "Structure:" header. This is the last word of the display
- * name — "Jeff Bezos" → "Bezos", "Jensen Huang" → "Huang". Works for all
- * current personas; single-word names fall back to themselves.
- */
+const DOMAIN_ORDER: Domain[] = [
+  "operators",
+  "investors",
+  "marketing",
+  "thinking",
+];
+
+const DOMAIN_HEADING: Record<Domain, string> = {
+  operators: "Operators",
+  investors: "Investors",
+  marketing: "Marketing",
+  thinking: "Thinking",
+};
+
 function shortName(fullName: string): string {
   const parts = fullName.trim().split(/\s+/);
   return parts[parts.length - 1];
+}
+
+function sortPersonas(personas: Persona[]): Persona[] {
+  const domainIndex = new Map(DOMAIN_ORDER.map((d, i) => [d, i]));
+  return [...personas].sort((a, b) => {
+    const da = domainIndex.get(a.domain)! - domainIndex.get(b.domain)!;
+    return da !== 0 ? da : a.slug.localeCompare(b.slug);
+  });
 }
 
 function namedExamples(personas: Persona[]): string {
@@ -30,9 +46,10 @@ function namedExamples(personas: Persona[]): string {
 function descriptionLead(personas: Persona[]): string {
   const count = personas.length;
   const noun = count === 1 ? "expert" : "experts";
+  const names = personas.map((p) => shortName(p.name)).join(" / ");
   return (
     `Custom panel of ${count} ${noun} — a hand-picked roster. ` +
-    `Use when user says 'ask dojo', names any loaded expert, ` +
+    `Use when user says 'ask dojo', names ${names}, ` +
     `or asks about a domain they cover.`
   );
 }
@@ -54,7 +71,24 @@ function clampDescription(text: string): string {
 }
 
 function availableExperts(personas: Persona[]): string {
-  return personas.map((p) => `- ${p.longBlurb}`).join("\n\n");
+  const byDomain = new Map<Domain, Persona[]>();
+  for (const p of personas) {
+    const bucket = byDomain.get(p.domain) ?? [];
+    bucket.push(p);
+    byDomain.set(p.domain, bucket);
+  }
+
+  const sections: string[] = [];
+  for (const domain of DOMAIN_ORDER) {
+    const group = byDomain.get(domain);
+    if (!group?.length) continue;
+    const lines = group.map(
+      (p) =>
+        `- **${p.name}** (\`personas/${p.slug}/\`) — ${p.tagline}`,
+    );
+    sections.push(`**${DOMAIN_HEADING[domain]}**\n${lines.join("\n")}`);
+  }
+  return sections.join("\n\n");
 }
 
 export function renderSkillMd({
@@ -65,19 +99,20 @@ export function renderSkillMd({
   if (personas.length === 0) {
     throw new Error("renderSkillMd: at least one persona required");
   }
-  const primary = shortName(personas[0].name);
 
+  const sorted = sortPersonas(personas);
+  const primary = shortName(sorted[0].name);
   const fullName = skillName ? `dojo-${skillName}` : "dojo";
 
   const description = clampDescription(
-    `${descriptionLead(personas)} ${loadedLine(personas)}`,
+    `${descriptionLead(sorted)} ${loadedLine(sorted)}`,
   );
 
   return template
     .replaceAll("{{skill_name}}", fullName)
     .replaceAll("{{panel_title}}", "Custom")
     .replaceAll("{{description}}", description)
-    .replaceAll("{{named_examples}}", namedExamples(personas))
+    .replaceAll("{{named_examples}}", namedExamples(sorted))
     .replaceAll("{{primary_expert_header}}", primary)
-    .replaceAll("{{available_experts}}", availableExperts(personas));
+    .replaceAll("{{available_experts}}", availableExperts(sorted));
 }
