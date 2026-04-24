@@ -19,14 +19,15 @@ export function InstallSteps() {
             Drop the zip into whichever runtime you use:
             <ul className="mt-2 flex flex-col gap-[3px]">
               <li>
-                <span className="text-muted">Claude Code:</span>{" "}
-                <code className="rounded bg-chip px-[4px] py-[1px] text-[11px]">
-                  ~/.claude/skills/
-                </code>
-              </li>
-              <li>
-                <span className="text-muted">Claude Desktop / claude.ai:</span>{" "}
-                Settings → Capabilities → Skills → Upload skill
+                <span className="text-muted">Claude:</span>{" "}
+                <a
+                  href="https://claude.ai/customize/skills"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline decoration-dotted underline-offset-2 hover:text-ink"
+                >
+                  claude.ai/customize/skills
+                </a>
               </li>
               <li>
                 <span className="text-muted">ChatGPT:</span>{" "}
@@ -38,6 +39,12 @@ export function InstallSteps() {
                 >
                   chatgpt.com/skills
                 </a>
+              </li>
+              <li>
+                <span className="text-muted">Claude Code:</span>{" "}
+                <code className="rounded bg-chip px-[4px] py-[1px] text-[11px]">
+                  ~/.claude/skills/
+                </code>
               </li>
             </ul>
           </>
