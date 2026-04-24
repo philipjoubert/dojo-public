@@ -33,11 +33,20 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "Dojo",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Dojo — a grid of expert advisors",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
+    images: ["/og-image.png"],
   },
 };
 
