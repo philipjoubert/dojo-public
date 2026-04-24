@@ -29,7 +29,7 @@ export function MobileCheckout({ open, onClose }: MobileCheckoutProps) {
         open ? "translate-x-0" : "pointer-events-none translate-x-full",
       ].join(" ")}
     >
-      <div className="flex h-full flex-col bg-sidebar px-7 pt-6 pb-7">
+      <div className="flex h-full flex-col bg-sidebar px-4 pt-6 pb-7 sm:px-6">
         <div className="flex items-center justify-between">
           <button
             type="button"

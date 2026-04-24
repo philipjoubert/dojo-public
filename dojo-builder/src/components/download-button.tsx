@@ -54,7 +54,7 @@ export function DownloadButton() {
     status.kind === "loading" ? "Building…" : "Download skill";
 
   return (
-    <div className="sticky bottom-0 mt-4 -mx-7 -mb-7 border-t border-divider bg-sidebar px-7 pt-4 pb-4">
+    <div className="sticky bottom-0 mt-4 -mx-4 -mb-7 border-t border-divider bg-sidebar px-4 pt-4 pb-4 sm:-mx-6 sm:px-6 lg:-mx-7 lg:px-7">
       <button
         type="button"
         onClick={onClick}
