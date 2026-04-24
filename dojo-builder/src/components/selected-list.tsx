@@ -32,7 +32,7 @@ export function SelectedList() {
               {p.name}
             </span>
             <span className="text-[10px] uppercase tracking-[1px] text-subtle">
-              {DOMAIN_META[p.domain].label} · {p.sizeKb} KB
+              {DOMAIN_META[p.domain].label}
             </span>
           </div>
           <button
