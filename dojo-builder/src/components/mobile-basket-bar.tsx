@@ -1,6 +1,6 @@
 "use client";
 
-import { MAX_SLOTS, selectedPersonas, totalKb, useDojo } from "./dojo-state";
+import { MAX_SLOTS, selectedPersonas, useDojo } from "./dojo-state";
 import { Portrait } from "./portrait";
 
 const AVATAR_PREVIEW = 4;
@@ -18,7 +18,6 @@ export function MobileBasketBar({ onReview }: MobileBasketBarProps) {
 
   const preview = selected.slice(0, AVATAR_PREVIEW);
   const overflow = n - preview.length;
-  const kb = totalKb(selected);
 
   return (
     <div
@@ -49,9 +48,6 @@ export function MobileBasketBar({ onReview }: MobileBasketBarProps) {
         <div className="min-w-0 flex-1 leading-tight">
           <div className="text-[13px] font-medium text-main">
             {n} of {MAX_SLOTS} experts
-          </div>
-          <div className="text-[11px] text-main/70">
-            {kb.toLocaleString()} KB
           </div>
         </div>
         <span className="shrink-0 rounded-[8px] bg-hanko px-4 py-[10px] text-[13px] font-medium text-main">

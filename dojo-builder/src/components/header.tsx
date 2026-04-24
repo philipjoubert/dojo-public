@@ -12,7 +12,7 @@ export function Header() {
           Dojo
         </div>
         <div className="text-[11px] uppercase tracking-[0.3px] text-muted">
-          Build your panel
+          Build your expert panel
         </div>
       </div>
     </header>
