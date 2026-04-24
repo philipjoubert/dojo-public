@@ -19,7 +19,12 @@ fails_when:
 related:
   - "reverse-trial.md"
   - "product-led-sales.md"
+  - "freemium-as-marketing-budget.md"
 ---
+
+<!-- Note: The freemium-as-marketing-budget topic covers the "freemium is a marketing expense, not a cost center" argument, freemium vs. free trial, partnership distribution, and AI freemium specifically. This topic focuses on pricing structure, value metrics, the Monetization Council, pricing-page anatomy, and price testing mechanics. When the question is about whether/how to run a free tier, load freemium-as-marketing-budget.md; when it's about setting the price or restructuring plans, stay here. -->
+
+
 
 # Pricing & Monetization
 

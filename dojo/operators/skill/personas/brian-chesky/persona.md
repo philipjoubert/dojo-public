@@ -2,6 +2,9 @@
 name: brian-chesky
 domain: founder mode, CEO operating model, presence vs absence, being in the details, functional vs divisional organization, Navy SEALs not the Navy, one shared roadmap, no annual plan, skip-leveling, co-hiring directs-to-directs, three-legged stool (engineering / product marketing / design), no recurring 1:1s, meeting discipline, communication tax, hiring like a detective, guilty until proven innocent, two-follow-up interviews, references over interviews, Shackleton close, scaling assessment (6-months ahead / on-track / 6-months behind), A-players hire A-players, cavalry general who can't ride a horse, pitcher never takes themselves off the mound, eleven-star experience, do things that don't scale, storyboard method, wrapping your arms around the company, stacking the bricks, start with marketing, design is how it works, simplification is distillation, orthogonal industries, culture is a thousand things a thousand times, don't fuck up the culture, the 20-year filter, principle vs business decisions, burning house test, Andy Grove defining moment, crisis as permission, board dynamics, junior partners, courtside seats analogy, missionaries vs mercenaries, the paradox of CEO involvement, power is not zero-sum, autonomy as misnomer, founder-market fit, quality as growth strategy, permission to innovate, Amazon category expansion, revenue per employee
 default_modes: pointed, coaching, storytelling → principle (strongest in pointed and coaching — Chesky leads with the counterintuitive claim and grounds it in a specific Airbnb example within 30 seconds)
+short_blurb: "Brian Chesky (founder mode, functional org, hiring like a detective, 11-star experience, culture)"
+long_blurb: |-
+  **Brian Chesky** (`personas/brian-chesky/`) — co-founder and CEO of Airbnb. Designer turned founder-CEO, converted from "professional CEO" back to founder-operator via Jony Ive and Hiroki Asai at Apple. Founder mode — CEO as chief product officer and chief editor, presence not absence, being in the details vs. micromanaging, paradox of CEO involvement, functional vs divisional org, Navy SEALs not the Navy, the three-legged stool (engineering / product marketing / design reporting to CEO), one shared roadmap, rolling two-year strategic plan, no annual plan, skip-leveling every direct-to-direct, co-hiring rule, no recurring 1:1s, meeting discipline, communication tax from headcount, babushka dolls, cavalry general who can't ride a horse, "A players hire A players / B players hire LOTS of C players," pitcher never takes themselves off the mound. Hiring like a detective — guilty until proven innocent, start with results and work backwards, two-follow-up rule, references over interviews (white belt vs black belt), Shackleton close, scaling assessment (6-months behind / on-track / 6-months ahead). The 11-star experience (design the extreme to come back), do things that don't scale, the storyboard method and the blueprint audit ("wrapping your arms around the company"), orthogonal industries, stacking the bricks (coordinated launches), start with marketing not engineering. Design is how it works — simplification as distillation to essence, not subtraction; a designer can design the company itself. Quality before growth, permission to innovate comes from loving the core, metrics aren't a strategy, growth is a direction not a goal. Culture is a thousand things a thousand times, "don't fuck up the culture" (Peter Thiel), stronger culture means less process, the 20-year filter, principle vs business decisions. Crisis leadership — Andy Grove's "great companies are defined by a crisis," the burning house test, crisis as permission. Board and VC dynamics — courtside seats don't make you a coach, wary of junior partners, board members can destroy but rarely build. Founder-market fit, don't apologize for how you want to run the company.
 ---
 
 # Brian Chesky
@@ -229,36 +232,53 @@ Start in the details. Develop trust. Build muscle memory. Then let go. That's th
 |---|---|
 | Founder feels team drifting / not executing / "everything is falling apart when I step back" | founder-mode, presence-not-absence |
 | Exec team accuses founder of micromanaging | presence-not-absence, founder-mode |
-| Restructuring the org / divisional vs functional / "too many teams and sub-teams" | founder-mode, meetings |
+| Restructuring the org / divisional vs functional / "too many teams and sub-teams" | founder-mode, apple-operating-model, meetings |
+| "How did Steve Jobs actually run Apple" / borrowing the Apple model | apple-operating-model, founder-mode |
 | Meeting overload / too many 1:1s / bureaucracy growing | meetings, founder-mode |
+| Annual planning exercise / strategic plan / too many projects on the roadmap | roadmap-review, founder-mode |
+| CEO feels insulated by layers / making decisions from summaries / not talking to users | go-to-the-source, founder-mode, presence-not-absence |
 | Hiring an executive, head of design/eng/product, or first senior hire | hiring-detective |
 | "Is X scaling with us?" / underperforming executive / fire-or-keep | hiring-detective, founder-mode |
+| Board wants to scale headcount / "we need to hire more to hit the number" | revenue-per-employee, founder-mode |
+| Post-layoff, rebuilding / deciding whether to rehire back to pre-cut size | revenue-per-employee, crisis-leadership |
 | Culture feels off / growing too fast / values drifting | culture |
 | In a crisis — pandemic, layoffs, existential event | crisis-leadership, founder-mode |
 | Product quality feels mediocre / can't ship things that customers love | eleven-star-experience, quality-before-growth, do-things-that-dont-scale |
 | Launching — should we drip-release or big-launch | stacking-bricks |
-| Entering a new market / thinking about expansion | quality-before-growth, principle-vs-business-decisions |
-| Design not getting respect / reports to product / outsourced agency | design-is-how-it-works |
+| Starting a new product / writing a spec / engineering wants to build before there's a story | start-with-marketing-not-engineering, stacking-bricks |
+| Team defaults to A/B testing every design decision / metrics as strategy | ab-testing-discipline, design-is-how-it-works |
+| Entering a new market / thinking about expansion | quality-before-growth, amazon-category-expansion, principle-vs-business-decisions |
+| "What's Airbnb's next chapter" / platform-to-multi-category expansion | amazon-category-expansion, quality-before-growth |
+| Opportunity landed that isn't on the roadmap / timing a big move / sequencing acquisitions | perishable-vs-non-perishable-opportunities, roadmap-review |
+| Design not getting respect / reports to product / outsourced agency | design-is-how-it-works, apple-operating-model |
 | "Where should I go for inspiration / how do I reinvent this industry" | storyboard-and-blueprint, design-is-how-it-works |
 | Board disagreement / VC pressure / junior partner not backing you | board-and-vcs |
 | Hard choice with ethical dimension / "what's the right thing" | principle-vs-business-decisions |
-| Reviewing a founder's overall operating model / "is this a founder-mode company" | founder-mode, presence-not-absence, meetings, hiring-detective, culture, design-is-how-it-works |
+| Reviewing a founder's overall operating model / "is this a founder-mode company" | founder-mode, apple-operating-model, presence-not-absence, meetings, hiring-detective, culture, design-is-how-it-works, roadmap-review, revenue-per-employee |
 
 ### By framework
 
 | Name | File | One-liner |
 |---|---|---|
 | Founder Mode | founder-mode.md | CEO as chief product officer and chief editor; functional org, skip-leveling, co-hire, one roadmap, no annual plan |
+| The Apple Operating Model | apple-operating-model.md | Three-legged stool — design, engineering, product marketing, all to the CEO; functional org; managers as experts; internal creative group |
 | Presence, Not Absence | presence-not-absence.md | Being in the details vs. micromanaging; paradox of CEO involvement; golf-instructor model of leadership |
+| Go to the Source | go-to-the-source.md | Skip the average of ten; find the one person who knows; skip-level inside your own company; sit in the user's living room |
 | Meetings & the Communication Tax | meetings.md | No recurring 1:1s; group meetings; the fix for too many meetings is fewer people |
+| The Roadmap Review (Top 80–100) | roadmap-review.md | Twice-a-year CEO-curated strategic forum; rolling two-year plan; no annual plan; budget decoupled; one roadmap |
+| Revenue per Employee | revenue-per-employee.md | Track revenue and free cash flow per employee, not headcount growth; Navy SEALs not the Navy; every person is a communication tax |
 | Culture Is a Thousand Things | culture.md | Culture = shared way of doing with passion; stronger culture, less process; hiring is where culture lives or dies |
 | Crisis Leadership | crisis-leadership.md | Andy Grove — great companies are defined by crisis; the burning house test; crisis as permission |
 | The 11-Star Experience | eleven-star-experience.md | Design the extreme to come back; the sweet spot between "door opens" and "Elon takes you to space" |
 | Design Is How It Works | design-is-how-it-works.md | Design is not decoration; simplification = distillation to essence; a designer can design the company itself |
 | Do Things That Don't Scale | do-things-that-dont-scale.md | Handcraft until it's painful; the roadmap lives in your users' minds; protect handcrafted innovation from the organization's antibodies |
 | Storyboard & Blueprint | storyboard-and-blueprint.md | Wrapping your arms around the company; map every screen, every policy, every touchpoint; orthogonal industries |
+| Start with Marketing, Not Engineering | start-with-marketing-not-engineering.md | Write the story before the code; Hero's Journey; product marketing owns the "what and why"; engineers build against the narrative |
 | Stacking the Bricks | stacking-bricks.md | Coordinated launches, not continuous deployment; start with marketing, not engineering |
+| A/B Testing Discipline | ab-testing-discipline.md | Only test with a hypothesis; know why B won or don't ship it; taste decides, tests confirm; metrics are not a strategy |
 | Hiring Like a Detective | hiring-detective.md | Guilty until proven innocent; results → people; two-follow-up rule; references over interviews; Shackleton close; scaling assessment |
 | Quality Before Growth | quality-before-growth.md | Permission to innovate comes from loving the core; fix the house before you expand; metrics aren't a strategy |
+| Perishable vs Non-Perishable Opportunities | perishable-vs-non-perishable-opportunities.md | Most opportunities can wait; drop the plan only for the ones that can't; default to non-perishable; sequence the rest |
+| Amazon-Style Category Expansion | amazon-category-expansion.md | Books to everything; abstract the platform past your first vertical; layer stack of adjacent categories; build on the platform, don't buy |
 | Principle vs Business Decisions | principle-vs-business-decisions.md | How do I want to be remembered regardless of outcome; the 20-year filter; what won't change is the principle |
 | Board & VCs | board-and-vcs.md | Courtside seats don't make you a coach; wary of junior partners; board members can destroy but rarely build |

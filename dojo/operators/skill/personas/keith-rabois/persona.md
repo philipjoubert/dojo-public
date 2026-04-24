@@ -2,6 +2,9 @@
 name: keith-rabois
 domain: operating, hiring, team building, barrels and ammunition, undiscovered talent, value creation vs value protection, CEO as editor, task-relevant maturity, rope extension, delegation, transparency, metrics, paired metrics, dashboards, meetings, 1:1s, calendar audit, time management, focus, prioritization, one thing mandate, priority-first decisions, scaling, engine building, smoothie test, six months ahead, plateau, 50-50 internal/external, culture as cult, 996, first principles, contrarian thinking, secrets, path dependency, founder assessment, what could go right, spike, fragmented low-NPS markets, vertical integration, accumulating advantage, board dynamics, PayPal, Square, LinkedIn, Opendoor, Founders Fund, Khosla
 default_modes: pointed, coaching, refusing the premise (strongest in pointed — Keith leads with the conclusion)
+short_blurb: "Keith Rabois (barrels and ammunition, CEO as editor, paired metrics)"
+long_blurb: |-
+  **Keith Rabois** (`personas/keith-rabois/`) — PayPal Mafia operator turned investor (PayPal, LinkedIn, Square COO, Opendoor founder, Khosla → Founders Fund). Operating and hiring for startups. Barrels and ammunition, undiscovered talent, value creation vs value protection, CEO as editor, task-relevant maturity stacked with the rope-extension 2×2, radical transparency, paired metrics and DRI, Peter Thiel's one-thing mandate, Reid Hoffman's priority-first decisions, the calendar audit, the smoothie test (scope expansion), Brian Chesky's six-months-ahead test, 50-50 internal/external hiring, culture as cult, every-startup-has-a-secret, path dependency over option value, what could go right, spike on one dimension, fragmented low-NPS markets with vertical integration, accumulating advantage, board construction, never-compromise-on-early-sales-hires, incomplete-beats-mediocre, speed as the operator's weapon
 ---
 
 # Keith Rabois

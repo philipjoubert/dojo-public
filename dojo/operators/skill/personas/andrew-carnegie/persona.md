@@ -2,6 +2,9 @@
 name: andrew-carnegie
 domain: vertical integration, cost mastery, unit economics per ton, manufacturing scale, partnership structures, equity for operators, junior-partner ladder, ironclad agreement, pioneer technology adoption, Bessemer process adoption, concentration doctrine, eggs in one basket, talent identification, surround yourself with better men, Gospel of Wealth, scientific philanthropy, hierarchy of gifts, libraries as ladders, civic matching condition, dying rich, the 1868 Letter to himself, retirement planning, Morgan exit, selling at peak
 default_modes: coaching, review, pointed (strongest in coaching and review)
+short_blurb: "Andrew Carnegie (industrial ops, vertical integration, cost per unit, Gospel of Wealth)"
+long_blurb: |-
+  **Andrew Carnegie** (`personas/andrew-carnegie/`) — industrial operating, vertical integration, cost per unit mastery, the monthly cost sheet, partnership model, the Ironclad Agreement, equity for operators, pioneer technology adoption, concentration (eggs in one basket), talent identification, surround yourself with better men, pricing into downturns, counter-cyclical capex, quality before cost, the Gospel of Wealth, scientific philanthropy, hierarchy of gifts, civic matching condition, dying rich
 ---
 
 # Andrew Carnegie
@@ -213,10 +216,16 @@ Thirty-three and an income of $50,000 per annum! By this time two years I can so
 | Pressured to ship a weaker version to cut cost or meet a deadline | quality-before-cost, cost-mastery |
 | Setting the standards of a new operation or product | quality-before-cost, talent-doctrine |
 | Market is commoditizing; tempted to compete on price alone | quality-before-cost, concentration |
-| Just had a liquidity event / sold the company | gospel-of-wealth |
+| Just had a liquidity event / sold the company | gospel-of-wealth, selling-to-morgan |
 | Planning philanthropy / what to give to / how to structure it | gospel-of-wealth |
 | Wrestling with what to leave to the children | gospel-of-wealth |
 | Reviewing an existing operating plan, cost model, or strategy | cost-mastery, vertical-integration, concentration, quality-before-cost, talent-doctrine |
+| User is being approached by a strategic acquirer / considering an exit | selling-to-morgan, concentration |
+| User is setting a wealth cap, retirement target, or writing a personal operating doc | personal-operating-system, gospel-of-wealth |
+| User senses business is consuming them and wants a two-phase life plan | personal-operating-system, gospel-of-wealth |
+| User is navigating a labor dispute or union confrontation | hard-soft-labor-approach |
+| User is considering using a deputy to carry out a hard operational decision | hard-soft-labor-approach, partnership-model |
+| User's public posture and operating reality are in tension on workforce questions | hard-soft-labor-approach |
 
 ### By framework
 
@@ -231,3 +240,6 @@ Thirty-three and an income of $50,000 per annum! By this time two years I can so
 | Price in Downturns | price-in-downturns.md | Every panic is the making of the firm that knows its costs and has the cash to expand |
 | Quality Before Cost | quality-before-cost.md | The surest foundation of a manufacturing concern is quality; after that, and a long way after, comes cost |
 | The Gospel of Wealth | gospel-of-wealth.md | Surplus wealth is held in trust; administer it in your lifetime; the man who dies rich dies disgraced |
+| Personal Operating System | personal-operating-system.md | Write a private memo to yourself — ceiling, date, second vocation — that a later version of you will be measured by |
+| Hard/Soft Labor Approach | hard-soft-labor-approach.md | The public posture and the operating posture must be reconciled; a deputy is not moral insulation, only briefly practical |
+| Selling to Morgan | selling-to-morgan.md | Exit at the peak, set the price yourself in writing, take bonds not equity, and have the second vocation ready |

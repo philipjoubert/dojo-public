@@ -18,7 +18,12 @@ related:
   - "distribution-trust.md"
   - "growth-teams.md"
   - "growth-loops.md"
+  - "aeo-ai-engine-optimization.md"
 ---
+
+<!-- Note: The AEO (AI Engine Optimization) mechanics — how SEO mutates for ChatGPT/Perplexity/Claude citation traffic, what content survives AI summarization, how to measure AI visibility — are covered in aeo-ai-engine-optimization.md. This topic focuses on the PMF treadmill, Disruption Risk 2x2, Moat Framework, innovation vs. optimization ratio, and MLP. When the question is specifically about AI-era distribution mechanics (AEO, satellite apps replacing SEO, creator economy in the AI era), load aeo-ai-engine-optimization.md alongside distribution-trust.md. -->
+
+
 
 # AI-Native Growth (PMF Treadmill, Big Bets, Disruption Risk)
 

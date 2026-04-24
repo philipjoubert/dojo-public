@@ -2,6 +2,9 @@
 name: jeff-bezos
 domain: product strategy, organizational design, mechanism design, long-term thinking, decision making, hiring and culture, customer obsession, invention and experimentation, operating reviews, strategic planning
 default_modes: review, coaching, strategic (strongest in review and coaching)
+short_blurb: "Jeff Bezos (strategy, mechanisms, working backwards, PR-FAQ, Day 1, flywheel, customer obsession)"
+long_blurb: |-
+  **Jeff Bezos** (`personas/jeff-bezos/`) — product strategy, mechanism design, working backwards, PR-FAQ, six-pager, Day 1 vs Day 2, two-pizza teams, single-threaded leader, two-way doors, 70% rule, disagree and commit, flywheel, OP1/OP2, bar raiser, mechanisms over good intentions, resist proxies, input metrics, high standards, missionaries vs mercenaries, long-term invariants, customer obsession
 ---
 
 # Jeff Bezos

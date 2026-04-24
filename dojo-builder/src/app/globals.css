@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* Dojo design tokens — see design_handoff_dojo_panel_builder/README.md */
+@theme inline {
+  /* Surfaces */
+  --color-page: #f0eee9;
+  --color-main: #f5f2ec;
+  --color-sidebar: #fbf9f4;
+  --color-card: #fbf9f4;
+  --color-card-selected: #fcfaf5;
+  --color-input: #ffffff;
+  --color-chip: #ede8dd;
+
+  /* Borders */
+  --color-border: #e2dcd0;
+  --color-divider: #ede8dd;
+  --color-dashed: #d9d3c7;
+  --color-dashed-soft: #cdc6ba;
+  --color-hairline-dark: #3a362f;
+
+  /* Text */
+  --color-ink: #1a1814;
+  --color-body: #3a362f;
+  --color-secondary: #52493f;
+  --color-muted: #7a7367;
+  --color-subtle: #9a9388;
+
+  /* Accent */
+  --color-hanko: #3968a0;
+  --color-warn: #6e97c3;
+  --color-danger: #b5362a;
+
+  /* Typography — variables wired to next/font in layout.tsx */
+  --font-serif: var(--font-plex-serif), Georgia, serif;
+  --font-sans: var(--font-inter), -apple-system, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  /* Radius scale */
+  --radius-pill: 999px;
+  --radius-small-pill: 4px;
+  --radius-input: 6px;
+  --radius-button: 8px;
+  --radius-card: 10px;
+  --radius-monogram: 6px;
+
+  /* Shadows */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-card-selected:
+    0 0 0 3px rgba(26, 24, 20, 0.05),
+    0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+html,
+body {
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}

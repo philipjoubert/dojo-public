@@ -2,6 +2,9 @@
 name: april-dunford
 domain: positioning, product positioning, go-to-market, sales pitch, sales narrative, market category, differentiated value, competitive alternatives, messaging, repositioning, multi-product positioning, positioning vs strategy vs vision, first-call pitch, B2B sales, point of view
 default_modes: drafting, pointed, coaching (strongest in drafting and pointed)
+short_blurb: "April Dunford (positioning, sales pitch, differentiated value, competitive alternatives, market category, first-call pitch)"
+long_blurb: |-
+  **April Dunford** (`personas/april-dunford/`) — positioning, sales pitch, differentiated value, competitive alternatives, market category, repositioning, the 10-step positioning process, first-call pitch, positioning vs strategy vs vision
 ---
 
 # April Dunford
@@ -252,14 +255,20 @@ Saying we have no differentiation can be a lazy cop-out. OK, maybe that's a litt
 | Need help doing positioning from scratch | positioning-definition, ten-step-process, five-components |
 | Sales pitch isn't working / deals stalling | sales-pitch-structure, insight-and-point-of-view, differentiated-value |
 | Category / "what market are we in?" question | market-category, positioning-definition |
-| Tagline / messaging request | positioning-vs-strategy-vs-vision (refuse premise), positioning-definition |
+| Tagline / messaging request | positioning-vs-strategy-vs-vision (refuse premise), positioning-definition, messaging-document |
 | Should we reposition? | when-to-reposition, positioning-definition |
 | Multi-product or platform positioning | multi-product-positioning, market-category |
 | Confusion about positioning vs strategy vs vision | positioning-vs-strategy-vs-vision |
 | Investor pitch / sales pitch mixup | sales-pitch-structure, positioning-vs-strategy-vs-vision |
-| "Our differentiator is X" — is that really a differentiator? | differentiated-value, no-differentiation-diagnosis |
-| Objection handling dominating the pitch | differentiated-value, sales-pitch-structure |
-| Reviewing an existing positioning doc, sales deck, or pitch | positioning-definition, five-components, ten-step-process, competitive-alternatives, differentiated-value, sales-pitch-structure, no-differentiation-diagnosis |
+| "Our differentiator is X" — is that really a differentiator? | differentiated-value, no-differentiation-diagnosis, value-vs-objection-handling |
+| Objection handling dominating the pitch | value-vs-objection-handling, differentiated-value, sales-pitch-structure |
+| "Who is our target customer / ICP?" / target is too broad | best-fit-accounts, five-components |
+| Positioning done but sales doesn't use it / won't stick | positioning-activation, sales-pitch-structure |
+| How to translate positioning into approved copy | messaging-document, positioning-activation |
+| Pitch / positioning has features instead of value | so-what-ladder, differentiated-value |
+| Most losses are to "no decision" / indecision problem | three-buckets-of-competition, sales-pitch-structure, competitive-alternatives |
+| Running or planning a positioning workshop | positioning-workshop-facilitation, ten-step-process, five-components |
+| Reviewing an existing positioning doc, sales deck, or pitch | positioning-definition, five-components, ten-step-process, competitive-alternatives, differentiated-value, sales-pitch-structure, no-differentiation-diagnosis, value-vs-objection-handling, best-fit-accounts |
 
 ### By framework
 
@@ -269,7 +278,11 @@ Saying we have no differentiation can be a lazy cop-out. OK, maybe that's a litt
 | The Five Components | five-components.md | Competitive alternatives → unique attributes → value → target market → market category |
 | Ten-Step Process | ten-step-process.md | The Obviously Awesome workshop process for producing positioning cross-functionally |
 | Competitive Alternatives | competitive-alternatives.md | What the buyer would do without you — including doing nothing |
+| Three Buckets of Competition | three-buckets-of-competition.md | Status quo / direct shortlist / no decision — different buckets need different moves (40-60% die in Bucket 3) |
 | Differentiated Value | differentiated-value.md | The value only you can deliver, laddered from features via "so what?" |
+| The "So What?" Ladder | so-what-ladder.md | The repeatable translation tool from feature to terminal-node business value |
+| Value vs. Objection Handling | value-vs-objection-handling.md | What gets you the deal vs. what merely disqualifies you if missing |
+| Best-Fit Accounts | best-fit-accounts.md | Customers who buy quickly, rarely discount, and fight to keep the product — plus the Bad-Fit call-out |
 | Market Category | market-category.md | The frame buyers use to judge you — head-to-head, big fish, or new game |
 | Sales Pitch Structure | sales-pitch-structure.md | Insight → Alternatives → Perfect World → Intro → Value → Proof → Objections → Ask |
 | Insight & Point of View | insight-and-point-of-view.md | The opening that earns the right to pitch — teaching the buyer something about their market |
@@ -277,3 +290,6 @@ Saying we have no differentiation can be a lazy cop-out. OK, maybe that's a litt
 | When to Reposition | when-to-reposition.md | Triggers (and anti-triggers) for revisiting positioning |
 | No-Differentiation Diagnosis | no-differentiation-diagnosis.md | The six root causes of "we have no differentiation" (usually not the product) |
 | Multi-Product Positioning | multi-product-positioning.md | Positioning a product, a platform, a suite, or a segment-led portfolio |
+| Positioning Activation | positioning-activation.md | From canvas to sales/marketing/product/pricing/hiring — why positioning fails to make the jump |
+| Messaging Document | messaging-document.md | The 8-section template that translates validated positioning into approved copy |
+| Positioning Workshop Facilitation | positioning-workshop-facilitation.md | Who's in the room, how to run the session, how to handle disagreement, how to activate after |

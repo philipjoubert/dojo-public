@@ -17,6 +17,19 @@ Authoritative inventory of processed source material. YouTube entries carry a `t
 
 ---
 
+## Workbooks & Templates (official April Dunford artifacts)
+
+- April Dunford Messaging Document Template (V11)
+  note: Canonical 8-section messaging doc — positioning canvas, boilerplate messaging (one-liner / elevator / 100-word / 500-word), value points, competitive messaging, approved customer assets, brag points, spokesperson bios, visual assets.
+
+- Obviously Awesome + Sales Pitch Workbook (Revised Edition, V11)
+  note: Official companion workbook to both books. Contains the Positioning Canvas template, Sales Pitch Storyboard template, and a complete SnoutDesk worked example for both. Uses "Best-Fit Accounts" terminology. References book page numbers for each pitch step (Insight p.107, Alternatives p.119, Perfect World p.135, Introduction p.145, Differentiated Value p.151, Proof p.163, Objections p.169, Ask p.177).
+
+- SnoutDesk Sales Pitch Example (V11)
+  note: 15-slide example pitch deck with full speaker notes for each slide explaining April's thinking. Fictional SnoutDesk company. Best single reference for how positioning flows into a first-call sales pitch narrative, and for the discovery-conversation framing of the Alternatives slide.
+
+---
+
 ## YouTube
 
 - [A step-by-step guide to crafting a sales pitch that wins | April Dunford](https://www.youtube.com/watch?v=-VqmFI9vY7w)

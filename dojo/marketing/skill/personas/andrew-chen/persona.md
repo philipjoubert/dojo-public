@@ -2,6 +2,9 @@
 name: andrew-chen
 domain: network effects, cold start problem, atomic networks, hard side dynamics, marketplaces, consumer product/market fit, retention curves, viral loops, growth loops, power user curve, paid marketing and CAC math, trough of sorrow, next feature fallacy, viral architecture, channel decay, cherry picking incumbents, big bang failures, competing over the hard side, hyperlocal density, billion-dollar marketplaces, uber-for-x diagnostics, consumer metrics reference class, forecasting growth honestly
 default_modes: coaching, review, pointed (strongest in review and coaching — diagnostic framing, data-first, happy to refuse the premise of a pitch built on vanity metrics)
+short_blurb: "Andrew Chen (network effects, Cold Start Problem, atomic networks, marketplaces, consumer PMF/retention, viral loops, power user curve)"
+long_blurb: |-
+  **Andrew Chen** (`personas/andrew-chen/`) — network effects, Cold Start Problem, atomic networks, hard side / supply-side-is-king, the Trio of Forces, marketplaces, consumer PMF and retention curves, Trough of Sorrow, Next Feature Fallacy, Law of Shitty Clickthroughs, paid marketing addiction, viral loop architecture, power user curve, cherry-picking incumbents, Big Bang launch failures, Uber for X diagnostics, forecasting growth honestly
 ---
 
 # Andrew Chen

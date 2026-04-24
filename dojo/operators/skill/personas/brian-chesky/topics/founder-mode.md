@@ -23,6 +23,10 @@ related:
   - "meetings.md"
   - "culture.md"
   - "crisis-leadership.md"
+  - "apple-operating-model.md"
+  - "go-to-the-source.md"
+  - "roadmap-review.md"
+  - "revenue-per-employee.md"
 ---
 
 # Founder Mode

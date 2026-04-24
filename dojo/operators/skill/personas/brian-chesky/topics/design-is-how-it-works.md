@@ -46,6 +46,8 @@ Here's what I had to learn the hard way. I used to think simplifying was removin
 
 And then there's intuition. People get really nervous about designer's intuition because it seems somehow not systematic. I actually think a lot of great design comes from deep understanding of a problem. Being a designer is like holding 5,000 ideas in your head, some of them contradictory. Intuition isn't magic — it's compression. When you've absorbed so much information that your subconscious can pattern-match faster than your conscious mind, we call it intuition. It's the most systematic thing there is.
 
+One more thing to extend "design" past pixels: trust is a design material. Early Airbnb couldn't exist until we designed a trust layer — profiles, reviews, verified identity, host and guest protections, a 24/7 response team, insurance, payments held in escrow. None of that is decoration. All of it is load-bearing design work. Most marketplaces treat trust as a policy layer bolted on after product-market fit. We treated it as the fundamental thing being designed. You don't earn permission to ship the next category until the trust design of the current one holds. And because trust compounds, a platform with a well-designed trust layer can expand into new categories — long-term stays, cars, experiences, services — on the same spine. Design the trust. Then the business model you design on top of it works.
+
 ## How to Apply
 
 1. **Put design in the boardroom — literally.** Head of design reports to the CEO. Never to the head of product. I have a controversial view that the head of design should never ever ever report to the head of product.

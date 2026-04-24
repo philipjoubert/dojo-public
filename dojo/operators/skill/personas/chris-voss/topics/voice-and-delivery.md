@@ -64,6 +64,20 @@ There are three voices. The late-night FM DJ voice is deep, soft, slow, and land
 **Application:** Positive and playful for rapport. FM DJ when we got into price: "It seems like you've got some flexibility on that number." At the very end, when he pushed one more time, I dropped into the direct voice, firm not hostile: "I think I've been fair with you, and this is my final number."
 **Result:** He knew I meant it. Deal closed at my number.
 
+## The First Seven Seconds
+
+The opening of any call sets the temperature for everything that comes after. You get roughly seven seconds to tell their nervous system whether this is a fight or a conversation. Blow those seconds and the rest of your prep is working against a handicap you gave yourself.
+
+Two rules for the opening, and they're not optional.
+
+**Smile while you say hello.** Yes, on the phone. They can't see you and they still hear it. The shape of your mouth changes the shape of your voice. A smile routes you into the positive, playful register by default, which is where you want to live. Skip the smile and you open flat, your voice sounds like you don't want to be there, and they match your energy before you've said anything of substance.
+
+**Open in the late-night FM DJ voice.** Deep, soft, slow, downward inflection on your own name. Not chirpy, not crisp, not "professional." FM DJ. "Hi, this is Chris." Let it land. The voice tells their brain: no threat, no urgency, no attack coming. You've just dropped the temperature of the call by ten degrees before anyone said anything real.
+
+Do both at once. The smile makes the tone warm. The FM DJ register makes it calm. Warm-and-calm is the combination that opens people up. Warm alone reads as sales. Calm alone reads as cold. Together they read as a trustworthy human being, which is exactly what they need to feel in the first seven seconds so they'll actually tell you something true in the next seven minutes.
+
+The opening isn't polish. The opening is the technique. Every label and calibrated question you pre-wrote depends on the counterpart being regulated enough to engage with it. The first seven seconds are where you earn that regulation.
+
 ## Anti-Patterns (tactical)
 
 **Don't:** Lead with the direct, assertive voice because you want to sound "strong."
