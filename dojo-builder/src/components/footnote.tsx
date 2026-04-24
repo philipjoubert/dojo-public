@@ -4,7 +4,7 @@ export function Footnote() {
       Full source material for each expert lives under <code>sources/</code>
       {" "}in the{" "}
       <a
-        href="https://github.com/philipjoubert/personas-public"
+        href="https://github.com/philipjoubert/dojo-public/"
         className="underline underline-offset-2 hover:text-muted"
         target="_blank"
         rel="noreferrer"
