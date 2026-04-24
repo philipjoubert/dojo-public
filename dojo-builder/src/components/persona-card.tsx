@@ -27,7 +27,8 @@ export function PersonaCard({
       aria-pressed={isSelected}
       aria-label={`${persona.name} — ${isSelected ? "selected" : "select"}`}
       className={[
-        "relative flex flex-col rounded-[10px] border px-3 py-4 text-left shadow-card",
+        "relative flex gap-3 rounded-[10px] border p-3 text-left shadow-card",
+        "sm:flex-col sm:gap-0 sm:px-3 sm:py-4",
         "transition-[border-color,transform,box-shadow] duration-200",
         isSelected
           ? "border-ink bg-card-selected shadow-card-selected"
@@ -48,25 +49,31 @@ export function PersonaCard({
         {isSelected && <CheckIcon />}
       </span>
 
-      <Portrait slug={persona.slug} size={96} className="rounded-[6px]" />
+      <Portrait
+        slug={persona.slug}
+        size={96}
+        className="h-20 w-20 shrink-0 rounded-[6px] sm:h-24 sm:w-24"
+      />
 
-      <h3 className="mt-[12px] font-serif text-[17px] font-medium leading-[1.15] tracking-[-0.2px] text-ink">
-        {persona.name}
-      </h3>
+      <div className="flex min-w-0 flex-1 flex-col">
+        <h3 className="pr-7 font-serif text-[16px] font-medium leading-[1.15] tracking-[-0.2px] text-ink sm:mt-[12px] sm:pr-0 sm:text-[17px]">
+          {persona.name}
+        </h3>
 
-      <div className="mt-1 text-[10px] uppercase tracking-[1.2px] text-muted">
-        {DOMAIN_META[persona.domain].label}
-      </div>
+        <div className="mt-[2px] text-[10px] uppercase tracking-[1.2px] text-muted sm:mt-1">
+          {DOMAIN_META[persona.domain].label}
+        </div>
 
-      <div className="mt-[10px] flex flex-wrap gap-[4px]">
-        {persona.topics.map((t) => (
-          <span
-            key={t}
-            className="rounded-[4px] bg-chip px-[6px] py-[2px] text-[9px] tracking-[0.2px] text-secondary"
-          >
-            {t}
-          </span>
-        ))}
+        <div className="mt-[8px] flex flex-wrap gap-[4px] sm:mt-[10px]">
+          {persona.topics.map((t) => (
+            <span
+              key={t}
+              className="rounded-[4px] bg-chip px-[6px] py-[2px] text-[9px] tracking-[0.2px] text-secondary"
+            >
+              {t}
+            </span>
+          ))}
+        </div>
       </div>
     </button>
   );

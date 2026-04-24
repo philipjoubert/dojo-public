@@ -23,7 +23,7 @@ export function SkillNameInput() {
           onChange={(e) =>
             dispatch({ type: "setSkillName", value: e.target.value })
           }
-          className="w-full bg-transparent font-mono text-[13px] text-ink outline-none"
+          className="min-w-0 flex-1 bg-transparent font-mono text-[13px] text-ink outline-none"
           spellCheck={false}
         />
       </div>
