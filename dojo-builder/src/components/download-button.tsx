@@ -54,7 +54,7 @@ export function DownloadButton() {
     status.kind === "loading" ? "Building…" : "Download skill";
 
   return (
-    <div className="sticky bottom-0 mt-5 -mx-7 -mb-7 border-t border-divider bg-sidebar px-7 pt-5 pb-7">
+    <div className="sticky bottom-0 mt-4 -mx-7 -mb-7 border-t border-divider bg-sidebar px-7 pt-4 pb-4">
       <button
         type="button"
         onClick={onClick}
@@ -69,13 +69,9 @@ export function DownloadButton() {
         <DownloadIcon />
         {label}
       </button>
-      {status.kind === "error" ? (
+      {status.kind === "error" && (
         <p className="mt-2 text-center text-[10px] text-danger">
           {status.message}
-        </p>
-      ) : (
-        <p className="mt-2 text-center text-[10px] text-subtle">
-          Install into Claude or ChatGPT — see steps below
         </p>
       )}
     </div>
