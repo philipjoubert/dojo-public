@@ -65,26 +65,6 @@ Explicit:
 
 When multiple experts respond, you get separate sections. They can disagree. The contradictions are the point.
 
-## DIY — skip the website
-
-If you want an entire domain as one skill (without the 8-expert cap), or you want to edit a persona, install directly from this repo:
-
-- [`dojo-operators.zip`](dojo-operators.zip)
-- [`dojo-investors.zip`](dojo-investors.zip)
-- [`dojo-marketing.zip`](dojo-marketing.zip)
-- [`dojo-thinking.zip`](dojo-thinking.zip)
-
-Upload those the same way as the custom zips, or for Claude Code:
-
-```bash
-git clone https://github.com/philipjoubert/dojo-public.git
-cd dojo-public
-cp -R dojo/operators/skill  ~/.claude/skills/dojo-operators
-# …and whichever other domains you want
-```
-
-To update: `git pull` and re-copy, or download the latest zips and re-upload.
-
 ## How it's built
 
 For anyone curious — or for anyone who wants to build their own expert.
