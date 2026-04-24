@@ -40,10 +40,12 @@ const DOJO_DIR = path.join(REPO_ROOT, "dojo");
 const OUT_PATH = path.join(APP_ROOT, "src", "lib", "personas.generated.ts");
 
 // Tagline contract — the single coverage signal exposed to the app.
-// Values tuned so 8 personas × (name + tagline) fit under the ~1024-char
-// SKILL.md description limit with room to spare.
-const TAGLINE_MAX_CHARS = 120;
-const TAGLINE_MAX_ITEMS = 8;
+// Generous cap: tagline is used in the SKILL.md EXPERTS body section,
+// which has no size limit. The 1024-char skill description is built
+// separately from `topics`, not from the tagline. The cap here exists
+// only to defend against unbounded prose — not to win scannability.
+const TAGLINE_MAX_CHARS = 300;
+const TAGLINE_MAX_ITEMS = 16;
 
 // Topic-file expectation — personas without topic files are suspicious.
 const MIN_TOPIC_FILES = 3;
