@@ -2,22 +2,17 @@
 
 **A panel of expert advisors, loaded into Claude or ChatGPT.**
 
-![Neo: I know Kung Fu](assets/matrix-i-know-kung-fu.jpg)
-*Install the dojo. Open your eyes. You know positioning.*
-
-Just like [Neo downloads kung fu](https://youtube.com/watch?t=13&v=0YhJxJZOWBw&feature=youtu.be), you can do the same with positioning, negotiation, founder mode, SaaS GTM — a panel of experts, in their own voice, willing to disagree with you and each other.
+[![Build your dojo at dojo-public.vercel.app](assets/dojo-builder-screenshot.png)](https://dojo-public.vercel.app/)
 
 ## Build your dojo
 
 👉 **[dojo-public.vercel.app](https://dojo-public.vercel.app/)**
 
-Pick up to 8 experts. Download one skill zip. Install it:
-
-- **Claude Desktop / claude.ai** — Settings → Capabilities → Skills → Upload skill
-- **ChatGPT** — [chatgpt.com/skills](https://chatgpt.com/skills) → New skill → Upload
-- **Claude Code** — unzip into `~/.claude/skills/`
+Pick up to 8 experts. Download a skill zip. Upload it into Claude or ChatGPT.
 
 Then ask in plain language — *"ask dojo: how should I respond to this hit piece?"* — and the router picks the right expert(s).
+
+It's a bit like Neo downloading kung fu — except the experts here are real people, and you pick them.
 
 ## What's in each persona
 
