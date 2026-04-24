@@ -32,14 +32,25 @@ function descriptionLead(personas: Persona[]): string {
   const noun = count === 1 ? "expert" : "experts";
   return (
     `Custom panel of ${count} ${noun} — a hand-picked roster. ` +
-    `Use when user says "ask dojo", names any loaded expert, ` +
+    `Use when user says 'ask dojo', names any loaded expert, ` +
     `or asks about a domain they cover.`
   );
 }
 
 function loadedLine(personas: Persona[]): string {
-  const joined = personas.map((p) => p.shortBlurb).join("; ");
+  const joined = personas
+    .map((p) => `${p.name} (${p.topics.join(", ")})`)
+    .join("; ");
   return `Loaded: ${joined}.`;
+}
+
+const DESCRIPTION_MAX = 1024;
+
+function clampDescription(text: string): string {
+  if (text.length <= DESCRIPTION_MAX) return text;
+  const cutAt = text.lastIndexOf(";", DESCRIPTION_MAX - 2);
+  const end = cutAt > 0 ? cutAt : DESCRIPTION_MAX - 1;
+  return `${text.slice(0, end).trimEnd()}…`;
 }
 
 function availableExperts(personas: Persona[]): string {
@@ -58,11 +69,14 @@ export function renderSkillMd({
 
   const fullName = skillName ? `dojo-${skillName}` : "dojo";
 
+  const description = clampDescription(
+    `${descriptionLead(personas)} ${loadedLine(personas)}`,
+  );
+
   return template
     .replaceAll("{{skill_name}}", fullName)
     .replaceAll("{{panel_title}}", "Custom")
-    .replaceAll("{{description_lead}}", descriptionLead(personas))
-    .replaceAll("{{loaded_line}}", loadedLine(personas))
+    .replaceAll("{{description}}", description)
     .replaceAll("{{named_examples}}", namedExamples(personas))
     .replaceAll("{{primary_expert_header}}", primary)
     .replaceAll("{{available_experts}}", availableExperts(personas));
