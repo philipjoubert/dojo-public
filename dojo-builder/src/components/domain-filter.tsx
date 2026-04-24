@@ -16,29 +16,33 @@ export function DomainFilter() {
   const shown = filteredPersonas(state, personas).length;
 
   return (
-    <div className="mb-[14px] flex items-center gap-[6px]">
-      {DOMAINS.map((d) => {
-        const label = d === null ? "All" : DOMAIN_META[d].label;
-        const active =
-          d === null ? state.activeDomain === null : state.activeDomain === d;
-        return (
-          <button
-            key={label}
-            type="button"
-            onClick={() => dispatch({ type: "setDomain", domain: d })}
-            className={[
-              "rounded-[6px] px-3 py-[6px] text-[12px] font-medium transition-colors",
-              active
-                ? "bg-ink text-main"
-                : "text-body hover:bg-chip",
-            ].join(" ")}
-          >
-            {label}
-          </button>
-        );
-      })}
-      <div className="ml-auto text-[12px] text-muted">
-        {shown} experts available
+    <div className="mb-[14px]">
+      <div className="flex items-center">
+        <div className="scroll-strip flex min-w-0 flex-1 items-center gap-[6px] overflow-x-auto">
+          {DOMAINS.map((d) => {
+            const label = d === null ? "All" : DOMAIN_META[d].label;
+            const active =
+              d === null
+                ? state.activeDomain === null
+                : state.activeDomain === d;
+            return (
+              <button
+                key={label}
+                type="button"
+                onClick={() => dispatch({ type: "setDomain", domain: d })}
+                className={[
+                  "shrink-0 rounded-[6px] px-3 py-[6px] text-[12px] font-medium transition-colors",
+                  active ? "bg-ink text-main" : "text-body hover:bg-chip",
+                ].join(" ")}
+              >
+                {label}
+              </button>
+            );
+          })}
+        </div>
+        <div className="ml-3 hidden shrink-0 text-[12px] text-muted sm:block">
+          {shown} experts available
+        </div>
       </div>
     </div>
   );
