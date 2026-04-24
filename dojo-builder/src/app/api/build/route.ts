@@ -36,6 +36,17 @@ function personaSourceDir(p: Persona): string {
   return path.join(DOJO_DIR, p.domain, "skill", "personas", p.slug);
 }
 
+// Strip YAML frontmatter from persona.md before shipping in the zip.
+// The frontmatter is authoring metadata (routing_keywords, etc.) consumed
+// by the manifest builder — Claude's skill preview renders it as prose,
+// which looks like garbage. The shipped file should be pure markdown body.
+function stripFrontmatter(markdown: string): string {
+  if (!markdown.startsWith("---\n")) return markdown;
+  const end = markdown.indexOf("\n---\n", 4);
+  if (end === -1) return markdown;
+  return markdown.slice(end + 5).replace(/^\s*\n+/, "");
+}
+
 async function addPersonaFiles(
   zip: JSZip,
   persona: Persona,
@@ -45,9 +56,9 @@ async function addPersonaFiles(
   const folder = zip.folder(target);
   if (!folder) throw new Error(`zip.folder failed for ${target}`);
 
-  // persona.md at the root
-  const personaMd = await readFile(path.join(src, "persona.md"));
-  folder.file("persona.md", personaMd);
+  // persona.md at the root — frontmatter stripped for clean preview.
+  const personaMdRaw = await readFile(path.join(src, "persona.md"), "utf8");
+  folder.file("persona.md", stripFrontmatter(personaMdRaw));
 
   // topics/*.md — shallow, no nesting expected
   const topicsDir = path.join(src, "topics");
