@@ -26,8 +26,8 @@
   --color-subtle: #9a9388;
 
   /* Accent */
-  --color-hanko: #3968a0;
-  --color-warn: #6e97c3;
+  --color-hanko: #b8501a;
+  --color-warn: #d4884a;
   --color-danger: #b5362a;
 
   /* Typography — variables wired to next/font in layout.tsx */
