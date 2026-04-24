@@ -39,13 +39,14 @@ const REPO_ROOT = path.resolve(APP_ROOT, "..");
 const DOJO_DIR = path.join(REPO_ROOT, "dojo");
 const OUT_PATH = path.join(APP_ROOT, "src", "lib", "personas.generated.ts");
 
-// Tagline contract — the single coverage signal exposed to the app.
-// Generous cap: tagline is used in the SKILL.md EXPERTS body section,
-// which has no size limit. The 1024-char skill description is built
-// separately from `topics`, not from the tagline. The cap here exists
-// only to defend against unbounded prose — not to win scannability.
-const TAGLINE_MAX_CHARS = 300;
-const TAGLINE_MAX_ITEMS = 16;
+// Tagline contract — hand-authored via persona.md `routing_keywords`
+// (Phase 8 of DOJO-PERSONA-PROCESS.md). Used in the SKILL.md EXPERTS
+// body section, which has no size limit. The 1024-char description
+// is built from `topics`, not tagline. Cap exists only to defend
+// against accidental unbounded prose — authors take responsibility
+// for richness within these bounds.
+const TAGLINE_MAX_CHARS = 500;
+const TAGLINE_MAX_ITEMS = 30;
 
 // Topic-file expectation — personas without topic files are suspicious.
 const MIN_TOPIC_FILES = 3;
@@ -188,6 +189,10 @@ function rawTagline(
   fm: Record<string, string>,
   shortBlurb: string,
 ): string {
+  // Preferred source: the hand-authored routing_keywords field (Phase 8 of
+  // DOJO-PERSONA-PROCESS.md). Legacy fallbacks exist so the builder doesn't
+  // break mid-migration, but both emit a warning so we know to backfill.
+  if (fm.routing_keywords) return fm.routing_keywords.trim();
   if (fm.tagline) return fm.tagline.trim();
   const paren = shortBlurb.match(/\(([^)]*(?:\([^)]*\)[^)]*)*)\)/);
   return paren ? paren[1].trim() : "";
@@ -294,6 +299,14 @@ function collectPersonas(): { personas: Persona[]; issues: Issue[] } {
         });
       }
 
+      if (!fm.routing_keywords) {
+        issues.push({
+          level: "warn",
+          slug,
+          message: "no routing_keywords frontmatter — falling back to short_blurb; add routing_keywords per DOJO-PERSONA-PROCESS.md Phase 8",
+        });
+      }
+
       const tagline = normalizeTagline(rawTagline(fm, shortBlurb));
       if (!tagline.value) {
         issues.push({
@@ -307,7 +320,7 @@ function collectPersonas(): { personas: Persona[]; issues: Issue[] } {
         issues.push({
           level: "warn",
           slug,
-          message: `tagline truncated (${tagline.originalChars} chars / ${tagline.originalItems} items → ${tagline.value.length} chars / ${tagline.value.split(", ").length} items) — tighten the source tagline in persona.md to keep routing signal intact`,
+          message: `routing_keywords truncated (${tagline.originalChars} chars / ${tagline.originalItems} items → ${tagline.value.length} chars / ${tagline.value.split(", ").length} items) — tighten the source field in persona.md`,
         });
       }
 

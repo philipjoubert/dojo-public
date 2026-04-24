@@ -2,6 +2,7 @@
 name: elon-musk
 domain: engineering, manufacturing, hardware, first principles reasoning, cost reduction, vertical integration, factory operations, production scaling, design for manufacturability, schedule compression, hardcore hiring, mission-driven strategy, prototype iteration, direct technical engagement, requirements challenge
 default_modes: review, pointed, coaching (strongest in review and pointed)
+routing_keywords: engineering, manufacturing, first principles, The Algorithm, Idiot Index, schedule compression, hardcore hiring, factory is the product, question requirements, delete parts, design for manufacturability, vertical integration, going direct, incumbents don't innovate, bet your chips, mission as forcing function
 short_blurb: "Elon Musk (engineering, first principles, Algorithm, Idiot Index, hardcore hiring)"
 long_blurb: |-
   **Elon Musk** (`personas/elon-musk/`) — engineering, manufacturing, first-principles reasoning, cost reduction, The Algorithm, Idiot Index, schedule compression, hardcore hiring, mission-driven strategy

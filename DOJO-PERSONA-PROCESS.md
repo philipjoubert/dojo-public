@@ -514,6 +514,10 @@ Stitch together the sections produced in phases 2–7 into the final file. Templ
 name: <slug>
 domain: <comma-separated list>
 default_modes: <e.g., review, drafting (strongest in review)>
+routing_keywords: <comma-separated list — see below>
+short_blurb: "<Full Name> (<4–6 headline items in parens>)"
+long_blurb: |-
+  **<Full Name>** (`personas/<slug>/`) — <dense prose summary of role, history, frameworks>
 ---
 
 # <Full Name>
@@ -572,6 +576,30 @@ default_modes: <e.g., review, drafting (strongest in review)>
 **Target size:** ~250–320 lines for a typical persona. The 3 voice samples + compressed exchanges + no Always-rules section keep `persona.md` lean (~25–30K chars / ~6K–7.5K tokens). Going significantly over usually means the voice samples are too long or the exchanges weren't compressed.
 
 **Destination:** `dojo/skill/personas/<name>/persona.md`
+
+### Authoring `routing_keywords`
+
+This field is the single routing signal surfaced in the generated SKILL.md's EXPERTS index. The panel-builder extractor (`dojo-builder/scripts/build-manifest.ts`) reads it directly — no fallback derivation from `short_blurb` or filenames. Terse here → terse routing in the shipped skill, no matter how rich the actual persona is.
+
+**What to include** — 15–25 comma-separated items that cover the full breadth of the persona:
+
+1. **Named frameworks** — the proper nouns an educated reader would recognize: *The Algorithm*, *48 Types of VP Sales*, *PR-FAQ*, *7 Powers*, *The Scout Mindset*, *Tactical Empathy*, *Mirroring*, *The Struggle*, *Idiot Index*.
+2. **Topic areas** — the domains they genuinely cover, overlapping with `domain:` but phrased as routing-useful terms: *founder-led sales*, *VP hiring*, *churn*, *pricing*, *negotiation*, *positioning*, *growth*, *fundraising*.
+3. **Signature concepts and phrases** — terms strongly identified with this expert that users might literally type: *LVR*, *Day 1*, *wartime CEO*, *schlep blindness*, *Cold Start Problem*, *network effects*, *Black Swans*.
+4. **Adjacent questions they handle well** — if an obvious routing gap exists that isn't covered by 1–3, add it: *crisis leadership*, *board dynamics*, *hiring mistakes*.
+
+**What to leave out:**
+
+- Filler phrases ("strategic advice", "business thinking") — they match nothing useful.
+- Biographical trivia ("Scottish-born", "Stanford MBA") — belongs in `long_blurb`.
+- Concepts they *reference* but aren't theirs (Munger citing Graham's *Mr. Market*, Jensen citing Grove's *Only the Paranoid*). Stay inside the "what they own" boundary.
+- Things covered only as anti-patterns. If Chesky's whole point is *"don't blend voices"*, that's a rule, not a topic they'd be routed to.
+
+**Format:** one comma-separated line. No quotes around individual items. Double-quote the whole YAML value if it contains `:` characters (it usually doesn't, but belt-and-braces).
+
+**Length:** the hard cap enforced by the build is generous (~300 chars / 16 items typical, warnings if truncated). Aim for richness within reason. A persona with 21 topic files should have a routing_keywords line that reflects that range; a persona with 5 topic files should have a shorter, tighter line.
+
+**When to revisit:** any time you add or remove a topic file, or coin a new signature framework for the persona. `routing_keywords` has to stay in sync with the actual coverage — if a user routes on *"ask <expert> about X"* but X isn't in the keywords, they'll miss the expert.
 
 ---
 

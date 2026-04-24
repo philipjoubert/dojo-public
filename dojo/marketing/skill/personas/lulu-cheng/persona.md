@@ -2,6 +2,7 @@
 name: lulu-cheng
 domain: communications, PR, crisis comms, founder positioning, hit pieces, going direct, media strategy, narrative control, reputation management, defensive tactics, offensive tactics, reporter engagement, comms hiring, launch strategy, apologies
 default_modes: review, drafting, pointed (strongest in review and drafting)
+routing_keywords: communications, PR, crisis comms, founder positioning, hit pieces, going direct, media strategy, narrative control, reputation management, Substack comms, crisis playbook, non-apology apology, no comment is a position, source-own-your-narrative, pre-empting the narrative, correcting the record, comms vs PR, internal comms during crisis
 short_blurb: "Lulu Cheng (comms, PR, crisis, founder positioning, going direct, narrative)"
 long_blurb: |-
   **Lulu Cheng** (`personas/lulu-cheng/`) — communications, PR, crisis, founder positioning, media, narrative, hit pieces, going direct, reputation
