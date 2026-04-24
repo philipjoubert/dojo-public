@@ -3,6 +3,23 @@
  *
  * Runs automatically before `next dev` and `next build` (see package.json
  * predev/prebuild hooks). The generated file is gitignored — it's derived.
+ *
+ * Pipeline contract (what the manifest guarantees to downstream consumers):
+ *
+ *   1. Tagline is always a tight comma-separated list: ≤ TAGLINE_MAX_CHARS
+ *      and ≤ TAGLINE_MAX_ITEMS. Whichever cap bites first, items beyond it
+ *      are dropped on ingest. Downstream code (skill-builder, persona cards)
+ *      can rely on this and will never render a 2,000-word "tagline".
+ *   2. Every persona has topics from the canonical TOPIC taxonomy, 2–4 of
+ *      them, via TOPIC_MAP. A missing entry fails the build.
+ *   3. Only fields actually used by the app are exported. shortBlurb /
+ *      longBlurb / raw tags are no longer in the manifest — they were
+ *      unbounded pass-throughs that invited drift.
+ *
+ * Add a new persona:
+ *   1. Drop persona.md + topics/ under dojo/<domain>/skill/personas/<slug>/.
+ *   2. Add a TOPIC_MAP entry here mapping the slug to 2–4 topics.
+ *   3. Re-run `npm run build:manifest`. Warnings tell you where to tighten.
  */
 import {
   readdirSync,
@@ -21,6 +38,15 @@ const APP_ROOT = path.resolve(__dirname, "..");
 const REPO_ROOT = path.resolve(APP_ROOT, "..");
 const DOJO_DIR = path.join(REPO_ROOT, "dojo");
 const OUT_PATH = path.join(APP_ROOT, "src", "lib", "personas.generated.ts");
+
+// Tagline contract — the single coverage signal exposed to the app.
+// Values tuned so 8 personas × (name + tagline) fit under the ~1024-char
+// SKILL.md description limit with room to spare.
+const TAGLINE_MAX_CHARS = 120;
+const TAGLINE_MAX_ITEMS = 8;
+
+// Topic-file expectation — personas without topic files are suspicious.
+const MIN_TOPIC_FILES = 3;
 
 const BUCKETS = ["operators", "investors", "marketing", "thinking"] as const;
 type Bucket = (typeof BUCKETS)[number];
@@ -90,11 +116,8 @@ interface Persona {
   name: string;
   domain: Bucket;
   tagline: string;
-  tags: string[];
   topics: Topic[];
   sizeKb: number;
-  shortBlurb: string;
-  longBlurb: string;
 }
 
 function parseFrontmatter(text: string): Record<string, string> {
@@ -154,31 +177,66 @@ function walkBytes(dir: string): number {
   return total;
 }
 
-function extractTags(shortBlurb: string): string[] {
-  const paren = shortBlurb.match(/\(([^)]*(?:\([^)]*\)[^)]*)*)\)/);
-  if (!paren) return [];
-  return paren[1]
-    .split(/[,;]\s*/)
-    .map((t) => t.trim().toLowerCase())
-    .filter(Boolean);
-}
-
 function extractName(shortBlurb: string): string {
   const idx = shortBlurb.indexOf(" (");
   return idx === -1 ? shortBlurb.trim() : shortBlurb.slice(0, idx).trim();
 }
 
-function extractTagline(
-  frontmatter: Record<string, string>,
+function rawTagline(
+  fm: Record<string, string>,
   shortBlurb: string,
 ): string {
-  if (frontmatter.tagline) return frontmatter.tagline;
+  if (fm.tagline) return fm.tagline.trim();
   const paren = shortBlurb.match(/\(([^)]*(?:\([^)]*\)[^)]*)*)\)/);
-  return paren ? paren[1] : "";
+  return paren ? paren[1].trim() : "";
 }
 
-function collectPersonas(): Persona[] {
+interface NormalizedTagline {
+  value: string;
+  truncated: boolean;
+  originalChars: number;
+  originalItems: number;
+}
+
+function normalizeTagline(raw: string): NormalizedTagline {
+  const items = raw
+    .split(/[,;]\s*/)
+    .map((t) => t.trim())
+    .filter(Boolean);
+  const originalChars = raw.length;
+  const originalItems = items.length;
+
+  const kept: string[] = [];
+  let running = 0;
+  for (const item of items) {
+    if (kept.length >= TAGLINE_MAX_ITEMS) break;
+    // +2 accounts for ", " separator
+    const next = running + (kept.length === 0 ? 0 : 2) + item.length;
+    if (next > TAGLINE_MAX_CHARS) break;
+    kept.push(item);
+    running = next;
+  }
+
+  return {
+    value: kept.join(", "),
+    truncated:
+      kept.length < originalItems ||
+      originalChars > TAGLINE_MAX_CHARS,
+    originalChars,
+    originalItems,
+  };
+}
+
+interface Issue {
+  level: "error" | "warn";
+  slug: string;
+  message: string;
+}
+
+function collectPersonas(): { personas: Persona[]; issues: Issue[] } {
   const personas: Persona[] = [];
+  const issues: Issue[] = [];
+
   for (const bucket of BUCKETS) {
     const personasDir = path.join(DOJO_DIR, bucket, "skill", "personas");
     if (!existsSync(personasDir)) continue;
@@ -186,47 +244,110 @@ function collectPersonas(): Persona[] {
       const slugDir = path.join(personasDir, slug);
       if (!statSync(slugDir).isDirectory()) continue;
       const personaMd = path.join(slugDir, "persona.md");
-      if (!existsSync(personaMd)) continue;
+      if (!existsSync(personaMd)) {
+        issues.push({
+          level: "error",
+          slug,
+          message: "missing persona.md",
+        });
+        continue;
+      }
 
       const text = readFileSync(personaMd, "utf8");
       const fm = parseFrontmatter(text);
       const shortBlurb = fm.short_blurb || "";
-      const longBlurb = fm.long_blurb || "";
-      if (!shortBlurb || !longBlurb) {
-        console.warn(`warn: ${slug}: missing short_blurb or long_blurb`);
+      if (!shortBlurb) {
+        issues.push({
+          level: "error",
+          slug,
+          message: "missing short_blurb frontmatter",
+        });
+        continue;
+      }
+
+      const name = extractName(shortBlurb);
+      if (!name) {
+        issues.push({
+          level: "error",
+          slug,
+          message: "could not extract name from short_blurb",
+        });
         continue;
       }
 
       const topics = TOPIC_MAP[slug];
       if (!topics) {
-        console.warn(`warn: ${slug}: no entry in TOPIC_MAP — add one in build-manifest.ts`);
+        issues.push({
+          level: "error",
+          slug,
+          message: "no TOPIC_MAP entry — add one in build-manifest.ts",
+        });
+        continue;
+      }
+      if (topics.length < 2 || topics.length > 4) {
+        issues.push({
+          level: "warn",
+          slug,
+          message: `topics count ${topics.length} — expected 2–4`,
+        });
+      }
+
+      const tagline = normalizeTagline(rawTagline(fm, shortBlurb));
+      if (!tagline.value) {
+        issues.push({
+          level: "error",
+          slug,
+          message: "empty tagline after normalization",
+        });
+        continue;
+      }
+      if (tagline.truncated) {
+        issues.push({
+          level: "warn",
+          slug,
+          message: `tagline truncated (${tagline.originalChars} chars / ${tagline.originalItems} items → ${tagline.value.length} chars / ${tagline.value.split(", ").length} items) — tighten the source tagline in persona.md to keep routing signal intact`,
+        });
+      }
+
+      const topicsDir = path.join(slugDir, "topics");
+      const topicFileCount = existsSync(topicsDir)
+        ? readdirSync(topicsDir).filter((f) => f.endsWith(".md")).length
+        : 0;
+      if (topicFileCount < MIN_TOPIC_FILES) {
+        issues.push({
+          level: "warn",
+          slug,
+          message: `only ${topicFileCount} topic files — persona may be incomplete`,
+        });
       }
 
       personas.push({
         slug,
-        name: extractName(shortBlurb),
+        name,
         domain: bucket,
-        tagline: extractTagline(fm, shortBlurb),
-        tags: extractTags(shortBlurb),
-        topics: topics ?? [],
+        tagline: tagline.value,
+        topics,
         sizeKb: Math.max(1, Math.round(walkBytes(slugDir) / 1024)),
-        shortBlurb,
-        longBlurb,
       });
     }
   }
-  // Stable order: by bucket (in BUCKETS declaration order), then alpha by slug.
+
+  // Stable order: bucket in declaration order, then alpha by slug.
   const bucketIndex = new Map(BUCKETS.map((b, i) => [b, i]));
   personas.sort((a, b) => {
     const da = bucketIndex.get(a.domain)! - bucketIndex.get(b.domain)!;
     return da !== 0 ? da : a.slug.localeCompare(b.slug);
   });
-  return personas;
+  return { personas, issues };
 }
 
 function emit(personas: Persona[]): string {
-  const header = `// GENERATED by scripts/build-manifest.ts — do not edit by hand.
+  return `// GENERATED by scripts/build-manifest.ts — do not edit by hand.
 // Re-run via \`npm run build:manifest\`. This file is gitignored.
+//
+// Invariants (enforced by build-manifest.ts):
+//  - tagline: ≤ ${TAGLINE_MAX_CHARS} chars, ≤ ${TAGLINE_MAX_ITEMS} items, comma-separated.
+//  - topics: 2–4 entries from the Topic union; every persona has a mapping.
 
 export type Domain = ${BUCKETS.map((b) => `"${b}"`).join(" | ")};
 
@@ -237,11 +358,8 @@ export interface Persona {
   name: string;
   domain: Domain;
   tagline: string;
-  tags: string[];
   topics: Topic[];
   sizeKb: number;
-  shortBlurb: string;
-  longBlurb: string;
 }
 
 export const DOMAIN_META: Record<Domain, { label: string }> = {
@@ -255,16 +373,31 @@ export const TOPICS: Topic[] = ${JSON.stringify(TOPICS, null, 2)};
 
 export const PERSONAS: Persona[] = ${JSON.stringify(personas, null, 2)};
 `;
-  return header;
 }
 
 function main(): void {
-  const personas = collectPersonas();
+  const { personas, issues } = collectPersonas();
   const byBucket = personas.reduce<Record<string, number>>((acc, p) => {
     acc[p.domain] = (acc[p.domain] || 0) + 1;
     return acc;
   }, {});
-  console.log(`build-manifest: ${personas.length} personas`, byBucket);
+
+  const errors = issues.filter((i) => i.level === "error");
+  const warnings = issues.filter((i) => i.level === "warn");
+
+  for (const w of warnings) console.warn(`⚠ ${w.slug}: ${w.message}`);
+  for (const e of errors) console.error(`✗ ${e.slug}: ${e.message}`);
+
+  console.log(
+    `\nbuild-manifest: ${personas.length} personas ${JSON.stringify(byBucket)} — ${warnings.length} warnings, ${errors.length} errors`,
+  );
+
+  if (errors.length > 0) {
+    console.error(
+      `\naborting: ${errors.length} persona(s) failed validation. Fix the issues above and re-run.`,
+    );
+    process.exit(1);
+  }
 
   const outDir = path.dirname(OUT_PATH);
   if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
