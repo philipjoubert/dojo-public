@@ -63,6 +63,12 @@ function loadedLine(personas: Persona[]): string {
 
 const DESCRIPTION_MAX = 1024;
 
+// Escape for a YAML double-quoted scalar. Backslash first so we don't
+// double-escape, then the quote character.
+function yamlEscape(s: string): string {
+  return s.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
+}
+
 function clampDescription(text: string): string {
   if (text.length <= DESCRIPTION_MAX) return text;
   const cutAt = text.lastIndexOf(";", DESCRIPTION_MAX - 2);
@@ -104,8 +110,8 @@ export function renderSkillMd({
   const primary = shortName(sorted[0].name);
   const fullName = skillName ? `dojo-${skillName}` : "dojo";
 
-  const description = clampDescription(
-    `${descriptionLead(sorted)} ${loadedLine(sorted)}`,
+  const description = yamlEscape(
+    clampDescription(`${descriptionLead(sorted)} ${loadedLine(sorted)}`),
   );
 
   return template
