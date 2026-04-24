@@ -116,7 +116,6 @@ export function renderSkillMd({
 
   return template
     .replaceAll("{{skill_name}}", fullName)
-    .replaceAll("{{panel_title}}", "Custom")
     .replaceAll("{{description}}", description)
     .replaceAll("{{named_examples}}", namedExamples(sorted))
     .replaceAll("{{primary_expert_header}}", primary)
