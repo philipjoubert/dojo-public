@@ -594,6 +594,10 @@ This field is the single routing signal surfaced in the generated SKILL.md's EXP
 - Biographical trivia ("Scottish-born", "Stanford MBA") — belongs in `long_blurb`.
 - Concepts they *reference* but aren't theirs (Munger citing Graham's *Mr. Market*, Jensen citing Grove's *Only the Paranoid*). Stay inside the "what they own" boundary.
 - Things covered only as anti-patterns. If Chesky's whole point is *"don't blend voices"*, that's a rule, not a topic they'd be routed to.
+- **Near-duplicates within a single persona.** If you have *positioning*, *positioning activation*, and *positioning workshop facilitation*, collapse to the single umbrella term plus at most one sub-framework that adds distinct signal. Three variants of the same concept waste routing surface area.
+- **Jargon acronyms.** Spell out the full phrase and drop the acronym: *Lead Velocity Rate* (not *LVR*), *product-market fit* (not *PMF*), *net revenue retention* (not *NRR*), *answer engine optimization* (not *AEO*). Users query using words more often than acronyms, and the full phrase also matches acronym mentions downstream. Exceptions — keep acronyms when they are the universally-understood form: *CEO*, *VP*, *AI*, *B2B*, *SaaS*, *M&A*, *SMB*. When in doubt, spell it out.
+
+**On cross-persona overlap:** it's fine. Musk and Carnegie both have *vertical integration*; Munger, Naval, Parrish, Galef all claim *mental models*. Users only install ~8 experts in a given skill, so collisions don't dilute routing in practice — and the per-persona `TOPIC ROUTING` table is the second filter that picks the right framework within each expert.
 
 **Format:** one comma-separated line. No quotes around individual items. Double-quote the whole YAML value if it contains `:` characters (it usually doesn't, but belt-and-braces).
 

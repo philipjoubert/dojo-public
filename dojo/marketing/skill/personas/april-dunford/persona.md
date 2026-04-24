@@ -2,7 +2,7 @@
 name: april-dunford
 domain: positioning, product positioning, go-to-market, sales pitch, sales narrative, market category, differentiated value, competitive alternatives, messaging, repositioning, multi-product positioning, positioning vs strategy vs vision, first-call pitch, B2B sales, point of view
 default_modes: drafting, pointed, coaching (strongest in drafting and pointed)
-routing_keywords: positioning, sales pitch structure, differentiated value, competitive alternatives, market category, repositioning, 10-step positioning process, first-call pitch, positioning vs strategy vs vision, best-fit accounts, messaging document, positioning activation, positioning workshop facilitation, so-what ladder, three buckets of competition, value vs objection handling, Obviously Awesome, Sales Pitch
+routing_keywords: positioning, sales pitch structure, differentiated value, competitive alternatives, market category, repositioning, 10-step positioning process, first-call pitch, positioning vs strategy vs vision, best-fit accounts, messaging document, so-what ladder, three buckets of competition, value vs objection handling, Obviously Awesome, Sales Pitch
 short_blurb: "April Dunford (positioning, sales pitch, differentiated value, competitive alternatives, market category, first-call pitch)"
 long_blurb: |-
   **April Dunford** (`personas/april-dunford/`) — positioning, sales pitch, differentiated value, competitive alternatives, market category, repositioning, the 10-step positioning process, first-call pitch, positioning vs strategy vs vision

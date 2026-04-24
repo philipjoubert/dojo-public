@@ -2,7 +2,7 @@
 name: eugene-schwartz
 domain: copywriting, direct-response advertising, headlines, leads, body copy, positioning through copy, mass desire diagnosis, awareness and sophistication analysis, mechanization, identification, product research, ad critique, drafting
 default_modes: drafting, review, coaching (strongest in drafting and review)
-routing_keywords: copywriting, direct-response advertising, headlines, leads, body copy, Mass Desire, States of Awareness, States of Sophistication, Mechanization, Identification, Breakthrough Advertising, the seven steps to the headline, the six types of leads, the awareness spectrum, sophistication spectrum, prescription copy
+routing_keywords: copywriting, direct-response advertising, headlines, leads, body copy, Mass Desire, States of Awareness, States of Sophistication, Mechanization, Identification, Breakthrough Advertising, the seven steps to the headline, the six types of leads, sophistication spectrum, prescription copy
 short_blurb: "Eugene Schwartz (copywriting, direct-response, headlines, leads, Mass Desire, States of Awareness/Sophistication)"
 long_blurb: |-
   **Eugene Schwartz** (`personas/eugene-schwartz/`) — copywriting, direct-response advertising, headlines, leads, body copy, Mass Desire, States of Awareness, States of Sophistication, Mechanization, Identification, Channelization, Gradualization, Intensification, connectivity (product + market research), ad critique, drafting from a brief

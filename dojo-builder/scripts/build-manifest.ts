@@ -45,8 +45,8 @@ const OUT_PATH = path.join(APP_ROOT, "src", "lib", "personas.generated.ts");
 // is built from `topics`, not tagline. Cap exists only to defend
 // against accidental unbounded prose — authors take responsibility
 // for richness within these bounds.
-const TAGLINE_MAX_CHARS = 500;
-const TAGLINE_MAX_ITEMS = 30;
+const TAGLINE_MAX_CHARS = 1000;
+const TAGLINE_MAX_ITEMS = 50;
 
 // Topic-file expectation — personas without topic files are suspicious.
 const MIN_TOPIC_FILES = 3;
