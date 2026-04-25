@@ -31,7 +31,7 @@ Questions are classified by mode — pointed, coaching, review, drafting, emerge
 
 ## Available experts
 
-29 experts across four domains. Browse and pick at [superdojo.xyz](https://superdojo.xyz/).
+31 experts across four domains. Browse and pick at [superdojo.xyz](https://superdojo.xyz/).
 
 **Operators** — Andrew Carnegie · Brian Chesky · Chris Voss · Elon Musk · Jason Lemkin · Jeff Bezos · Jensen Huang · Keith Rabois · Patrick Collison · Steve Jobs · Tobi Lütke
 
@@ -39,7 +39,7 @@ Questions are classified by mode — pointed, coaching, review, drafting, emerge
 
 **Marketing** — Andrew Chen · April Dunford · David Ogilvy · Elena Verna · Eugene Schwartz · Harry Dry · Lulu Cheng
 
-**Thinking** — Charlie Munger · Eliyahu Goldratt · Hamilton Helmer · Julia Galef · Shane Parrish · Thomas Sowell
+**Thinking** — Charlie Munger · Clayton Christensen · David Deutsch · Eliyahu Goldratt · Hamilton Helmer · Julia Galef · Shane Parrish · Thomas Sowell
 
 Each one takes weeks of reading and structuring — the corpus for a single persona runs to hundreds of pages before any writing starts. Per-expert source corpora live under [`sources/<slug>/MANIFEST.md`](sources/).
 
@@ -123,7 +123,34 @@ The detailed rationale for this layout is in `DOJO-PERSONA-PROCESS.md` (Phase 0)
 
 ### When you're done
 
-Drop the finished `persona.md` + `topics/` into the right `dojo/<domain>/skill/personas/<slug>/` folder, add a `TOPIC_MAP` entry in `dojo-builder/scripts/build-manifest.ts` mapping the slug to 2–4 topics, and re-zip the full-domain skill (`cd dojo/<domain>/skill && zip -r ../../../dojo-<domain>.zip .`). The website picks up new personas automatically on the next deploy.
+Five steps to publish, in order. (`DOJO-PERSONA-PROCESS.md` Phase 11 has the full rationale.)
+
+1. **Drop the finished persona** into `dojo/<domain>/skill/personas/<slug>/` — `persona.md` + `topics/`.
+
+2. **Add a `TOPIC_MAP` entry** in `dojo-builder/scripts/build-manifest.ts`, mapping the slug to **2–4 topics** drawn from the fixed `TOPICS` vocabulary at the top of that file. Without this entry the website build fails with `"no TOPIC_MAP entry"`.
+
+3. **Add a portrait** at `dojo-builder/public/portraits/<slug>.{jpg,webp}`. Style fingerprint of the existing 29:
+   - **Square 320×320 px**, JPEG (or WebP).
+   - **Color source is fine** — the site applies `filter: grayscale(100%) contrast(1.02)` at render time.
+   - Filename matches the slug exactly.
+
+   Easiest path: `cd dojo-builder && npx tsx scripts/fetch-portraits.ts` — Wikipedia-backed, also regenerates `src/lib/portraits.generated.ts`. Use `--force` to re-download existing files. If Wikipedia has no usable photo, drop a hand-sourced 320×320 JPEG into `public/portraits/` and add the slug→ext line to `src/lib/portraits.generated.ts` manually.
+
+   Skipping this renders the persona as a generic silhouette in the picker grid.
+
+4. **Update this README** — bump the expert count in `## Available experts` and add the name to the right bucket line.
+
+5. **Build and ship the zips.** From the public repo root:
+   ```bash
+   cd dojo-builder && npm run build       # catches missing TOPIC_MAP
+   cd .. && # build the four dojo-<bucket>.zip files
+   for bucket in operators investors marketing thinking; do
+     (cd dojo/$bucket/skill && zip -r ../../../dojo-$bucket.zip . -x "*.DS_Store")
+   done
+   ```
+   *(If you maintain the private companion repo, `tools/sync-public.sh` does steps 1, 4-prep, and 5 mechanically and also strips `persona.md` frontmatter from the zipped copies so Claude's skill preview renders clean. Run it from the private repo and skip the manual zip command.)*
+
+The website picks up new personas automatically on the next deploy. The downloadable zips at the public-repo root are what the "Download skill" button serves, so they need to ship together.
 
 ## Credits
 

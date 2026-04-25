@@ -505,6 +505,27 @@ Include a row for "reviewing an existing X" that loads 5–8 files — reviews w
 
 ---
 
+## Phase 7.5 — Coverage gap check
+
+Run `tools/gap-check.py <slug>` before assembling `persona.md`. The script asks Claude — cold, with no knowledge of what we've built — to list the expert's signature frameworks, books, concepts, and topic areas. It diffs that list against our current `routing_keywords`, `topics/*.md` filenames, and `long_blurb`, then walks us through each unmatched item interactively.
+
+For each candidate gap, you answer:
+
+- **[a]dd** — real gap, missing from our corpus. Go back to Phase 0, fetch a source that covers it, then re-run Phases 2–4 on the new material.
+- **[s]cope** — intentional omission. The item is genuinely this expert's, but falls outside how we've scoped the persona (e.g., Paul Graham's essays on art rather than startups). Logged in `<slug>/scope-decisions.md` so it doesn't come back next run.
+- **[r]eject** — LLM hallucination or misattribution. Logged in `<slug>/rejected-gaps.md` with the reason, and suppressed in future gap checks for this persona.
+
+**Two important limits on this phase:**
+
+1. **Public-figure gate.** If Claude's cold list comes back thin, hedging, or clearly low-confidence ("I don't have specific knowledge of…"), the script aborts. LLM gap-check is only useful when the LLM actually knows the person. For niche experts whose corpus is narrow by necessity, skip this phase — you'll get more noise than signal.
+2. **Signature-only, not exhaustive.** The prompt asks Claude to rank items by public notability and return only top-tier signature frameworks, iconic concepts, widely-cited books. We're not trying to catch every passing idea the expert has ever mentioned — we're catching the handful that a user would plausibly type into a routing query and miss.
+
+**Attribution hygiene is absolute.** Anything accepted in step a still has to land in the corpus and be extracted from the expert's own sources. Gap-check identifies *what to look for*; it does not insert content. The voice-provenance rule from Phase 5 (samples only from sources where the expert is speaking) is not loosened.
+
+**When to re-run:** any time the corpus grows, a new topic file ships, or a year has passed since the last check. Rejected-gaps log prevents re-surfacing known hallucinations; scope-decisions log captures deliberate omissions.
+
+---
+
 ## Phase 8 — Assemble `persona.md`
 
 Stitch together the sections produced in phases 2–7 into the final file. Template:
@@ -646,6 +667,102 @@ Check:
 
 ---
 
+## Phase 11 — Publish to public repo
+
+Phases 0–10 produce a working persona in the *private* repo and deploy it locally. Phase 11 mirrors the persona to the public companion repo (`personas-public/`), the dojo-builder website (`superdojo.xyz`), and the downloadable skill zips. **Skipping any sub-step here ships a broken or visually inconsistent persona** — TOPIC_MAP omissions fail the website build silently in CI; missing portraits render as silhouettes; out-of-date zips ship stale topic files.
+
+There are five steps and they must run in this order.
+
+### Step 1 — Add a `TOPIC_MAP` entry (manual edit)
+
+Edit `personas-public/dojo-builder/scripts/build-manifest.ts`. In the `TOPIC_MAP` object, add a line keyed by the persona slug, with **2–4 topics** drawn from the fixed `TOPICS` vocabulary at the top of that file. The fixed list is currently:
+
+```
+hiring, culture, org design, negotiation, sales, pricing, positioning,
+copywriting, PR & comms, fundraising, product, design, growth, marketplaces,
+engineering, strategy, career, wealth, decision-making, mental models
+```
+
+Pick the topics that match the persona's strongest content. Aim to include at least one topic that overlaps with same-bucket peers (so they show up next to each other in routing) and at least one that distinguishes them. Example:
+
+```ts
+"clayton-christensen": ["strategy", "mental models", "product", "career"],
+```
+
+The build will fail with `"no TOPIC_MAP entry — add one in build-manifest.ts"` if this is missing. There is no automation that can pick the topics for you — they are an editorial choice.
+
+### Step 2 — Add a portrait
+
+Portraits live at `personas-public/dojo-builder/public/portraits/<slug>.{jpg,webp}` and are listed in `personas-public/dojo-builder/src/lib/portraits.generated.ts`. **Style fingerprint of the existing 29 portraits:**
+
+- **Square 320×320 px**
+- **JPEG** (or WebP — both are accepted; .jpg is the convention)
+- **Color source is fine.** The site applies `filter: grayscale(100%) contrast(1.02)` at render time, so a neutral color photo desaturates cleanly. Pre-grayscaled images also work, but don't double-process.
+- **Filename = `<slug>.jpg`** (or `.webp`). Slug must match the dojo persona slug exactly.
+
+There are two paths:
+
+1. **Wikipedia-backed (preferred when the subject has a Wikipedia photo).** Run:
+   ```bash
+   cd personas-public/dojo-builder
+   npx tsx scripts/fetch-portraits.ts
+   ```
+   This scrapes Wikipedia's REST API for each persona that's missing one, downloads the thumbnail (typically 320 px), and regenerates `src/lib/portraits.generated.ts`. Add `--force` to re-download existing portraits.
+
+2. **Hand-curated** (when Wikipedia has no usable photo, or returns a poor crop). Drop a manually sourced 320×320 JPEG into `public/portraits/<slug>.jpg`, then add the slug→ext line to `src/lib/portraits.generated.ts` by hand. Re-run `fetch-portraits.ts` afterwards if you want it to regenerate the map idempotently around your manual file.
+
+If Step 2 is skipped, the persona renders as a generic silhouette — functional but stands out in the grid.
+
+### Step 3 — Run `tools/sync-public.sh`
+
+From the *private* repo root:
+
+```bash
+./tools/sync-public.sh
+```
+
+This is the canonical bridge between repos. It does, in order:
+
+- `rsync -a --delete` of `dojo/` → `personas-public/dojo/` — picks up new persona folder + any edits to existing personas.
+- For each persona that has a `dojo/<bucket>/skill/personas/<slug>/persona.md`, copies `personas/<slug>/content/MANIFEST.md` to `personas-public/sources/<slug>/MANIFEST.md` and runs it through `tools/clean-manifest.py` (strips internal paths, IDs, and `# private` comments).
+- Mirrors `scripts/` (excludes `.env`, `.venv`, `node_modules`, `__pycache__`, and a few private-only scripts) and copies `tools/generate-manifest.py` and this process doc.
+- Rebuilds the four `dojo-<bucket>.zip` files at the public-repo root. The zip contents are the contents of `dojo/<bucket>/skill/` (i.e. `SKILL.md` + `personas/`), with frontmatter stripped from every `persona.md` so Claude's skill preview renders clean prose. The unzipped tree retains the frontmatter for the manifest builder.
+
+The script refuses to proceed if an `.env` file slipped into the public tree.
+
+### Step 4 — Update the public README
+
+Edit `personas-public/README.md`:
+
+1. Bump the **expert count** in the `## Available experts` paragraph (e.g., `29 experts` → `30`).
+2. Add the new name to the **right bucket line** (`Operators`, `Investors`, `Marketing`, or `Thinking`), keeping the existing dot-separator formatting.
+
+This is the only step driven by manual editing of the public-facing copy. Everything else is mechanically generated. The README change is what makes the new persona discoverable in the prose, not just the picker grid.
+
+### Step 5 — Verify, commit, push
+
+From `personas-public/`:
+
+```bash
+cd ../personas-public
+git status                           # review what changed
+cd dojo-builder && npm run build     # catches missing TOPIC_MAP entries
+cd .. && git add . && git commit -m "Add <persona> to <bucket> dojo"
+git push
+```
+
+The website redeploys on push. The downloadable zips at `personas-public/dojo-<bucket>.zip` are committed alongside, so the "Download skill" button on the site picks up the new persona on the same release.
+
+### When to re-run Phase 11
+
+- After every Phase 10 iteration that touches `persona.md`, `topics/*.md`, or routing — sync re-pushes the corrected files and rebuilds the zips.
+- After the LLM gap-check (Phase 7.5) adds a new framework topic file — run sync to mirror it.
+- After portrait swaps or when a hand-curated portrait replaces the Wikipedia default.
+
+Skipping the re-run leaves stale topic files in the public repo and stale zips on the website — users get a different persona than the one you just built.
+
+---
+
 ## Parallelization
 
 This process is agent-friendly. Phases 2, 3, 3.5, 4, 5, 6 can run in parallel on independent agents:
@@ -683,6 +800,7 @@ Phase 3.5 should finish before Phase 4 starts — framework topic files cite exa
 - **Phase 6 (example exchanges):** 1–2 hours.
 - **Phases 7–9 (routing + assembly + deploy):** 1 hour.
 - **Phase 10 (test + iterate):** 1–2 hours.
+- **Phase 11 (publish to public repo):** 15–30 minutes (TOPIC_MAP edit + portrait fetch + sync + README + push). Add ~30 minutes if the portrait needs to be hand-curated rather than auto-fetched from Wikipedia.
 
 **Total per persona:** 10–16 hours of focused work for a new persona with a polished corpus. Porting the 12 remaining personas: ~2–3 weeks of focused sessions.
 
