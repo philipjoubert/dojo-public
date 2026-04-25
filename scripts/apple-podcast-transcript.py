@@ -51,35 +51,97 @@ def extract_episode_info(apple_url: str) -> dict:
 
 
 def get_episode_metadata(podcast_id: str, episode_id: str) -> dict:
-    """Fetch episode metadata from iTunes API."""
-    # iTunes lookup API
+    """Fetch episode metadata from iTunes API, falling back to the podcast's RSS feed."""
+    # Primary: direct episode lookup.
     url = f"https://itunes.apple.com/lookup?id={episode_id}&entity=podcastEpisode"
-    response = requests.get(url)
+    response = requests.get(url, timeout=15)
     data = response.json()
 
-    if data.get('resultCount', 0) == 0:
-        # Try alternative: search within podcast
-        url = f"https://itunes.apple.com/lookup?id={podcast_id}&entity=podcastEpisode&limit=200"
-        response = requests.get(url)
-        data = response.json()
+    if data.get('resultCount', 0) > 0:
+        return data['results'][0]
 
-        for result in data.get('results', []):
-            if str(result.get('trackId')) == episode_id:
-                return result
-        raise ValueError(f"Episode {episode_id} not found in podcast {podcast_id}")
+    # Secondary: list recent episodes for the podcast and match by trackId.
+    # Limited to 200, so older episodes require the RSS-feed fallback below.
+    url = f"https://itunes.apple.com/lookup?id={podcast_id}&entity=podcastEpisode&limit=200"
+    response = requests.get(url, timeout=15)
+    data = response.json()
+    for result in data.get('results', []):
+        if str(result.get('trackId')) == episode_id:
+            return result
 
-    return data['results'][0]
+    # Tertiary: parse the podcast's RSS feed (handles older-than-200 episodes).
+    feed_url = None
+    for result in data.get('results', []):
+        if 'feedUrl' in result:
+            feed_url = result['feedUrl']
+            break
+    if not feed_url:
+        raise ValueError(f"Episode {episode_id} not found and no feedUrl for podcast {podcast_id}")
+
+    import xml.etree.ElementTree as ET
+    feed_resp = requests.get(
+        feed_url,
+        timeout=30,
+        headers={'User-Agent': 'Mozilla/5.0 (compatible; podcast-fetcher/1.0)'},
+    )
+    feed_resp.raise_for_status()
+    root = ET.fromstring(feed_resp.content)
+    # Loose title/ID match — most feeds don't publish iTunes trackId, so we locate
+    # the episode by title fragment from the Apple page title when we can get it,
+    # otherwise by hitting the iTunes page HTML for the title.
+    page_resp = requests.get(
+        f"https://podcasts.apple.com/us/podcast/id{podcast_id}?i={episode_id}",
+        timeout=15,
+        headers={'User-Agent': 'Mozilla/5.0 (compatible; podcast-fetcher/1.0)'},
+    )
+    page_title = ''
+    m = re.search(r'<title[^>]*>([^<]+)</title>', page_resp.text)
+    if m:
+        page_title = m.group(1)
+    # Normalize to the part before the show name.
+    episode_title_hint = page_title.split(' - ')[0].strip() if page_title else ''
+
+    ns = {'itunes': 'http://www.itunes.com/dtds/podcast-1.0.dtd'}
+    for item in root.iter('item'):
+        title_el = item.find('title')
+        enclosure_el = item.find('enclosure')
+        if title_el is None or enclosure_el is None:
+            continue
+        title_text = (title_el.text or '').strip()
+        audio_url = enclosure_el.attrib.get('url', '')
+        if episode_title_hint and episode_title_hint.split(':')[0].strip() in title_text:
+            return {
+                'trackName': title_text,
+                'episodeUrl': audio_url,
+                'releaseDate': '',
+                'collectionName': '',
+                'trackTimeMillis': 0,
+            }
+
+    raise ValueError(f"Episode {episode_id} not found via iTunes lookup or RSS feed for podcast {podcast_id}")
 
 
 def download_audio(audio_url: str, output_path: Path) -> Path:
     """Download podcast audio file."""
     print(f"Downloading audio from: {audio_url[:80]}...")
-    response = requests.get(audio_url, stream=True)
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 '
+                      '(KHTML, like Gecko) Version/17.0 Safari/605.1.15',
+        'Accept': '*/*',
+    }
+    response = requests.get(
+        audio_url,
+        stream=True,
+        headers=headers,
+        allow_redirects=True,
+        timeout=(15, 120),
+    )
     response.raise_for_status()
 
     with open(output_path, 'wb') as f:
-        for chunk in response.iter_content(chunk_size=8192):
-            f.write(chunk)
+        for chunk in response.iter_content(chunk_size=1024 * 64):
+            if chunk:
+                f.write(chunk)
 
     return output_path
 
@@ -134,6 +196,23 @@ def split_audio(audio_path: Path, max_size_mb: int = 24) -> list[Path]:
         chunks.append(chunk_path)
 
     return chunks
+
+
+def transcribe_audio_with_retry(audio_path: Path, client: OpenAI, max_retries: int = 4) -> str:
+    """Transcribe with exponential backoff on transient OpenAI errors (429, 500s)."""
+    import time
+    from openai import APIError, APIConnectionError, InternalServerError, RateLimitError
+    attempt = 0
+    while True:
+        try:
+            return transcribe_audio(audio_path, client)
+        except (InternalServerError, RateLimitError, APIConnectionError) as e:
+            attempt += 1
+            if attempt > max_retries:
+                raise
+            wait = 2 ** attempt
+            print(f"  Transient error ({type(e).__name__}); retrying in {wait}s (attempt {attempt}/{max_retries})")
+            time.sleep(wait)
 
 
 def transcribe_audio(audio_path: Path, client: OpenAI) -> str:
@@ -237,7 +316,7 @@ def main():
         # Transcribe all chunks
         transcripts = []
         for chunk in chunks:
-            transcript = transcribe_audio(chunk, client)
+            transcript = transcribe_audio_with_retry(chunk, client)
             transcripts.append(transcript)
 
         # Combine transcripts
