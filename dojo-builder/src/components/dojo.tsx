@@ -8,6 +8,7 @@ import { Footnote } from "./footnote";
 import { Header } from "./header";
 import { Hero } from "./hero";
 import { InstallSteps } from "./install-steps";
+import { LlmHint } from "./llm-hint";
 import { MobileBasketBar } from "./mobile-basket-bar";
 import { MobileCheckout } from "./mobile-checkout";
 import { PersonaGrid } from "./persona-grid";
@@ -35,6 +36,7 @@ export function Dojo({ personas }: DojoProps) {
 
   return (
     <DojoContext.Provider value={{ state, dispatch, personas }}>
+      <LlmHint />
       <div className="mx-auto flex w-full min-h-screen max-w-[1440px] bg-main">
         <main className="min-w-0 flex-1 px-4 pt-6 pb-[120px] sm:px-6 lg:border-r lg:border-border lg:px-10 lg:pt-9 lg:pb-[60px]">
           <Header />

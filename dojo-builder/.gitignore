@@ -42,4 +42,8 @@ next-env.d.ts
 
 # generated manifest — built from ../dojo/ via scripts/build-manifest.ts
 /src/lib/personas.generated.ts
+
+# generated for LLMs — built from PERSONAS via scripts/build-llms-txt.ts
+/public/llms.txt
+
 /.claude

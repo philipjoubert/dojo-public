@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "build:manifest": "tsx scripts/build-manifest.ts",
+    "build:llms-txt": "tsx scripts/build-llms-txt.ts",
     "build:skills": "npm run build:manifest && tsx scripts/build-granular-skills.ts",
-    "predev": "npm run build:manifest",
-    "prebuild": "npm run build:manifest",
+    "predev": "npm run build:manifest && npm run build:llms-txt",
+    "prebuild": "npm run build:manifest && npm run build:llms-txt",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
