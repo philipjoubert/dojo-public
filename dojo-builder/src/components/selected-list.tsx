@@ -13,7 +13,7 @@ export function SelectedList() {
     return (
       <div className="mt-[26px] rounded-[8px] border border-dashed border-dashed px-5 py-7 text-center">
         <p className="font-serif text-[13px] italic text-subtle">
-          Pick your first expert to begin.
+          Select experts to generate an install command.
         </p>
       </div>
     );

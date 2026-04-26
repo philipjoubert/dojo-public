@@ -7,23 +7,18 @@ import { CheckIcon } from "./icons";
 export interface PersonaCardProps {
   persona: Persona;
   isSelected: boolean;
-  isAtCapacity: boolean;
   onToggle: () => void;
 }
 
 export function PersonaCard({
   persona,
   isSelected,
-  isAtCapacity,
   onToggle,
 }: PersonaCardProps) {
-  const disabled = !isSelected && isAtCapacity;
-
   return (
     <button
       type="button"
       onClick={onToggle}
-      disabled={disabled}
       aria-pressed={isSelected}
       aria-label={`${persona.name} — ${isSelected ? "selected" : "select"}`}
       className={[
@@ -33,7 +28,7 @@ export function PersonaCard({
         isSelected
           ? "border-ink bg-card-selected shadow-card-selected"
           : "border-border bg-card hover:border-hairline-dark",
-        disabled ? "cursor-not-allowed opacity-50" : "cursor-pointer",
+        "cursor-pointer",
       ].join(" ")}
     >
       {/* Selection dot */}

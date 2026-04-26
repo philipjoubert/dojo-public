@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "pluginRoot": "./"
+  },
+  "plugins": [
+    {
+      "name": "dojo",
+      "source": "./",
+      "description": "Founder-mode expert panels packaged as agent skills.",
+      "skills": [
+        "./dojo/operators/skill",
+        "./dojo/investors/skill",
+        "./dojo/marketing/skill",
+        "./dojo/thinking/skill",
+        "./skills/dojo-andrew-carnegie",
+        "./skills/dojo-brian-chesky",
+        "./skills/dojo-chris-voss",
+        "./skills/dojo-elon-musk",
+        "./skills/dojo-jason-lemkin",
+        "./skills/dojo-jeff-bezos",
+        "./skills/dojo-jensen-huang",
+        "./skills/dojo-keith-rabois",
+        "./skills/dojo-patrick-collison",
+        "./skills/dojo-steve-jobs",
+        "./skills/dojo-toby-lutke",
+        "./skills/dojo-ben-horowitz",
+        "./skills/dojo-marc-andreessen",
+        "./skills/dojo-naval-ravikant",
+        "./skills/dojo-paul-graham",
+        "./skills/dojo-peter-thiel",
+        "./skills/dojo-andrew-chen",
+        "./skills/dojo-april-dunford",
+        "./skills/dojo-david-ogilvy",
+        "./skills/dojo-elena-verna",
+        "./skills/dojo-eugene-schwartz",
+        "./skills/dojo-harry-dry",
+        "./skills/dojo-lulu-cheng",
+        "./skills/dojo-charlie-munger",
+        "./skills/dojo-clayton-christensen",
+        "./skills/dojo-david-deutsch",
+        "./skills/dojo-eliyahu-goldratt",
+        "./skills/dojo-hamilton-helmer",
+        "./skills/dojo-julia-galef",
+        "./skills/dojo-shane-parrish",
+        "./skills/dojo-thomas-sowell"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { MAX_SLOTS, selectedPersonas, useDojo } from "./dojo-state";
+import { selectedPersonas, useDojo } from "./dojo-state";
 import { Portrait } from "./portrait";
 
 const AVATAR_PREVIEW = 4;
@@ -28,7 +28,7 @@ export function MobileBasketBar({ onReview }: MobileBasketBarProps) {
         type="button"
         onClick={onReview}
         className="flex w-full items-center gap-3 text-left"
-        aria-label={`Review panel, ${n} of ${MAX_SLOTS} experts selected`}
+        aria-label={`Install ${n} selected expert skills`}
       >
         <div className="flex -space-x-2">
           {preview.map((p) => (
@@ -47,11 +47,11 @@ export function MobileBasketBar({ onReview }: MobileBasketBarProps) {
         </div>
         <div className="min-w-0 flex-1 leading-tight">
           <div className="text-[13px] font-medium text-main">
-            {n} of {MAX_SLOTS} experts
+            {n} expert{n === 1 ? "" : "s"} selected
           </div>
         </div>
         <span className="shrink-0 rounded-[8px] bg-hanko px-4 py-[10px] text-[13px] font-medium text-main">
-          Review →
+          Install
         </span>
       </button>
     </div>

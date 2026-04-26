@@ -8,43 +8,25 @@ export function InstallSteps() {
       />
       <Step
         n={2}
-        title="Assemble your skill"
-        body="Pick up to eight experts. We bundle their persona files into a single skill zip — one download, one upload. Keep it small or go wide."
+        title="Select skills"
+        body="Pick the experts you want. Each one installs as its own granular skill, so you can keep your agent's toolbelt precise or install a full panel."
       />
       <Step
         n={3}
-        title="Install it"
+        title="Run the command"
         body={
           <>
-            Drop the zip into whichever runtime you use:
+            Copy the generated command into your terminal. It uses the open
+            agent skills CLI and lets it detect where to install:
             <ul className="mt-2 flex flex-col gap-[3px]">
               <li>
-                <span className="text-muted">Claude:</span>{" "}
-                <a
-                  href="https://claude.ai/customize/skills"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="underline decoration-dotted underline-offset-2 hover:text-ink"
-                >
-                  claude.ai/customize/skills
-                </a>
-              </li>
-              <li>
-                <span className="text-muted">ChatGPT:</span>{" "}
-                <a
-                  href="https://chatgpt.com/skills"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="underline decoration-dotted underline-offset-2 hover:text-ink"
-                >
-                  chatgpt.com/skills
-                </a>
-              </li>
-              <li>
-                <span className="text-muted">Claude Code:</span>{" "}
                 <code className="rounded bg-chip px-[4px] py-[1px] text-[11px]">
-                  ~/.claude/skills/
+                  npx skills add
                 </code>
+              </li>
+              <li>
+                <span className="text-muted">Specific agent:</span>{" "}
+                add <code className="rounded bg-chip px-[4px] py-[1px] text-[11px]">--agent claude-code</code>
               </li>
             </ul>
           </>

@@ -1,10 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import { CapacityMeter } from "./capacity-meter";
-import { DownloadButton } from "./download-button";
+import { InstallCommandPanel } from "./install-command-panel";
 import { SelectedList } from "./selected-list";
-import { SkillNameInput } from "./skill-name-input";
 
 export interface MobileCheckoutProps {
   open: boolean;
@@ -41,17 +39,15 @@ export function MobileCheckout({ open, onClose }: MobileCheckoutProps) {
             <span>Browse</span>
           </button>
           <div className="text-[10px] uppercase tracking-[1.4px] text-muted">
-            Your panel
+            Install skills
           </div>
         </div>
 
         <div className="mt-4 flex-1 overflow-y-auto">
-          <SkillNameInput />
-          <CapacityMeter />
           <SelectedList />
         </div>
 
-        <DownloadButton />
+        <InstallCommandPanel />
       </div>
     </div>
   );

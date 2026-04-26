@@ -120,6 +120,7 @@ interface Persona {
   slug: string;
   name: string;
   domain: Bucket;
+  installName: string;
   tagline: string;
   topics: Topic[];
   sizeKb: number;
@@ -342,6 +343,7 @@ function collectPersonas(): { personas: Persona[]; issues: Issue[] } {
         slug,
         name,
         domain: bucket,
+        installName: `dojo-${slug}`,
         tagline: tagline.value,
         topics,
         sizeKb: Math.max(1, Math.round(walkBytes(slugDir) / 1024)),
@@ -374,6 +376,7 @@ export interface Persona {
   slug: string;
   name: string;
   domain: Domain;
+  installName: string;
   tagline: string;
   topics: Topic[];
   sizeKb: number;

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PORTRAITS } from "@/lib/portraits.generated";
 
 // Silhouette fallback used when we don't have a real portrait for a slug.
@@ -24,7 +25,7 @@ export function Portrait({ slug, size = 96, className = "" }: PortraitProps) {
   const ext = PORTRAITS[slug];
   if (ext) {
     return (
-      <img
+      <Image
         src={`/portraits/${slug}.${ext}`}
         alt=""
         width={size}

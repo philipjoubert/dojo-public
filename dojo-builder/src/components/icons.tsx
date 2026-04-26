@@ -40,6 +40,35 @@ export function DownloadIcon({ className }: { className?: string }) {
   );
 }
 
+export function CopyIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      width="14"
+      height="14"
+      viewBox="0 0 14 14"
+      fill="none"
+      aria-hidden
+    >
+      <rect
+        x="5"
+        y="4"
+        width="6.5"
+        height="7.5"
+        rx="1.2"
+        stroke="currentColor"
+        strokeWidth="1.3"
+      />
+      <path
+        d="M3 9.5H2.5A1.5 1.5 0 0 1 1 8V2.5A1.5 1.5 0 0 1 2.5 1H8A1.5 1.5 0 0 1 9.5 2.5V3"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
 export function CloseIcon({ className }: { className?: string }) {
   return (
     <svg
