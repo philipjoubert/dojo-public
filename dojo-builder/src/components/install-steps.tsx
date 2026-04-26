@@ -8,25 +8,48 @@ export function InstallSteps() {
       />
       <Step
         n={2}
-        title="Select skills"
-        body="Pick the experts you want. Each one installs as its own granular skill, so you can keep your agent's toolbelt precise or install a full panel."
+        title="Assemble your panel"
+        body="Pick up to eight experts. Bundle them into a single skill zip, or install them as separate granular skills via the CLI."
       />
       <Step
         n={3}
-        title="Run the command"
+        title="Install"
         body={
           <>
-            Copy the generated command into your terminal. It uses the open
-            agent skills CLI and lets it detect where to install:
+            Two options:
             <ul className="mt-2 flex flex-col gap-[3px]">
               <li>
+                <span className="text-muted">Zip:</span>{" "}
+                drop into{" "}
+                <a
+                  href="https://claude.ai/customize/skills"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline decoration-dotted underline-offset-2 hover:text-ink"
+                >
+                  claude.ai/customize/skills
+                </a>
+                ,{" "}
+                <a
+                  href="https://chatgpt.com/skills"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline decoration-dotted underline-offset-2 hover:text-ink"
+                >
+                  chatgpt.com/skills
+                </a>
+                , or{" "}
                 <code className="rounded bg-chip px-[4px] py-[1px] text-[11px]">
-                  npx skills add
+                  ~/.claude/skills/
                 </code>
               </li>
               <li>
-                <span className="text-muted">Specific agent:</span>{" "}
-                add <code className="rounded bg-chip px-[4px] py-[1px] text-[11px]">--agent claude-code</code>
+                <span className="text-muted">CLI:</span>{" "}
+                copy the generated{" "}
+                <code className="rounded bg-chip px-[4px] py-[1px] text-[11px]">
+                  npx skills add
+                </code>
+                {" "}command into your terminal
               </li>
             </ul>
           </>

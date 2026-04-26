@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { selectedPersonas, useDojo } from "./dojo-state";
 import { CheckIcon, CopyIcon } from "./icons";
+import { ModeSwitchLink } from "./install-options";
 
 type Status = "idle" | "copied" | "error";
 
@@ -82,6 +83,7 @@ export function InstallCommandPanel() {
         {status === "copied" ? <CheckIcon /> : <CopyIcon />}
         {label}
       </button>
+      <ModeSwitchLink to="zip" label="Or download as zip" />
     </div>
   );
 }

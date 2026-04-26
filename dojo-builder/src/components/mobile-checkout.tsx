@@ -1,6 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { useDojo } from "./dojo-state";
+import { InstallTabs } from "./install-options";
+import { SkillNameInput } from "./skill-name-input";
+import { CapacityMeter } from "./capacity-meter";
+import { DownloadButton } from "./download-button";
 import { InstallCommandPanel } from "./install-command-panel";
 import { SelectedList } from "./selected-list";
 
@@ -10,6 +15,9 @@ export interface MobileCheckoutProps {
 }
 
 export function MobileCheckout({ open, onClose }: MobileCheckoutProps) {
+  const { state } = useDojo();
+  const isZip = state.installMode === "zip";
+
   useEffect(() => {
     if (!open) return;
     function onKey(e: KeyboardEvent) {
@@ -43,11 +51,19 @@ export function MobileCheckout({ open, onClose }: MobileCheckoutProps) {
           </div>
         </div>
 
+        <InstallTabs />
+        {isZip && (
+          <>
+            <SkillNameInput />
+            <CapacityMeter />
+          </>
+        )}
+
         <div className="mt-4 flex-1 overflow-y-auto">
           <SelectedList />
         </div>
 
-        <InstallCommandPanel />
+        {isZip ? <DownloadButton /> : <InstallCommandPanel />}
       </div>
     </div>
   );
