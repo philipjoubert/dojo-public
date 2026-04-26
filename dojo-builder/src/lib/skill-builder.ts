@@ -11,6 +11,7 @@ const DOMAIN_ORDER: Domain[] = [
   "investors",
   "marketing",
   "thinking",
+  "craft",
 ];
 
 const DOMAIN_HEADING: Record<Domain, string> = {
@@ -18,6 +19,7 @@ const DOMAIN_HEADING: Record<Domain, string> = {
   investors: "Investors",
   marketing: "Marketing",
   thinking: "Thinking",
+  craft: "Craft",
 };
 
 function shortName(fullName: string): string {

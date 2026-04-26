@@ -70,7 +70,7 @@ Questions are classified by mode — pointed, coaching, review, drafting, emerge
 
 ## Available experts
 
-31 experts across four domains. Browse and pick at [superdojo.xyz](https://superdojo.xyz/).
+32 experts across four domains. Browse and pick at [superdojo.xyz](https://superdojo.xyz/).
 
 **Operators** — Andrew Carnegie · Brian Chesky · Chris Voss · Elon Musk · Jason Lemkin · Jeff Bezos · Jensen Huang · Keith Rabois · Patrick Collison · Steve Jobs · Tobi Lütke
 
@@ -78,7 +78,7 @@ Questions are classified by mode — pointed, coaching, review, drafting, emerge
 
 **Marketing** — Andrew Chen · April Dunford · David Ogilvy · Elena Verna · Eugene Schwartz · Harry Dry · Lulu Cheng
 
-**Thinking** — Charlie Munger · Clayton Christensen · David Deutsch · Eliyahu Goldratt · Hamilton Helmer · Julia Galef · Shane Parrish · Thomas Sowell
+**Thinking** — Charlie Munger · Clayton Christensen · David Deutsch · Eliyahu Goldratt · Hamilton Helmer · Julia Galef · Nassim Taleb · Shane Parrish · Thomas Sowell
 
 Each one takes weeks of reading and structuring — the corpus for a single persona runs to hundreds of pages before any writing starts. Per-expert source corpora live under [`sources/<slug>/MANIFEST.md`](sources/).
 

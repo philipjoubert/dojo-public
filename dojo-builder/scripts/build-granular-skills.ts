@@ -34,6 +34,7 @@ const DOMAIN_SKILL_PATHS = [
   "./dojo/investors/skill",
   "./dojo/marketing/skill",
   "./dojo/thinking/skill",
+  "./dojo/craft/skill",
 ];
 
 function personaSourceDir(p: Persona): string {

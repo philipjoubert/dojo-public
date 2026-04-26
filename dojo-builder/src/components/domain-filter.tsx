@@ -9,6 +9,7 @@ const DOMAINS: Array<Domain | null> = [
   "investors",
   "marketing",
   "thinking",
+  "craft",
 ];
 
 export function DomainFilter() {

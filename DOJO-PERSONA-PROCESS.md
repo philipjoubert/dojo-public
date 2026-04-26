@@ -671,7 +671,7 @@ Check:
 
 Phases 0–10 produce a working persona in the *private* repo and deploy it locally. Phase 11 mirrors the persona to the public companion repo (`personas-public/`), the dojo-builder website (`superdojo.xyz`), and the downloadable skill zips. **Skipping any sub-step here ships a broken or visually inconsistent persona** — TOPIC_MAP omissions fail the website build silently in CI; missing portraits render as silhouettes; out-of-date zips ship stale topic files.
 
-There are five steps and they must run in this order.
+There are six steps and they must run in this order.
 
 ### Step 1 — Add a `TOPIC_MAP` entry (manual edit)
 
@@ -730,36 +730,64 @@ This is the canonical bridge between repos. It does, in order:
 
 The script refuses to proceed if an `.env` file slipped into the public tree.
 
-### Step 4 — Update the public README
+### Step 4 — Generate the per-persona skill folders + marketplace.json
+
+The CLI install path on the website (the "Install via CLI" tab) emits commands of the form:
+
+```bash
+npx --yes skills add philipjoubert/dojo-public --copy --skill dojo-<slug>
+```
+
+This requires that `skills/dojo-<slug>/` exists in the public repo and that `.claude-plugin/marketplace.json` lists it. Both are mechanically generated — never hand-edited.
+
+From `personas-public/dojo-builder/`:
+
+```bash
+cd ../personas-public/dojo-builder
+npm run build:manifest      # regenerates src/lib/personas.generated.ts (catches missing TOPIC_MAP entries; also writes llms.txt)
+npx tsx scripts/build-granular-skills.ts   # writes skills/dojo-<slug>/ for every persona, plus .claude-plugin/marketplace.json
+```
+
+`build-granular-skills.ts`:
+
+- Reads `src/lib/personas.generated.ts` (which `build:manifest` produced).
+- For each persona, copies `dojo/<bucket>/skill/personas/<slug>/` into `skills/dojo-<slug>/personas/<slug>/`, with `persona.md` frontmatter stripped (same convention as the bucket zips).
+- Renders a single-persona `SKILL.md` at `skills/dojo-<slug>/SKILL.md` from `templates/skill-template.md.tmpl`.
+- Rewrites `.claude-plugin/marketplace.json` to list every per-persona skill alongside the four bucket skills.
+
+If you skip Step 4, the bucket zips will work but the new persona will silently fail to install via CLI: `npx skills add ... --skill dojo-<new-slug>` will report "skill not found in marketplace."
+
+### Step 5 — Update the public README
 
 Edit `personas-public/README.md`:
 
-1. Bump the **expert count** in the `## Available experts` paragraph (e.g., `29 experts` → `30`).
+1. Bump the **expert count** in the `## Available experts` paragraph (e.g., `31 experts` → `32`).
 2. Add the new name to the **right bucket line** (`Operators`, `Investors`, `Marketing`, or `Thinking`), keeping the existing dot-separator formatting.
 
 This is the only step driven by manual editing of the public-facing copy. Everything else is mechanically generated. The README change is what makes the new persona discoverable in the prose, not just the picker grid.
 
-### Step 5 — Verify, commit, push
+### Step 6 — Verify, commit, push
 
 From `personas-public/`:
 
 ```bash
 cd ../personas-public
-git status                           # review what changed
-cd dojo-builder && npm run build     # catches missing TOPIC_MAP entries
-cd .. && git add . && git commit -m "Add <persona> to <bucket> dojo"
+git status                           # review what changed — should include skills/dojo-<slug>/, marketplace.json, llms.txt, portraits.generated.ts, personas.generated.ts, dojo/<bucket>/, sources/<slug>/MANIFEST.md, README.md, dojo-<bucket>.zip
+cd dojo-builder && npm run build     # full Next build; catches anything the manifest checker missed
+cd .. && git add -A && git commit -m "Add <persona> to <bucket> dojo"
 git push
 ```
 
-The website redeploys on push. The downloadable zips at `personas-public/dojo-<bucket>.zip` are committed alongside, so the "Download skill" button on the site picks up the new persona on the same release.
+The website redeploys on push. The downloadable zips at `personas-public/dojo-<bucket>.zip` ship alongside, so the "Download zip" button picks up the new persona on the same release. The "Install via CLI" tab also picks up the new `dojo-<slug>` skill on the same release because `marketplace.json` is what `npx skills add` reads.
 
 ### When to re-run Phase 11
 
-- After every Phase 10 iteration that touches `persona.md`, `topics/*.md`, or routing — sync re-pushes the corrected files and rebuilds the zips.
-- After the LLM gap-check (Phase 7.5) adds a new framework topic file — run sync to mirror it.
-- After portrait swaps or when a hand-curated portrait replaces the Wikipedia default.
+- After every Phase 10 iteration that touches `persona.md`, `topics/*.md`, or routing — re-run sync (Step 3) **and** `build:manifest` + `build-granular-skills.ts` (Step 4) so both the bucket zips and the per-persona CLI skills carry the corrected files.
+- After the LLM gap-check (Phase 7.5) adds a new framework topic file — same: sync + regenerate.
+- After portrait swaps or when a hand-curated portrait replaces the Wikipedia default — re-run `fetch-portraits.ts`, then Step 4 (per-persona skills don't ship the portrait, but the website does).
+- If you only edit `TOPIC_MAP` or topic categorisation, you can skip Step 3 (no dojo files changed) but you still need Step 4.
 
-Skipping the re-run leaves stale topic files in the public repo and stale zips on the website — users get a different persona than the one you just built.
+Skipping any sub-step leaves a partial publish: stale topic files in the public repo, stale zips on the website, or a CLI install command that resolves to an empty skill — users get a different persona than the one you just built.
 
 ---
 

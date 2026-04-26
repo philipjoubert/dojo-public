@@ -51,7 +51,7 @@ const TAGLINE_MAX_ITEMS = 50;
 // Topic-file expectation — personas without topic files are suspicious.
 const MIN_TOPIC_FILES = 3;
 
-const BUCKETS = ["operators", "investors", "marketing", "thinking"] as const;
+const BUCKETS = ["operators", "investors", "marketing", "thinking", "craft"] as const;
 type Bucket = (typeof BUCKETS)[number];
 
 const TOPICS = [
@@ -75,6 +75,7 @@ const TOPICS = [
   "wealth",
   "decision-making",
   "mental models",
+  "writing",
 ] as const;
 type Topic = (typeof TOPICS)[number];
 
@@ -112,8 +113,11 @@ const TOPIC_MAP: Record<string, Topic[]> = {
   "eliyahu-goldratt": ["engineering", "decision-making", "strategy", "mental models"],
   "hamilton-helmer": ["strategy", "mental models", "positioning"],
   "julia-galef": ["decision-making", "mental models"],
+  "nassim-taleb": ["decision-making", "mental models", "wealth", "strategy"],
   "shane-parrish": ["decision-making", "mental models"],
   "thomas-sowell": ["mental models", "decision-making", "strategy"],
+  // craft
+  "william-zinsser": ["writing", "mental models", "PR & comms"],
 };
 
 interface Persona {
@@ -387,6 +391,7 @@ export const DOMAIN_META: Record<Domain, { label: string }> = {
   investors: { label: "Investors" },
   marketing: { label: "Marketing" },
   thinking: { label: "Thinking" },
+  craft: { label: "Craft" },
 };
 
 export const TOPICS: Topic[] = ${JSON.stringify(TOPICS, null, 2)};

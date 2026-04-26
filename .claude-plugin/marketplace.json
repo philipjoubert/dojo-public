@@ -12,6 +12,7 @@
         "./dojo/investors/skill",
         "./dojo/marketing/skill",
         "./dojo/thinking/skill",
+        "./dojo/craft/skill",
         "./skills/dojo-andrew-carnegie",
         "./skills/dojo-brian-chesky",
         "./skills/dojo-chris-voss",
@@ -41,6 +42,7 @@
         "./skills/dojo-eliyahu-goldratt",
         "./skills/dojo-hamilton-helmer",
         "./skills/dojo-julia-galef",
+        "./skills/dojo-nassim-taleb",
         "./skills/dojo-shane-parrish",
         "./skills/dojo-thomas-sowell"
       ]

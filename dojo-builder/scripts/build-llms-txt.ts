@@ -83,7 +83,7 @@ function buildLlmsTxt(): string {
 
   sections.push("## Available skills");
 
-  const domainOrder: Domain[] = ["operators", "investors", "marketing", "thinking"];
+  const domainOrder: Domain[] = ["operators", "investors", "marketing", "thinking", "craft"];
   for (const domain of domainOrder) {
     const list = byDomain.get(domain);
     if (!list?.length) continue;
