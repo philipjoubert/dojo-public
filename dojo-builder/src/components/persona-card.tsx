@@ -59,8 +59,8 @@ export function PersonaCard({
           {DOMAIN_META[persona.domain].label}
         </div>
 
-        <div className="mt-[6px] text-[12px] italic leading-[1.35] text-secondary sm:mt-[8px] sm:text-[13px]">
-          {persona.headline}
+        <div className="mt-[6px] text-[12px] leading-[1.35] text-secondary sm:mt-[8px] sm:text-[13px]">
+          {persona.headline.charAt(0).toUpperCase() + persona.headline.slice(1)}
         </div>
 
         <div className="mt-[8px] flex flex-wrap gap-[4px] sm:mt-[10px]">
