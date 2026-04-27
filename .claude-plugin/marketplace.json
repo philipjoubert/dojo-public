@@ -14,6 +14,7 @@
         "./dojo/thinking/skill",
         "./dojo/craft/skill",
         "./skills/dojo-andrew-carnegie",
+        "./skills/dojo-andy-grove",
         "./skills/dojo-brian-chesky",
         "./skills/dojo-chris-voss",
         "./skills/dojo-elon-musk",
@@ -24,6 +25,7 @@
         "./skills/dojo-patrick-collison",
         "./skills/dojo-steve-jobs",
         "./skills/dojo-toby-lutke",
+        "./skills/dojo-wes-kao",
         "./skills/dojo-ben-horowitz",
         "./skills/dojo-marc-andreessen",
         "./skills/dojo-naval-ravikant",
@@ -36,6 +38,7 @@
         "./skills/dojo-eugene-schwartz",
         "./skills/dojo-harry-dry",
         "./skills/dojo-lulu-cheng",
+        "./skills/dojo-annie-duke",
         "./skills/dojo-charlie-munger",
         "./skills/dojo-clayton-christensen",
         "./skills/dojo-david-deutsch",
@@ -44,7 +47,8 @@
         "./skills/dojo-julia-galef",
         "./skills/dojo-nassim-taleb",
         "./skills/dojo-shane-parrish",
-        "./skills/dojo-thomas-sowell"
+        "./skills/dojo-thomas-sowell",
+        "./skills/dojo-william-zinsser"
       ]
     }
   ]
