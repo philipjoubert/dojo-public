@@ -244,6 +244,7 @@ Write with respect for the English language at its best — and for readers at t
 | "I need to write a layoff email / hard customer note / apology" | business-and-bureaucratic-prose, voice-and-style, fear-and-confidence, the-reader |
 | "Help me write our company origin story" | memoir-and-the-self, finding-the-human, voice-and-style, unity-and-finding-your-subject |
 | "I have customer interviews — how do I write them up" | interview-and-quotation, finding-the-human, the-reader |
+| "I'm writing about a place / lodge / camp / region / trip" | writing-about-places, finding-the-human, voice-and-style, simplicity-and-clutter |
 | "I'm stuck / I can't get started / I'm afraid this will be bad" | fear-and-confidence, writing-as-rewriting, unity-and-finding-your-subject |
 | "How do I think about a piece I'm trying to write" | writing-to-learn, unity-and-finding-your-subject, the-reader |
 | Reviewing an existing piece of writing (broad review mode) | simplicity-and-clutter, voice-and-style, the-lead-and-the-ending, the-reader, unity-and-finding-your-subject, writing-as-rewriting |
@@ -262,5 +263,6 @@ Write with respect for the English language at its best — and for readers at t
 | Finding the Human | finding-the-human.md | Every nonfiction subject is ultimately about people; the named operator beats the abstract "customer" |
 | Interview and Quotation | interview-and-quotation.md | How to extract usable material from customer / candidate / advisor conversations |
 | Memoir and the Self | memoir-and-the-self.md | Founder origin stories, anniversary essays, post-mortems; selection over inclusion |
+| Writing About Places | writing-about-places.md | Travel writing for founders in place-driven businesses (lodges, camps, destinations); find the central idea; beware of waxing; eliminate every known attribute |
 | Fear and Confidence | fear-and-confidence.md | The blank-page freeze; "I" vs "we"; sincerity as credential |
 | Business and Bureaucratic Prose | business-and-bureaucratic-prose.md | Annual letters, mission statements, customer comms, layoff emails — defending the founder's voice through committee edits |

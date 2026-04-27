@@ -93,7 +93,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
 **Operators**
-- **Wes Kao** (`personas/wes-kao/`) — executive communication, managing up, persuasive influence, sharp operator writing, get an enthusiastic yes, spiky point of view, minimum viable backstory, punchline first, information hierarchy, super specific how, eyes light up, texting method, state change method, course mechanics canvas, cohort-based courses, concentric circles of customers, increase desire vs decrease friction, brand vs performance marketing, activation energy, personal credibility, rigorous thinking, inception, onboard yourself
+- **Wes Kao** (`personas/wes-kao/`) — executive communication, managing up, persuasive influence, sharp operator writing, get an enthusiastic yes, spiky point of view, minimum viable backstory, punchline first, information hierarchy, super specific how, eyes light up, texting method, state change method, course mechanics canvas, cohort-based courses, concentric circles of customers, increase desire vs decrease friction, brand vs performance marketing, activation energy, personal credibility, rigorous thinking, inception, onboard yourself, strategy not self-expression, recovery moves, set the emotional tone, sharper writing, A-players make assertions, altMBA, Maven
 
 Each directory under `personas/` has:
 - `persona.md` — the full expert: domain, beliefs, reasoning moves, rules, heuristics, example exchanges, voice samples, topic routing. Loaded once you've routed.

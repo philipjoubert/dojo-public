@@ -108,6 +108,8 @@ const TOPIC_MAP: Record<string, Topic[]> = {
   "eugene-schwartz": ["copywriting", "positioning"],
   "harry-dry": ["copywriting", "positioning", "design"],
   "lulu-cheng": ["PR & comms", "positioning", "career"],
+  "rob-fitzpatrick": ["product", "sales", "positioning", "strategy"],
+  "al-ries": ["positioning", "strategy", "mental models"],
   // thinking
   "annie-duke": ["decision-making", "mental models", "strategy"],
   "charlie-munger": ["mental models", "decision-making", "wealth"],

@@ -4,6 +4,7 @@
 // silhouette.
 
 export const PORTRAITS: Record<string, string> = {
+  "al-ries": "jpg",
   "andrew-carnegie": "jpg",
   "andrew-chen": "jpg",
   "andy-grove": "jpg",
@@ -34,6 +35,7 @@ export const PORTRAITS: Record<string, string> = {
   "patrick-collison": "jpg",
   "paul-graham": "jpg",
   "peter-thiel": "jpg",
+  "rob-fitzpatrick": "jpg",
   "shane-parrish": "jpg",
   "steve-jobs": "jpg",
   "thomas-sowell": "jpg",
