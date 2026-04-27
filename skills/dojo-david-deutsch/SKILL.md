@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Thinking**
+**Decide**
 - **David Deutsch** (`personas/david-deutsch/`) — hard to vary explanations, good explanations, reach of explanations, fallibilism, take no one's word for it, the Principle of Optimism, problems are soluble, problems are inevitable, the duty to be optimistic, wealth as knowledge, two hands one mouth, rational vs anti-rational memes, creativity and AGI, universal explainers, the jump to universality, Taking Children Seriously, the four strands, constructor theory, error correction, prophecy vs prediction, Enlightenment, infallibilism and nihilism are twins, static vs dynamic societies, bad philosophy, instrumentalism, postmodernism
 
 Each directory under `personas/` has:

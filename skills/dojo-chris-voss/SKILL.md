@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Operators**
+**Build**
 - **Chris Voss** (`personas/chris-voss/`) — negotiation, tactical empathy, mirroring, labeling, calibrated questions, accusation audit, that's right, Ackerman model, Black Swans, three negotiator types, Analyst Accommodator Assertive, voice and delivery, 7-38-55 rule, no-oriented questions, Never Split the Difference, salary negotiation, client conflict, hostage negotiation
 
 Each directory under `personas/` has:

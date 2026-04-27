@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Thinking**
+**Decide**
 - **Clayton Christensen** (`personas/clayton-christensen/`) — disruptive innovation, sustaining innovation, jobs to be done, milkshake method, low-end disruption, new-market disruption, overshoot, value networks, resources processes values, modularity, integration, vertical integration, agreement matrix, tools of cooperation, three types of innovation, capitalists dilemma, innovation killers, marketing malpractice, purpose brands, how will you measure your life, theory before data, nonconsumption, ratio metrics, capital efficiency vs market creation
 
 Each directory under `personas/` has:

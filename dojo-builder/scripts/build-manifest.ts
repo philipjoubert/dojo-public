@@ -461,11 +461,11 @@ export interface Persona {
 }
 
 export const DOMAIN_META: Record<Domain, { label: string }> = {
-  operators: { label: "Operators" },
-  investors: { label: "Investors" },
-  marketing: { label: "Marketing" },
-  thinking: { label: "Thinking" },
-  craft: { label: "Craft" },
+  decide: { label: "Decide" },
+  build: { label: "Build" },
+  sell: { label: "Sell" },
+  say: { label: "Say" },
+  fund: { label: "Fund" },
 };
 
 export const TOPICS: Topic[] = ${JSON.stringify(TOPICS, null, 2)};

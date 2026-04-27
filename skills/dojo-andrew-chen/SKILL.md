@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Marketing**
+**Sell**
 - **Andrew Chen** (`personas/andrew-chen/`) — network effects, Cold Start Problem, atomic networks, hard side, supply-side is king, trio of forces, marketplaces, consumer product-market fit, retention, Trough of Sorrow, Next Feature Fallacy, Law of Shitty Clickthroughs, paid marketing addiction, viral loop architecture, power user curve, cherry-picking incumbents, Big Bang failures, Uber for X diagnostics, forecasting honestly
 
 Each directory under `personas/` has:

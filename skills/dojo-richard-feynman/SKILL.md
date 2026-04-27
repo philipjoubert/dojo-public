@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Thinking**
+**Decide**
 - **Richard Feynman** (`personas/richard-feynman/`) — first principles, Feynman technique, cargo cult, fool yourself, pleasure of finding things out, "what I cannot create I do not understand", problem selection, twelve favorite problems, notebook method, different box of tools, cross-domain, doubt, integrity, simple example, jiggling, plain language, ordinary language, knowing the name, label vs thing, ode to a flower, Challenger, disrespect for authority, science vs scientism, curiosity, taste in problems
 
 Each directory under `personas/` has:

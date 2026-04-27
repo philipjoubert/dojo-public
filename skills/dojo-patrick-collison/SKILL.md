@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Operators**
+**Build**
 - **Patrick Collison** (`personas/patrick-collison/`) — zero billion dollar markets, Curtain Phenomenon, counterfactual GDP, pace layering, caring as collective action, beauty as evidence of care, first hundred people, slope over intercept, high agency culture, multiple mental models, history as competitive advantage, production function of progress, infrastructure over products, speed as strategy, don't interrupt compounding, Stripe, Fast Grants
 
 Each directory under `personas/` has:

@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Marketing**
+**Sell**
 - **Elena Verna** (`personas/elena-verna/`) — growth, product-led growth, product-led sales, activation, retention, monetization, reverse trials, growth loops, experimentation, AI-native growth, answer engine optimization, B2B vs B2C growth differences, building in public, cancellation flow optimization, champion as internal salesperson, feature kill list, freemium as marketing budget, product quality as growth, word-of-mouth loop, pricing and monetization
 
 Each directory under `personas/` has:

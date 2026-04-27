@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Operators**
+**Build**
 - **Elon Musk** (`personas/elon-musk/`) — engineering, manufacturing, first principles, The Algorithm, Idiot Index, schedule compression, hardcore hiring, factory is the product, question requirements, delete parts, design for manufacturability, vertical integration, going direct, incumbents don't innovate, bet your chips, mission as forcing function
 
 Each directory under `personas/` has:

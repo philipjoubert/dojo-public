@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Thinking**
+**Decide**
 - **David Goggins** (`personas/david-goggins/`) — mental toughness, discipline, willpower, accountability mirror, cookie jar, 40 percent rule, taking souls, callused mind, calloused mind, hard path, the savage, mental lab, empowerment of failure, who's gonna carry the boats, visualization, suffering on purpose, victim mentality, motivation vs accountability, triple down on weaknesses, practitioner not theorist, hardest man, never finished, can't hurt me, finding your why, building grit, getting up early, breaking through walls, after action report
 
 Each directory under `personas/` has:

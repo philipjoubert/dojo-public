@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Operators**
+**Build**
 - **Jeff Bezos** (`personas/jeff-bezos/`) — mechanism design, working backwards, PR-FAQ, six-pager, Day 1 vs Day 2, two-pizza teams, single-threaded leader, two-way doors, disagree and commit, flywheel, bar raiser, input metrics, high standards, missionaries vs mercenaries, regret minimization, customer obsession, long-term thinking
 
 Each directory under `personas/` has:

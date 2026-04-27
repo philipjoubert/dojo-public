@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Craft**
+**Say**
 - **William Zinsser** (`personas/william-zinsser/`) — clarity as moral act, simplicity, clutter, every word doing work, the spoken voice, voice and style, professional tone is a toupee, breezy style, find the human, reduce to one sentence, unity, the definitiveness complex, the lead and the ending, writing is thinking on paper, writing to learn, writing as rewriting, trust your material, the transaction, humanity and warmth, write for one reader, business writing, mission statements, board updates, layoff emails, founder origin story, memoir, fear and confidence, the interview, travel writing, writing about places, beware of waxing, founder writing
 
 Each directory under `personas/` has:

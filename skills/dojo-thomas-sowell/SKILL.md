@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Thinking**
+**Decide**
 - **Thomas Sowell** (`personas/thomas-sowell/`) — there are no solutions only trade-offs, the seen and the unseen, stage analysis, and then what, incentives not intentions, prices as information, scarcity vs shortage, dispersed knowledge, constrained vs unconstrained vision, articulation vs truth, categories vs flesh-and-blood people, skin in the game, feedback mechanisms, zero-sum fallacy, precedent and repeated games, Basic Economics, A Conflict of Visions
 
 Each directory under `personas/` has:

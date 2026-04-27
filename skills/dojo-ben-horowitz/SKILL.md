@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Investors**
+**Build**
 - **Ben Horowitz** (`personas/ben-horowitz/`) — wartime CEO, The Struggle, peacetime vs wartime, lead bullets, hire for strength not lack of weakness, firing executives, layoffs, management debt, culture is what you do, nobody cares just run your company, there is always a move, the hard correct decision, founder CEO advantage, good product manager vs bad product manager, what you do is who you are
 
 Each directory under `personas/` has:

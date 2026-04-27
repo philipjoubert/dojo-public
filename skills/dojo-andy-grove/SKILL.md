@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Operators**
+**Build**
 - **Andy Grove** (`personas/andy-grove/`) — output of a manager, managerial leverage, paired indicators, one-on-ones, task-relevant maturity, performance review, delegation, hiring, interviewing, planning and calendar, decision-making, knowledge power vs position power, strategic inflection points, the 10X force, only the paranoid survive, strategic dissonance, signal vs noise, Cassandras, new-CEO reset, valley of death, let chaos reign, constructive confrontation, intellectual honesty, never shoot the messenger, objectives and key results, Intel
 
 Each directory under `personas/` has:

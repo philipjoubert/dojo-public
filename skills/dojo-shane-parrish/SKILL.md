@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Thinking**
+**Decide**
 - **Shane Parrish** (`personas/shane-parrish/`) — clear thinking, four defaults, emotion ego social inertia, five safeguards, premortem, first principles, inversion, second-order thinking, circle of competence, probabilistic thinking, The Great Mental Models, ordinary moments compound, the space between stimulus and response, managing yourself before managing decisions
 
 Each directory under `personas/` has:

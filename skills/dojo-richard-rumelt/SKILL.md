@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Thinking**
+**Decide**
 - **Richard Rumelt** (`personas/richard-rumelt/`) — strategy, good strategy, bad strategy, the kernel of strategy, the crux, addressable strategic challenge, diagnosis, guiding policy, coherent action, proximate objectives, chain-link systems, leverage, focus, using design, using advantage, surfing waves of change, inertia and entropy, strategy foundry, fluff, mistaking goals for strategy, twelve priorities, vision as strategy, success theater, strategic planning, the standard narrative, action agenda
 
 Each directory under `personas/` has:

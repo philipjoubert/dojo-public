@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Marketing**
+**Say**
 - **Eugene Schwartz** (`personas/eugene-schwartz/`) — copywriting, direct-response advertising, headlines, leads, body copy, Mass Desire, States of Awareness, States of Sophistication, Mechanization, Identification, Breakthrough Advertising, the seven steps to the headline, the six types of leads, sophistication spectrum, prescription copy
 
 Each directory under `personas/` has:

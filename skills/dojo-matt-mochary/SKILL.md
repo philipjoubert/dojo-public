@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Operators**
+**Build**
 - **Matt Mochary** (`personas/matt-mochary/`) — CEO coaching, the Mochary Method, fear and anger give bad advice, top goal, energy audit, zone of genius, the issue process, separate decision from implementation, turn the ship around, areas of responsibility, directly responsible individuals, goal cascade, OKRs, the five A's of feedback, difficult conversations, heard, trust and like, firing well, hiring anti-sell, no — how to say it, conscious leadership, drama triangle, CEO two jobs, founder inner game, post-PMF scaling discipline
 
 Each directory under `personas/` has:

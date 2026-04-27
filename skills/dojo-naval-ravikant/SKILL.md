@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Investors**
+**Fund**
 - **Naval Ravikant** (`personas/naval-ravikant/`) — wealth equation, specific knowledge, three types of leverage, code and media, accountability, judgment, four kinds of luck, long-term games, escape competition through authenticity, principal-agent problem, productize yourself, happiness is a skill, meditation and awareness, rational optimism, avoid ruin, reading and rereading, compound interest in all life domains
 
 Each directory under `personas/` has:

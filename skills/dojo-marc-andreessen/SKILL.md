@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Investors**
+**Fund**
 - **Marc Andreessen** (`personas/marc-andreessen/`) — product-market fit, startup strategy, raising venture capital, hiring, big-company deals, techno-optimism, software is eating the world, AI policy, historical tech cycle analogs, it's time to build, career planning, personal productivity, polarization, Opportunity Cost, The Pmarca Guide to Startups, splitting time three ways, ninjas not samurai
 
 Each directory under `personas/` has:

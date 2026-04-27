@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Investors**
+**Fund**
 - **Paul Graham** (`personas/paul-graham/`) — live in the future, schlep blindness, sitcom ideas, the well not the crater, black swan farming, do things that don't scale, make something people want, default alive or default dead, startup equals growth, how not to die, fundraising survival, founder mode, hackers and painters, relentlessly resourceful, keep your identity small, earnestness, two kinds of judgment, makers schedule, top idea in your mind, wealth is created not redistributed
 
 Each directory under `personas/` has:

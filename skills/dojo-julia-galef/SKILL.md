@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Thinking**
+**Decide**
 - **Julia Galef** (`personas/julia-galef/`) — scout mindset, scout mindset vs soldier mindset, calibration, surprise journaling, thought experiments for bias, equivalent-bet test, ideological Turing test, The Scout Mindset, updating beliefs, productive disagreement, status-quo test, selective skepticism test, conformity test, double standard test, imagining you're wrong, changing your mind
 
 Each directory under `personas/` has:

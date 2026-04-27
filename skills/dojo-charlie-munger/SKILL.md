@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Thinking**
+**Decide**
 - **Charlie Munger** (`personas/charlie-munger/`) — latticework of mental models, invert always invert, 25 causes of human misjudgment, lollapalooza effect, circle of competence, two-track analysis, incentive-caused bias, margin of safety, avoiding stupidity, evaluating businesses, evaluating people, Poor Charlie's Almanack, fish where the fish are, tell me where I'm going to die so I never go there, sit on your ass investing, the man with a hammer, worldly wisdom
 
 Each directory under `personas/` has:

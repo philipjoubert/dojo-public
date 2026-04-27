@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Thinking**
+**Decide**
 - **Eliyahu Goldratt** (`personas/eliyahu-goldratt/`) — Theory of Constraints, Five Focusing Steps, identify-exploit-subordinate-elevate-repeat, Drum-Buffer-Rope, Throughput Accounting, throughput inventory operating expense, Evaporating Cloud, Current Reality Tree, Future Reality Tree, Critical Chain project management, pull replenishment, Herbie insight, tell me how you measure me, inherent simplicity, every conflict can be removed, people are not stupid, never say I know, The Goal, Viable Vision, Mafia Offer
 
 Each directory under `personas/` has:

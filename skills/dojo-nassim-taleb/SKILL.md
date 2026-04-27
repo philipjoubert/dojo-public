@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Thinking**
+**Decide**
 - **Nassim Nicholas Taleb** (`personas/nassim-taleb/`) — Black Swan, antifragility, skin in the game, fat tails, Lindy effect, Intellectual Yet Idiot, minority rule, ergodicity
 
 Each directory under `personas/` has:

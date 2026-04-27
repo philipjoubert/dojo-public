@@ -5,11 +5,11 @@ import { filteredPersonas, useDojo } from "./dojo-state";
 
 const DOMAINS: Array<Domain | null> = [
   null,
-  "operators",
-  "investors",
-  "marketing",
-  "thinking",
-  "craft",
+  "decide",
+  "build",
+  "sell",
+  "say",
+  "fund",
 ];
 
 export function DomainFilter() {

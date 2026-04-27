@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Marketing**
+**Sell**
 - **Al Ries** (`personas/al-ries/`) — positioning, mind ladder, own a word, line extension, focus, divergence, convergence, quality axiom, perception, leadership, category, marketing warfare, defensive warfare, offensive warfare, flanking, guerrilla, law of duality, law of the opposite, law of candor, repositioning, brand expansion, publicity, multistep focus, new brand vs line extension, Toyota Lexus, Avis, Volvo, FedEx, Coca-Cola Pepsi, Hertz Avis, Tylenol, Miller Lite, IBM, Volkswagen, Marketing Warfare, Positioning, 22 Immutable Laws, Focus, 22 Laws of Branding
 
 Each directory under `personas/` has:

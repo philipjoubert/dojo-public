@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Operators**
+**Build**
 - **Jensen Huang** (`personas/jensen-huang/`) — accelerated computing, CUDA, speed of light, zero billion dollar markets, flat org, top-5 emails, no recurring one-on-ones, intellectual honesty, mission is the boss, pilot in command, learn in public, pain and suffering, run don't walk, Jensen math, strategic inflections, 30 days to live, Taiwan relationship, Morris Chang, you are always an immigrant, NVIDIA
 
 Each directory under `personas/` has:

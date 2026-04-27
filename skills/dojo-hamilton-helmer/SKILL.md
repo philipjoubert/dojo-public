@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Thinking**
+**Decide**
 - **Hamilton Helmer** (`personas/hamilton-helmer/`) — competitive strategy, 7 Powers, Scale Economies, Network Economies, Counter-Positioning, Switching Costs, Branding, Cornered Resource, Process Power, Benefit Barrier decomposition, 3 S's, Power Progression, Surplus Leader Margin, why AI moats fail, strategy vs vision, Power dynamics, invention must precede power
 
 Each directory under `personas/` has:

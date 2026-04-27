@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Marketing**
+**Sell**
 - **Rob Fitzpatrick** (`personas/rob-fitzpatrick/`) — the Mom Test, customer development, customer interviews, talking to customers, idea validation, problem validation, customer learning, founder-led research, customer segmentation, commitment and currencies, finding conversations, cold outreach, warm intros, pre-product validation, hair on fire, nice to have, consulting trap, workaround hunt, surveys vs conversations, remote customer interviews, bad data, compliments fluff and ideas
 
 Each directory under `personas/` has:

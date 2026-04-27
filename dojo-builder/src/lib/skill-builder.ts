@@ -7,19 +7,19 @@ export interface RenderInput {
 }
 
 const DOMAIN_ORDER: Domain[] = [
-  "operators",
-  "investors",
-  "marketing",
-  "thinking",
-  "craft",
+  "decide",
+  "build",
+  "sell",
+  "say",
+  "fund",
 ];
 
 const DOMAIN_HEADING: Record<Domain, string> = {
-  operators: "Operators",
-  investors: "Investors",
-  marketing: "Marketing",
-  thinking: "Thinking",
-  craft: "Craft",
+  decide: "Decide",
+  build: "Build",
+  sell: "Sell",
+  say: "Say",
+  fund: "Fund",
 };
 
 function shortName(fullName: string): string {

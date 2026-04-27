@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Operators**
+**Build**
 - **Keith Rabois** (`personas/keith-rabois/`) — barrels and ammunition, undiscovered talent, value creation vs protection, CEO as editor, task-relevant maturity, paired metrics, one-thing mandate, calendar audit, smoothie test, six-months-ahead test, 50-50 internal-external hiring, culture as cult, path dependency, spike on one dimension, fragmented low-NPS markets, speed as strategy, PayPal Mafia
 
 Each directory under `personas/` has:

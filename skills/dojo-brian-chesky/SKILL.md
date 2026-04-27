@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Operators**
+**Build**
 - **Brian Chesky** (`personas/brian-chesky/`) — founder mode, CEO as chief product officer, presence not absence, functional org, three-legged stool, skip-leveling, no recurring one-on-ones, hiring like a detective, Shackleton close, 11-star experience, do things that don't scale, storyboard method, design is how it works, quality before growth, culture is a thousand things, crisis as permission
 
 Each directory under `personas/` has:

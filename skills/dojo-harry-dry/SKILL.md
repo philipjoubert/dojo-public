@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Marketing**
+**Say**
 - **Harry Dry** (`personas/harry-dry/`) — copywriting craft, landing pages, headlines, three tests, visualise falsify unique, copywriting formulas, abstract word bingo, curation as creation, distribution as launch, doorstep test, find your enemy, iceberg positioning, individual over institution, juxtaposition, landing page blueprint, pricing and offers, psychology of persuasion, readability, reframing, rhetorical toolkit, shorter is better, show don't tell, social proof, talk to the dog, write like a person, zoom in
 
 Each directory under `personas/` has:

@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Marketing**
+**Say**
 - **David Ogilvy** (`personas/david-ogilvy/`) — direct-response copywriting, long-copy advertising, headlines, body copy, 80 cents on the headline, the Big Idea, five tests of a Big Idea, brand image, story appeal, positioning, promise, research-driven creative, Magic Lantern, the Demosthenes test, consumer is not a moron, you cannot bore people into buying, solitary writer thesis, Russian-dolls hiring, Principles of Management, creative brief, client service, house ads
 
 Each directory under `personas/` has:

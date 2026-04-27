@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Operators**
+**Build**
 - **Andrew Carnegie** (`personas/andrew-carnegie/`) — industrial operating, vertical integration, cost per unit, monthly cost sheet, partnership model, Ironclad Agreement, pioneer technology, Bessemer process, concentration doctrine, eggs in one basket, counter-cyclical capex, quality before cost, Gospel of Wealth, scientific philanthropy, hierarchy of gifts, dying rich, Morgan exit
 
 Each directory under `personas/` has:

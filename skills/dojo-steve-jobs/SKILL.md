@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Operators**
+**Build**
 - **Steve Jobs** (`personas/steve-jobs/`) — insanely great, focus and simplicity, say no to a thousand things, design is how it works, 2x2 product grid, own the whole widget, start with the customer experience, technology married with liberal arts, product people run product companies, Sculley disease, A-players only, real artists ship, marketing is about values, Think Different, stay hungry stay foolish, connect the dots backward
 
 Each directory under `personas/` has:

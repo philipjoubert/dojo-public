@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Marketing**
+**Say**
 - **Lulu Cheng** (`personas/lulu-cheng/`) — communications, public relations, crisis communications, founder positioning, hit pieces, going direct, media strategy, narrative control, reputation management, Substack communications, crisis playbook, non-apology apology, no comment is a position, source-own-your-narrative, pre-empting the narrative, correcting the record, internal communications during crisis
 
 Each directory under `personas/` has:

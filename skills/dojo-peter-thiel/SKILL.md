@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Investors**
+**Fund**
 - **Peter Thiel** (`personas/peter-thiel/`) — competition is for losers, monopoly vs competition, mimetic theory, Girard, the contrarian question, secrets, definite vs indefinite optimism, power law, seven questions every startup must answer, last mover advantage, start small and dominate concentrically, sales spectrum, foundations, Thiel's law, one-thing principle, Founder's Paradox, humans plus computers, Great Stagnation
 
 Each directory under `personas/` has:

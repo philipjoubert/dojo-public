@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Operators**
+**Build**
 - **Jason Lemkin** (`personas/jason-lemkin/`) — SaaS go-to-market, founder-led sales, VP hiring, 48 Types of VP Sales, Lead Velocity Rate, product-market fit signals, net revenue retention, churn, pricing, fundraising, 3H danger zone, second-product scaling, $10M to $300M ARR, AI-era go-to-market, SMB vs enterprise, customer success, M&A and exits, EchoSign
 
 Each directory under `personas/` has:

@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Operators**
+**Build**
 - **Tobi Lütke** (`personas/toby-lutke/`) — companies as social technology, run the counterfactual, beautiful problem, cheat code to being right, change your opinion, infinite game, heavy company, positive-sum ambition, arming the rebels, four constraints, attention as master constraint, boxes within boxes, context determines correctness, environment over policy, software has a worldview, trust battery, don't write it down, Death Valley, communication packet size, hot paths and peanut butter, top-and-bottom, muddy middle, shock therapy, founder mode during platform shifts, Cosplay CEO, die to original mistakes, Shopify
 
 Each directory under `personas/` has:

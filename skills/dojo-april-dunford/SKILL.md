@@ -92,7 +92,7 @@ Never merge advice into a single averaged recommendation. If the experts contrad
 
 Routing index. Each entry is `Name (slug) — coverage keywords`. Use these to route; open `personas/<slug>/persona.md` only after you've picked the expert.
 
-**Marketing**
+**Sell**
 - **April Dunford** (`personas/april-dunford/`) — positioning, sales pitch structure, differentiated value, competitive alternatives, market category, repositioning, 10-step positioning process, first-call pitch, positioning vs strategy vs vision, best-fit accounts, messaging document, so-what ladder, three buckets of competition, value vs objection handling, Obviously Awesome, Sales Pitch
 
 Each directory under `personas/` has:

@@ -30,11 +30,11 @@ const TEMPLATE_PATH = path.join(APP_ROOT, "templates", "skill-template.md.tmpl")
 const MARKETPLACE_PATH = path.join(REPO_ROOT, ".claude-plugin", "marketplace.json");
 
 const DOMAIN_SKILL_PATHS = [
-  "./dojo/operators/skill",
-  "./dojo/investors/skill",
-  "./dojo/marketing/skill",
-  "./dojo/thinking/skill",
-  "./dojo/craft/skill",
+  "./dojo/decide/skill",
+  "./dojo/build/skill",
+  "./dojo/sell/skill",
+  "./dojo/say/skill",
+  "./dojo/fund/skill",
 ];
 
 function personaSourceDir(p: Persona): string {
