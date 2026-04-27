@@ -21,6 +21,8 @@ related:
 
 # The Four Quadrants of Performance
 
+> **Provenance note.** This framework is currently single-sourced to *The Tim Ferriss Show* #665 (2023), where Danny names the model, attributes its origin to "some restaurateurs in California" who gave it to him, and describes its institutional adoption at USHG (locker-room mirrors, action point + timeframe per quadrant). Multiple third-party writers (Daniel Stillman, Leaders.com, others) have written it up as Danny's framework, but the primary source is one interview. Strengthen this file when a second interview-guest source surfaces — likely candidates: Knowledge Project full transcript (paywalled), USHG Hospitality Quotient training materials, or a future Danny interview.
+
 ## When to Use
 
 - You're trying to decide what to do about a specific person on the team and the question is harder than it looks.

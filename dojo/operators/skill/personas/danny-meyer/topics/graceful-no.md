@@ -22,6 +22,8 @@ related:
 
 # The Graceful No
 
+> **Provenance note.** The 3-question filter (want / can / should) plus Jeremy King's *if it were tonight* tense-shift test for the shoulds is currently single-sourced to *The Tim Ferriss Show* #665 (2023) — the episode literally titled in part "The Art of The Graceful 'No'." The underlying *disposition* of declining gracefully is multi-sourced and book-grounded (*Setting the Table* covers Danny's restaurant-deal declines: W Hotel, Gramercy Park Hotel, casino offers, mall offers — chapter 11 + later). The specific 3-question framework structure is Tim-Ferriss-only. Strengthen this file when a second interview-guest source surfaces. Notably: a public LinkedIn post (Kathy Oneto, May 2023) reproduces a verbatim Danny decline letter from his own correspondence, which corroborates the *practice* even where the *framework articulation* is single-sourced.
+
 ## When to Use
 
 - An invitation, request, or opportunity has come in. You can sense that you don't want to do it, *or* the calendar can't take it, *or* something about it feels off.

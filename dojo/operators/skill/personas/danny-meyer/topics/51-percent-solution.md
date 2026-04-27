@@ -138,8 +138,14 @@ Danny added this one over time because none of the six captured competitive driv
 - **Not being seen losing.** *John McEnroe yelling at the umpire.* Primary motivation is the loss-avoidance, not the win.
 - **Beating their own personal best.** *Usain Bolt with the leg outstretched and the veins popping.* Primary motivation is internal — competing with their last performance.
 
-Danny's preference is clearly the third bucket — people whose competitive engine is internal to themselves, who treat every shift as an opportunity to do today a little better than yesterday. *"That's the journey of excellence."* All three can succeed; the question is which kind of energy they bring to the team. Two Ali-types in the same kitchen will fight each other; two Bolt-types will pull each other up.
+Danny's preference is clearly the third bucket — people whose competitive engine is internal to themselves, who treat every shift as an opportunity to do today a little better than yesterday. *"That's the journey of excellence."* All three can succeed; the question is what kind of energy each brings to the team.
+
+The trait itself shows up across multiple Danny interviews, not only Tim Ferriss. At the Wharton McNulty Leadership Program (Authors@Wharton with Adam Grant, February 2023), Danny put it directly: *"I love winning, and I think that hospitality is a perfectly fine competitive trait."* And to the same audience, in the form of one of his own self-awareness questions: *"The biggest misperception people think about me is that Mr. Hospitality is not incredibly competitive."* The 3-bucket Ali/McEnroe/Bolt structure is from Tim Ferriss specifically; the underlying *love to win* trait is multiply attested.
 
 ### How to use this addendum
 
 Treat the Six Traits as the *interview kit* for the 51% Solution. The original five emotional skills (optimistic warmth / curiosity / work ethic / empathy / self-awareness-and-integrity) are the criteria you score; the Six Traits questions plus the love-to-win diagnostic are the operational way you actually surface that information in a 60-minute interview where the candidate is on best behavior. Don't ask the questions in order like a checklist — that turns the interview into a test, and the candidate tells you what they think you want to hear. Drop them in conversationally, follow up on the answer, and watch the eyes.
+
+### Sourcing
+
+The Six Traits + interview-question kit appears in **two interview-guest sources**: Tim Ferriss Show #665 (2023, where Danny goes through each trait with its specific question) and The Knowledge Project Episode #115 with Shane Parrish (July 2021, where the same six emotional skills are listed with the same framing — "optimistic kindness, intellectual curiosity, work ethic, empathy, self-awareness, integrity"). The "kind eyes" formulation also appears verbatim on Knowledge Project: *"You cannot lie in an interview if you don't have kind eyes."* The love-to-win seventh trait is multi-sourced (Tim Ferriss #665 + Wharton/Adam Grant Feb 2023). The three-bucket Ali/McEnroe/Bolt motivation structure is currently Tim-Ferriss-only.
