@@ -51,7 +51,7 @@ const TAGLINE_MAX_ITEMS = 50;
 // Topic-file expectation — personas without topic files are suspicious.
 const MIN_TOPIC_FILES = 3;
 
-const BUCKETS = ["operators", "investors", "marketing", "thinking", "craft"] as const;
+const BUCKETS = ["decide", "build", "sell", "say", "fund"] as const;
 type Bucket = (typeof BUCKETS)[number];
 
 const TOPICS = [
@@ -115,7 +115,7 @@ const HEADLINE_MAP: Record<string, string> = {
   // thinking
   "annie-duke": "thinking in bets",
   "charlie-munger": "Buffett's sharper half",
-  "david-goggins": "the toughest man",
+  "david-goggins": "Baddest motherfucker on earth",
   "clayton-christensen": "the disruption guy",
   "david-deutsch": "the explanations physicist",
   "eliyahu-goldratt": "the bottleneck guy",
