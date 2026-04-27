@@ -4,6 +4,16 @@ export interface RenderInput {
   personas: Persona[];
   skillName: string;
   template: string;
+  /**
+   * When true (single-persona inline install), flatten path references
+   * like `personas/<slug>/persona.md` to `./persona.md` in the rendered
+   * SKILL.md so the install bundle has SKILL.md sitting next to the
+   * persona content with no namespacing layer.
+   *
+   * Multi-persona installs leave this false: each persona must keep its
+   * `personas/<slug>/` namespace to avoid collisions inside one zip.
+   */
+  flat?: boolean;
 }
 
 const DOMAIN_ORDER: Domain[] = BUCKETS;
@@ -93,9 +103,13 @@ export function renderSkillMd({
   personas,
   skillName,
   template,
+  flat = false,
 }: RenderInput): string {
   if (personas.length === 0) {
     throw new Error("renderSkillMd: at least one persona required");
+  }
+  if (flat && personas.length !== 1) {
+    throw new Error("renderSkillMd: flat=true requires exactly one persona");
   }
 
   const sorted = sortPersonas(personas);
@@ -106,10 +120,31 @@ export function renderSkillMd({
     clampDescription(`${descriptionLead(sorted)} ${loadedLine(sorted)}`),
   );
 
-  return template
+  let rendered = template
     .replaceAll("{{skill_name}}", fullName)
     .replaceAll("{{description}}", description)
     .replaceAll("{{named_examples}}", namedExamples(sorted))
     .replaceAll("{{primary_expert_header}}", primary)
     .replaceAll("{{available_experts}}", availableExperts(sorted));
+
+  if (flat) {
+    // Single-persona inline install — flatten all persona paths so the
+    // SKILL.md sits next to persona.md / topics/ in one flat dir.
+    const slug = sorted[0].slug;
+    rendered = rendered
+      // resolved (slug-substituted) paths
+      .replaceAll(`personas/${slug}/persona.md`, "./persona.md")
+      .replaceAll(`personas/${slug}/topics/`, "./topics/")
+      .replaceAll(`personas/${slug}/`, "./")
+      // generic placeholder paths (template uses `<slug>` literally as doc)
+      .replaceAll("personas/<slug>/persona.md", "./persona.md")
+      .replaceAll("personas/<slug>/topics/", "./topics/")
+      .replaceAll("personas/<slug>/", "./")
+      // prose mentions of the personas/ directory
+      .replaceAll("the `personas/` directory", "this skill's root")
+      .replaceAll("Each directory under `personas/`", "This skill")
+      .replaceAll("under `personas/`", "in this skill");
+  }
+
+  return rendered;
 }

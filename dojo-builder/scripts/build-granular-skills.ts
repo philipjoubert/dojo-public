@@ -1,23 +1,25 @@
 /**
- * Builds one installable Vercel `npx skills` package per persona.
+ * Generates per-persona SKILL.md inline at dojo/personas/<slug>/SKILL.md
+ * and writes the marketplace.json entries that point at them.
  *
- * Source of truth stays under ../dojo/<domain>/skill/personas/<slug>/.
- * Generated output is committed under ../skills/dojo-<slug>/ so consumers can
- * install granular skills directly from GitHub without running this script.
+ * This is the single-persona install path. The CLI install
+ * (`npx skills add ... --skill dojo-<slug>`) resolves through
+ * marketplace.json to ./dojo/personas/<slug>/, copies the dir contents,
+ * and the user gets SKILL.md + persona.md + topics/ — flat layout, no
+ * namespace prefix.
+ *
+ * The multi-persona zip download path lives in api/build/route.ts and
+ * uses a different (namespaced) layout.
  */
 import {
-  cpSync,
   existsSync,
   mkdirSync,
-  readdirSync,
   readFileSync,
-  rmSync,
-  statSync,
   writeFileSync,
 } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { BUCKETS, PERSONAS, type Persona } from "../src/lib/personas.generated";
+import { PERSONAS, type Persona } from "../src/lib/personas.generated";
 import { renderSkillMd } from "../src/lib/skill-builder";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -25,91 +27,50 @@ const __dirname = path.dirname(__filename);
 const APP_ROOT = path.resolve(__dirname, "..");
 const REPO_ROOT = path.resolve(APP_ROOT, "..");
 const DOJO_DIR = path.join(REPO_ROOT, "dojo");
-const SKILLS_DIR = path.join(REPO_ROOT, "skills");
 const TEMPLATE_PATH = path.join(APP_ROOT, "templates", "skill-template.md.tmpl");
 const MARKETPLACE_PATH = path.join(REPO_ROOT, ".claude-plugin", "marketplace.json");
 
-// Derived from dojo/buckets.json via the generated manifest — single source of truth.
-const DOMAIN_SKILL_PATHS = BUCKETS.map((b) => `./dojo/${b}/skill`);
-
-function personaSourceDir(p: Persona): string {
-  return path.join(DOJO_DIR, p.domain, "skill", "personas", p.slug);
-}
-
-function stripFrontmatter(markdown: string): string {
-  if (!markdown.startsWith("---\n")) return markdown;
-  const end = markdown.indexOf("\n---\n", 4);
-  if (end === -1) return markdown;
-  return markdown.slice(end + 5).replace(/^\s*\n+/, "");
-}
-
-function cleanGeneratedSkills(): void {
-  if (!existsSync(SKILLS_DIR)) return;
-  for (const entry of readdirSync(SKILLS_DIR)) {
-    if (!entry.startsWith("dojo-")) continue;
-    const full = path.join(SKILLS_DIR, entry);
-    if (statSync(full).isDirectory()) rmSync(full, { recursive: true, force: true });
-  }
-}
-
-function copyPersonaFiles(persona: Persona, outDir: string): void {
-  const src = personaSourceDir(persona);
-  const target = path.join(outDir, "personas", persona.slug);
-  mkdirSync(target, { recursive: true });
-
-  const personaMdRaw = readFileSync(path.join(src, "persona.md"), "utf8");
-  writeFileSync(path.join(target, "persona.md"), stripFrontmatter(personaMdRaw));
-
-  const topicsSrc = path.join(src, "topics");
-  if (!existsSync(topicsSrc)) return;
-
-  const topicsTarget = path.join(target, "topics");
-  mkdirSync(topicsTarget, { recursive: true });
-  for (const entry of readdirSync(topicsSrc, { withFileTypes: true })) {
-    if (!entry.isFile() || !entry.name.endsWith(".md")) continue;
-    cpSync(path.join(topicsSrc, entry.name), path.join(topicsTarget, entry.name));
-  }
+function personaDir(p: Persona): string {
+  return path.join(DOJO_DIR, "personas", p.slug);
 }
 
 function writeMarketplace(personas: Persona[]): void {
-  const granularPaths = personas.map((p) => `./skills/${p.installName}`);
+  const skills = personas.map((p) => `./dojo/personas/${p.slug}`);
   const manifest = {
-    metadata: {
-      pluginRoot: "./",
-    },
+    metadata: { pluginRoot: "./" },
     plugins: [
       {
         name: "dojo",
         source: "./",
         description: "Founder-mode expert panels packaged as agent skills.",
-        skills: [...DOMAIN_SKILL_PATHS, ...granularPaths],
+        skills,
       },
     ],
   };
-
   mkdirSync(path.dirname(MARKETPLACE_PATH), { recursive: true });
   writeFileSync(MARKETPLACE_PATH, `${JSON.stringify(manifest, null, 2)}\n`);
 }
 
 function main(): void {
   const template = readFileSync(TEMPLATE_PATH, "utf8");
-  cleanGeneratedSkills();
-  mkdirSync(SKILLS_DIR, { recursive: true });
 
   for (const persona of PERSONAS) {
-    const outDir = path.join(SKILLS_DIR, persona.installName);
-    mkdirSync(outDir, { recursive: true });
+    const dir = personaDir(persona);
+    if (!existsSync(dir)) {
+      console.error(`error: ${dir} not found — skipping ${persona.slug}`);
+      continue;
+    }
     const skillMd = renderSkillMd({
       personas: [persona],
       skillName: persona.slug,
       template,
+      flat: true,
     });
-    writeFileSync(path.join(outDir, "SKILL.md"), skillMd);
-    copyPersonaFiles(persona, outDir);
+    writeFileSync(path.join(dir, "SKILL.md"), skillMd);
   }
 
   writeMarketplace(PERSONAS);
-  console.log(`build-granular-skills: wrote ${PERSONAS.length} skills to ${path.relative(REPO_ROOT, SKILLS_DIR)}`);
+  console.log(`build-granular-skills: wrote ${PERSONAS.length} inline SKILL.md files`);
   console.log(`updated ${path.relative(REPO_ROOT, MARKETPLACE_PATH)}`);
 }
 

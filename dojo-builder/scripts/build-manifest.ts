@@ -72,132 +72,12 @@ const MIN_TOPIC_FILES = 3;
 const BUCKETS = BUCKETS_RAW as readonly string[];
 type Bucket = string;
 
-const TOPICS = [
-  "hiring",
-  "culture",
-  "org design",
-  "negotiation",
-  "sales",
-  "pricing",
-  "positioning",
-  "copywriting",
-  "PR & comms",
-  "fundraising",
-  "product",
-  "design",
-  "growth",
-  "marketplaces",
-  "engineering",
-  "strategy",
-  "career",
-  "wealth",
-  "decision-making",
-  "mental models",
-  "writing",
-] as const;
-type Topic = (typeof TOPICS)[number];
+// Read TOPICS taxonomy from dojo/topics.json (single source of truth).
+const TOPICS_JSON_PATH = path.join(DOJO_DIR, "topics.json");
+const TOPICS = JSON.parse(readFileSync(TOPICS_JSON_PATH, "utf-8")).topics as readonly string[];
+type Topic = string;
 
-const HEADLINE_MAP: Record<string, string> = {
-  // operators
-  "andrew-carnegie": "steel magnate",
-  "andy-grove": "Intel's paranoid CEO",
-  "brian-chesky": "Airbnb's founder",
-  "chris-voss": "FBI hostage negotiator",
-  "danny-meyer": "hospitality master",
-  "elon-musk": "Tesla and SpaceX",
-  "jason-lemkin": "SaaStr",
-  "jeff-bezos": "Amazon and Blue Origin",
-  "jensen-huang": "Nvidia's leather-jacket CEO",
-  "keith-rabois": "PayPal Mafia VC",
-  "matt-mochary": "Silicon Valley CEO coach",
-  "patrick-collison": "Stripe's CEO",
-  "steve-jobs": "Apple and Pixar",
-  "toby-lutke": "Shopify's founder",
-  "wes-kao": "executive coach",
-  // investors
-  "ben-horowitz": "the hard thing about hard things",
-  "marc-andreessen": "a16z partner",
-  "naval-ravikant": "AngelList",
-  "paul-graham": "YC's essayist-in-chief",
-  "peter-thiel": "Zero to One",
-  // marketing
-  "al-ries": "original positioning guy",
-  "andrew-chen": "network effects guy",
-  "april-dunford": "positioning for tech",
-  "david-ogilvy": "original Mad Man",
-  "elena-verna": "SaaS growth advisor",
-  "eugene-schwartz": "the copywriter copywriters study",
-  "harry-dry": "runs Marketing Examples",
-  "lulu-cheng": "go-direct comms strategist",
-  "rob-fitzpatrick": "the Mom Test guy",
-  // thinking
-  "annie-duke": "thinking in bets",
-  "charlie-munger": "Buffett's sharper half",
-  "david-goggins": "Baddest motherfucker on earth",
-  "clayton-christensen": "the disruption guy",
-  "david-deutsch": "the explanations physicist",
-  "eliyahu-goldratt": "the bottleneck guy",
-  "hamilton-helmer": "7 Powers strategist",
-  "julia-galef": "the Scout Mindset",
-  "nassim-taleb": "the Black Swan guy",
-  "richard-feynman": "the curious physicist",
-  "richard-rumelt": "strategy's strategist",
-  "shane-parrish": "Farnam Street",
-  "thomas-sowell": "the contrarian economist",
-  // craft
-  "william-zinsser": "On Writing Well",
-};
-
-const TOPIC_MAP: Record<string, Topic[]> = {
-  // operators
-  "andrew-carnegie": ["engineering", "pricing", "strategy", "wealth"],
-  "brian-chesky": ["hiring", "culture", "org design", "design"],
-  "chris-voss": ["negotiation", "sales"],
-  "danny-meyer": ["culture", "hiring", "org design", "decision-making"],
-  "andy-grove": ["org design", "hiring", "decision-making", "strategy"],
-  "elon-musk": ["engineering", "decision-making", "hiring"],
-  "jason-lemkin": ["sales", "hiring", "fundraising", "growth"],
-  "jeff-bezos": ["strategy", "org design", "product", "decision-making"],
-  "jensen-huang": ["engineering", "org design", "strategy"],
-  "keith-rabois": ["hiring", "org design", "decision-making"],
-  "matt-mochary": ["decision-making", "culture", "hiring", "org design"],
-  "patrick-collison": ["engineering", "product", "culture", "career"],
-  "steve-jobs": ["product", "design", "hiring", "positioning"],
-  "toby-lutke": ["culture", "org design", "product", "mental models"],
-  "wes-kao": ["writing", "career", "PR & comms"],
-  // investors
-  "ben-horowitz": ["culture", "hiring", "org design", "decision-making"],
-  "marc-andreessen": ["strategy", "fundraising", "hiring", "sales"],
-  "naval-ravikant": ["wealth", "career", "decision-making", "mental models"],
-  "paul-graham": ["strategy", "fundraising", "growth", "product"],
-  "peter-thiel": ["strategy", "decision-making", "sales", "mental models"],
-  // marketing
-  "andrew-chen": ["growth", "marketplaces", "product", "strategy"],
-  "april-dunford": ["positioning", "sales", "strategy"],
-  "david-ogilvy": ["copywriting", "positioning", "PR & comms", "design"],
-  "elena-verna": ["growth", "product", "pricing", "sales"],
-  "eugene-schwartz": ["copywriting", "positioning"],
-  "harry-dry": ["copywriting", "positioning", "design"],
-  "lulu-cheng": ["PR & comms", "positioning", "career"],
-  "rob-fitzpatrick": ["product", "sales", "positioning", "strategy"],
-  "al-ries": ["positioning", "strategy", "mental models"],
-  // thinking
-  "annie-duke": ["decision-making", "mental models", "strategy"],
-  "charlie-munger": ["mental models", "decision-making", "wealth"],
-  "clayton-christensen": ["strategy", "mental models", "product", "career"],
-  "david-deutsch": ["mental models", "decision-making", "strategy"],
-  "david-goggins": ["mental models", "decision-making", "career"],
-  "eliyahu-goldratt": ["engineering", "decision-making", "strategy", "mental models"],
-  "hamilton-helmer": ["strategy", "mental models", "positioning"],
-  "julia-galef": ["decision-making", "mental models"],
-  "nassim-taleb": ["decision-making", "mental models", "wealth", "strategy"],
-  "richard-feynman": ["mental models", "decision-making", "engineering", "career"],
-  "richard-rumelt": ["strategy", "decision-making", "mental models"],
-  "shane-parrish": ["decision-making", "mental models"],
-  "thomas-sowell": ["mental models", "decision-making", "strategy"],
-  // craft
-  "william-zinsser": ["writing", "mental models", "PR & comms"],
-};
+// HEADLINE_MAP and TOPIC_MAP removed — now read from per-persona frontmatter.
 
 interface Persona {
   slug: string;
@@ -327,123 +207,104 @@ interface Issue {
   message: string;
 }
 
+function parseTopicsField(raw: string): string[] {
+  // YAML inline form: "[a, b, c]" or comma-separated bare string
+  const trimmed = raw.trim().replace(/^\[/, "").replace(/\]$/, "");
+  return trimmed.split(",").map((t) => t.trim().replace(/^["']|["']$/g, "")).filter(Boolean);
+}
+
 function collectPersonas(): { personas: Persona[]; issues: Issue[] } {
   const personas: Persona[] = [];
   const issues: Issue[] = [];
 
-  for (const bucket of BUCKETS) {
-    const personasDir = path.join(DOJO_DIR, bucket, "skill", "personas");
-    if (!existsSync(personasDir)) continue;
-    for (const slug of readdirSync(personasDir)) {
-      const slugDir = path.join(personasDir, slug);
-      if (!statSync(slugDir).isDirectory()) continue;
-      const personaMd = path.join(slugDir, "persona.md");
-      if (!existsSync(personaMd)) {
-        issues.push({
-          level: "error",
-          slug,
-          message: "missing persona.md",
-        });
-        continue;
-      }
+  const personasDir = path.join(DOJO_DIR, "personas");
+  if (!existsSync(personasDir)) return { personas, issues };
 
-      const text = readFileSync(personaMd, "utf8");
-      const fm = parseFrontmatter(text);
-      const shortBlurb = fm.short_blurb || "";
-      if (!shortBlurb) {
-        issues.push({
-          level: "error",
-          slug,
-          message: "missing short_blurb frontmatter",
-        });
-        continue;
-      }
-
-      const name = extractName(shortBlurb);
-      if (!name) {
-        issues.push({
-          level: "error",
-          slug,
-          message: "could not extract name from short_blurb",
-        });
-        continue;
-      }
-
-      const topics = TOPIC_MAP[slug];
-      if (!topics) {
-        issues.push({
-          level: "error",
-          slug,
-          message: "no TOPIC_MAP entry — add one in build-manifest.ts",
-        });
-        continue;
-      }
-      if (topics.length < 2 || topics.length > 4) {
-        issues.push({
-          level: "warn",
-          slug,
-          message: `topics count ${topics.length} — expected 2–4`,
-        });
-      }
-
-      if (!fm.routing_keywords) {
-        issues.push({
-          level: "warn",
-          slug,
-          message: "no routing_keywords frontmatter — falling back to short_blurb; add routing_keywords per DOJO-PERSONA-PROCESS.md Phase 8",
-        });
-      }
-
-      const tagline = normalizeTagline(rawTagline(fm, shortBlurb));
-      if (!tagline.value) {
-        issues.push({
-          level: "error",
-          slug,
-          message: "empty tagline after normalization",
-        });
-        continue;
-      }
-      if (tagline.truncated) {
-        issues.push({
-          level: "warn",
-          slug,
-          message: `routing_keywords truncated (${tagline.originalChars} chars / ${tagline.originalItems} items → ${tagline.value.length} chars / ${tagline.value.split(", ").length} items) — tighten the source field in persona.md`,
-        });
-      }
-
-      const topicsDir = path.join(slugDir, "topics");
-      const topicFileCount = existsSync(topicsDir)
-        ? readdirSync(topicsDir).filter((f) => f.endsWith(".md")).length
-        : 0;
-      if (topicFileCount < MIN_TOPIC_FILES) {
-        issues.push({
-          level: "warn",
-          slug,
-          message: `only ${topicFileCount} topic files — persona may be incomplete`,
-        });
-      }
-
-      const headline = HEADLINE_MAP[slug];
-      if (!headline) {
-        issues.push({
-          level: "error",
-          slug,
-          message: "no HEADLINE_MAP entry — add one in build-manifest.ts",
-        });
-        continue;
-      }
-
-      personas.push({
-        slug,
-        name,
-        domain: bucket,
-        installName: `dojo-${slug}`,
-        headline,
-        tagline: tagline.value,
-        topics,
-        sizeKb: Math.max(1, Math.round(walkBytes(slugDir) / 1024)),
-      });
+  for (const slug of readdirSync(personasDir)) {
+    const slugDir = path.join(personasDir, slug);
+    if (!statSync(slugDir).isDirectory()) continue;
+    const personaMd = path.join(slugDir, "persona.md");
+    if (!existsSync(personaMd)) {
+      issues.push({ level: "error", slug, message: "missing persona.md" });
+      continue;
     }
+
+    const text = readFileSync(personaMd, "utf8");
+    const fm = parseFrontmatter(text);
+
+    const shortBlurb = fm.short_blurb || "";
+    if (!shortBlurb) {
+      issues.push({ level: "error", slug, message: "missing short_blurb frontmatter" });
+      continue;
+    }
+
+    const name = extractName(shortBlurb);
+    if (!name) {
+      issues.push({ level: "error", slug, message: "could not extract name from short_blurb" });
+      continue;
+    }
+
+    const bucket = (fm.bucket || "").trim();
+    if (!bucket) {
+      issues.push({ level: "error", slug, message: "missing `bucket:` frontmatter field" });
+      continue;
+    }
+    if (!BUCKETS.includes(bucket)) {
+      issues.push({ level: "error", slug, message: `bucket "${bucket}" not in dojo/buckets.json (valid: ${BUCKETS.join(", ")})` });
+      continue;
+    }
+
+    const headline = (fm.headline || "").replace(/^["']|["']$/g, "").trim();
+    if (!headline) {
+      issues.push({ level: "error", slug, message: "missing `headline:` frontmatter field" });
+      continue;
+    }
+
+    const topics = fm.topics ? parseTopicsField(fm.topics) : [];
+    if (topics.length === 0) {
+      issues.push({ level: "error", slug, message: "missing `topics:` frontmatter field" });
+      continue;
+    }
+    const invalidTopics = topics.filter((t) => !TOPICS.includes(t as Topic));
+    if (invalidTopics.length > 0) {
+      issues.push({ level: "error", slug, message: `topics not in canonical taxonomy: ${invalidTopics.join(", ")} (valid: dojo/topics.json)` });
+      continue;
+    }
+    if (topics.length < 2 || topics.length > 4) {
+      issues.push({ level: "warn", slug, message: `topics count ${topics.length} — expected 2–4` });
+    }
+
+    if (!fm.routing_keywords) {
+      issues.push({ level: "warn", slug, message: "no routing_keywords frontmatter — falling back to short_blurb" });
+    }
+
+    const tagline = normalizeTagline(rawTagline(fm, shortBlurb));
+    if (!tagline.value) {
+      issues.push({ level: "error", slug, message: "empty tagline after normalization" });
+      continue;
+    }
+    if (tagline.truncated) {
+      issues.push({ level: "warn", slug, message: `routing_keywords truncated (${tagline.originalChars} chars / ${tagline.originalItems} items → ${tagline.value.length} chars / ${tagline.value.split(", ").length} items)` });
+    }
+
+    const topicsDir = path.join(slugDir, "topics");
+    const topicFileCount = existsSync(topicsDir)
+      ? readdirSync(topicsDir).filter((f) => f.endsWith(".md")).length
+      : 0;
+    if (topicFileCount < MIN_TOPIC_FILES) {
+      issues.push({ level: "warn", slug, message: `only ${topicFileCount} topic files — persona may be incomplete` });
+    }
+
+    personas.push({
+      slug,
+      name,
+      domain: bucket,
+      installName: `dojo-${slug}`,
+      headline,
+      tagline: tagline.value,
+      topics: topics as Topic[],
+      sizeKb: Math.max(1, Math.round(walkBytes(slugDir) / 1024)),
+    });
   }
 
   // Stable order: bucket in declaration order, then alpha by slug.

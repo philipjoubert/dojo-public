@@ -1,0 +1,26 @@
+{
+  "_doc": "Canonical topic taxonomy for the picker filter. ALL scripts (build-manifest.ts, gap-check.py, etc.) read this list. Each persona declares its own topics in persona.md frontmatter, drawn from this list. Edit here to add/rename a topic.",
+  "topics": [
+    "hiring",
+    "culture",
+    "org design",
+    "negotiation",
+    "sales",
+    "pricing",
+    "positioning",
+    "copywriting",
+    "PR & comms",
+    "fundraising",
+    "product",
+    "design",
+    "growth",
+    "marketplaces",
+    "engineering",
+    "strategy",
+    "career",
+    "wealth",
+    "decision-making",
+    "mental models",
+    "writing"
+  ]
+}

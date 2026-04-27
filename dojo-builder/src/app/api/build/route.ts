@@ -33,7 +33,7 @@ function findPersona(slug: string): Persona | undefined {
 }
 
 function personaSourceDir(p: Persona): string {
-  return path.join(DOJO_DIR, p.domain, "skill", "personas", p.slug);
+  return path.join(DOJO_DIR, "personas", p.slug);
 }
 
 // Strip YAML frontmatter from persona.md before shipping in the zip.
