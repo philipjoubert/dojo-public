@@ -79,6 +79,53 @@ const TOPICS = [
 ] as const;
 type Topic = (typeof TOPICS)[number];
 
+const HEADLINE_MAP: Record<string, string> = {
+  // operators
+  "andrew-carnegie": "steel magnate",
+  "andy-grove": "Intel's paranoid CEO",
+  "brian-chesky": "Airbnb's founder",
+  "chris-voss": "former FBI hostage negotiator",
+  "danny-meyer": "hospitality master",
+  "elon-musk": "Tesla and SpaceX",
+  "jason-lemkin": "founded SaaStr",
+  "jeff-bezos": "Amazon's founder",
+  "jensen-huang": "Nvidia's leather-jacket CEO",
+  "keith-rabois": "PayPal Mafia VC",
+  "patrick-collison": "Stripe's CEO",
+  "steve-jobs": "Apple's founder",
+  "toby-lutke": "Shopify's founder",
+  "wes-kao": "executive communication coach",
+  // investors
+  "ben-horowitz": "the wartime CEO guy",
+  "marc-andreessen": "a16z partner",
+  "naval-ravikant": "AngelList founder",
+  "paul-graham": "YC's essayist-in-chief",
+  "peter-thiel": "Zero to One",
+  // marketing
+  "al-ries": "the original positioning guy",
+  "andrew-chen": "the network effects guy",
+  "april-dunford": "positioning for tech",
+  "david-ogilvy": "the original Mad Man",
+  "elena-verna": "the SaaS growth advisor",
+  "eugene-schwartz": "the copywriter copywriters study",
+  "harry-dry": "runs Marketing Examples",
+  "lulu-cheng": "go-direct comms strategist",
+  "rob-fitzpatrick": "the Mom Test guy",
+  // thinking
+  "annie-duke": "poker pro turned decision coach",
+  "charlie-munger": "Buffett's sharper half",
+  "clayton-christensen": "the disruption guy",
+  "david-deutsch": "the explanations physicist",
+  "eliyahu-goldratt": "the bottleneck guy",
+  "hamilton-helmer": "7 Powers strategist",
+  "julia-galef": "wrote The Scout Mindset",
+  "nassim-taleb": "the Black Swan guy",
+  "shane-parrish": "runs Farnam Street",
+  "thomas-sowell": "the contrarian economist",
+  // craft
+  "william-zinsser": "wrote On Writing Well",
+};
+
 const TOPIC_MAP: Record<string, Topic[]> = {
   // operators
   "andrew-carnegie": ["engineering", "pricing", "strategy", "wealth"],
@@ -131,6 +178,7 @@ interface Persona {
   name: string;
   domain: Bucket;
   installName: string;
+  headline: string;
   tagline: string;
   topics: Topic[];
   sizeKb: number;
@@ -349,11 +397,22 @@ function collectPersonas(): { personas: Persona[]; issues: Issue[] } {
         });
       }
 
+      const headline = HEADLINE_MAP[slug];
+      if (!headline) {
+        issues.push({
+          level: "error",
+          slug,
+          message: "no HEADLINE_MAP entry — add one in build-manifest.ts",
+        });
+        continue;
+      }
+
       personas.push({
         slug,
         name,
         domain: bucket,
         installName: `dojo-${slug}`,
+        headline,
         tagline: tagline.value,
         topics,
         sizeKb: Math.max(1, Math.round(walkBytes(slugDir) / 1024)),
@@ -387,6 +446,7 @@ export interface Persona {
   name: string;
   domain: Domain;
   installName: string;
+  headline: string;
   tagline: string;
   topics: Topic[];
   sizeKb: number;

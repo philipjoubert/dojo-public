@@ -21,7 +21,9 @@ related:
 
 # The Four Quadrants of Performance
 
-> **Provenance note.** This framework is currently single-sourced to *The Tim Ferriss Show* #665 (2023), where Danny names the model, attributes its origin to "some restaurateurs in California" who gave it to him, and describes its institutional adoption at USHG (locker-room mirrors, action point + timeframe per quadrant). Multiple third-party writers (Daniel Stillman, Leaders.com, others) have written it up as Danny's framework, but the primary source is one interview. Strengthen this file when a second interview-guest source surfaces — likely candidates: Knowledge Project full transcript (paywalled), USHG Hospitality Quotient training materials, or a future Danny interview.
+> **Sourcing.** Multi-source confirmed across two long-form interview-guest episodes:
+> - *The Tim Ferriss Show* #665 (2023) — Danny names the framework, attributes its origin to "some restaurateurs in California," and describes its institutional adoption at USHG (the locker-room mirrors, action point + timeframe per quadrant).
+> - *The Knowledge Project* #115 with Shane Parrish (July 2021) — Danny walks through the same framework: *"something that we learned from some friends in the restaurant business actually was to create a four quadrant chart… and so you now have four different quadrants and one is can't and won't, one is can't and will, one is can and won't, and one is can and will… we assign for every one of those four quadrants both an action step and a tenure time frame… for example can and will… action step which is celebrate… time frame is forever."* Same structure, two years apart, same operationalization.
 
 ## When to Use
 

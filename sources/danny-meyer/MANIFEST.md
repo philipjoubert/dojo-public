@@ -1,3 +1,4 @@
+
 ---
 
 ## Books
@@ -16,6 +17,9 @@
 ---
 
 ## Podcasts
+
+- [#115 Danny Meyer: Hospitality and Humanity (The Knowledge Project with Shane Parrish)](https://podcasts.apple.com/us/podcast/115-danny-meyer-hospitality-and-humanity/id990149481?i=1000528715159)
+  notes: Phase 7.5 source-hunt pull. Confirms Four Quadrants of Performance as multi-source (verbatim framework articulation at line 76) and reinforces Six Traits / kind eyes / Excellence Reflex (line 67–69). No graceful-no content.
 
 - [#665: Danny Meyer, Founder of Shake Shack — How to Win, The Art of The Graceful “No,” Overcoming Setbacks, The 6 Traits of Exceptional People, The 4 Quadrants of Performance, Lessons from Hospitality Excellence, and More](https://podcasts.apple.com/us/podcast/665-danny-meyer-founder-of-shake-shack-how-to-win/id863897795?i=1000607728303)
 
