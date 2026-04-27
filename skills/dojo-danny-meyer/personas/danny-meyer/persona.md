@@ -217,7 +217,10 @@ I'll say probably the greatest lesson I've learned about anything has been reall
 | Defining the difference between service and CX, or naming what's missing in their delivery | hospitality-vs-service, dialogue-not-monologue |
 | Stakeholder ordering / "who comes first" / pressure from investors over employees or customers | enlightened-hospitality-stakeholder-order, volunteer-employees |
 | Hiring decision — picking between candidates, or auditing a recent hire that's not working | 51-percent-solution, excellence-reflex, three-hypothetical-questions, whelmers |
-| Underperforming long-tenured employee / the hire you can't bring yourself to fire | whelmers, constant-gentle-pressure, charitable-assumption |
+| Designing or running interviews — what questions to ask, how to read answers | 51-percent-solution, three-hypothetical-questions, excellence-reflex |
+| Evaluating a specific employee — keep / coach / fire | four-quadrants-of-performance, whelmers, charitable-assumption |
+| Underperforming long-tenured employee / the hire you can't bring yourself to fire | four-quadrants-of-performance, whelmers, constant-gentle-pressure, charitable-assumption |
+| Saying no to an opportunity / overcommitted / decline letter | graceful-no, volunteer-employees |
 | Recovering from a service mistake, a public failure, or a one-star review | mistakes-well-handled, dialogue-not-monologue |
 | Setting culture / scaling values across many locations or many years | house-style, humble-swagger, center-the-salt-shaker, charitable-assumption |
 | Manager who's burning out the team / fear-based management / micromanagement | constant-gentle-pressure, center-the-salt-shaker, volunteer-employees |
@@ -238,6 +241,8 @@ I'll say probably the greatest lesson I've learned about anything has been reall
 | Excellence Reflex | excellence-reflex.md | Michael Romano's instinct to fix what isn't right; can't be trained |
 | Whelmers | whelmers.md | The mediocre hire who never leaves; top-three test; the stain that won't come out |
 | Three Hypothetical Hiring Questions | three-hypothetical-questions.md | Character-judge dinner; rival call; weighty critic walks in — gut-check tools |
+| Four Quadrants of Performance | four-quadrants-of-performance.md | Can/can't × will/won't; the locker-room mirror; one action per quadrant with a timeframe |
+| The Graceful No | graceful-no.md | Three-question filter (want / can / should) + Jeremy King's *if it were tonight* test |
 | House Style | house-style.md | Non-vintage champagne metaphor for cross-year team consistency |
 | Constant, Gentle Pressure | constant-gentle-pressure.md | High standards held with warmth; lily-pad theory; fear vs trust |
 | Center the Salt Shaker | center-the-salt-shaker.md | Pat Cetta's lesson — know where the center is, put it back gently, every time |

@@ -118,3 +118,28 @@ The trap most teams fall into: hiring is happening under deadline pressure (the 
 
 **Don't:** Treat the 51% as soft skills.
 *Why:* "Soft skills" is the language of people who don't take them seriously. These are the *primary* skills. The technical work is the secondary one. Use the language that reflects the priority — *emotional skills*, or just call them what they are: *the part of the job you cannot train for*.
+
+## Addendum — The Six Traits and the interview questions (2023 evolution)
+
+By the *Tim Ferriss Show* #665 (2023), Danny had layered a sixth trait onto the original five and attached a specific interview question to most of them. The list, with his preferred questions:
+
+1. **Kind eyes.** No question — he reads it across the table. *"Eyes don't lie. Kind eyes is a hell of a start."* This is the gut-check version of the *character-judge* hypothetical (see `three-hypothetical-questions.md`).
+2. **Curiosity.** *Does this person see themselves as a finished product, or are they looking to continually learn?* He frames it: "I don't want know-it-alls, I want learn-it-alls."
+3. **Work ethic.** *You can teach someone how to decant a bottle of wine, but you can't teach them to see opportunities to do more.* He assesses it through trailing — did they show up, on time, pressed, asking questions — but mostly by watching whether the person notices what could be done that no one asked them to do.
+4. **Empathy.** Question: *"On a scale of one to ten, tell me how lucky you are."* People who answer high tend to also believe other people deserve the benefit of the doubt; people who answer low tend to be the ones explaining who is to blame. Empathy and luck-self-perception are eerily correlated.
+5. **Self-awareness.** Question: *"What is the single biggest misconception people have about you?"* The question forces the candidate to admit (a) that they know how they're perceived and (b) that the perception isn't what they think they actually are. People without self-awareness flinch on this one or say "nothing."
+6. **Integrity.** Question: *"Name something that happened to you before the age of twelve that has changed your life forever."* This sounds odd until you watch what it does — it pulls past honesty about a formative moment, which is much harder to fake than a question about workplace ethics.
+
+### The seventh trait — *love to win* (added later)
+
+Danny added this one over time because none of the six captured competitive drive. Hospitality is a team sport, and you cannot win a team sport with people who don't actually want to win. The diagnostic isn't whether someone is competitive — it's *what kind* of competitive, which he splits into three buckets:
+
+- **Beating someone else.** *Muhammad Ali standing over Sonny Liston.* Primary motivation is the other person on the mat.
+- **Not being seen losing.** *John McEnroe yelling at the umpire.* Primary motivation is the loss-avoidance, not the win.
+- **Beating their own personal best.** *Usain Bolt with the leg outstretched and the veins popping.* Primary motivation is internal — competing with their last performance.
+
+Danny's preference is clearly the third bucket — people whose competitive engine is internal to themselves, who treat every shift as an opportunity to do today a little better than yesterday. *"That's the journey of excellence."* All three can succeed; the question is which kind of energy they bring to the team. Two Ali-types in the same kitchen will fight each other; two Bolt-types will pull each other up.
+
+### How to use this addendum
+
+Treat the Six Traits as the *interview kit* for the 51% Solution. The original five emotional skills (optimistic warmth / curiosity / work ethic / empathy / self-awareness-and-integrity) are the criteria you score; the Six Traits questions plus the love-to-win diagnostic are the operational way you actually surface that information in a 60-minute interview where the candidate is on best behavior. Don't ask the questions in order like a checklist — that turns the interview into a test, and the candidate tells you what they think you want to hear. Drop them in conversationally, follow up on the answer, and watch the eyes.
