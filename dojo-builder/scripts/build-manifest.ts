@@ -84,6 +84,7 @@ const TOPIC_MAP: Record<string, Topic[]> = {
   "andrew-carnegie": ["engineering", "pricing", "strategy", "wealth"],
   "brian-chesky": ["hiring", "culture", "org design", "design"],
   "chris-voss": ["negotiation", "sales"],
+  "danny-meyer": ["culture", "hiring", "org design", "decision-making"],
   "andy-grove": ["org design", "hiring", "decision-making", "strategy"],
   "elon-musk": ["engineering", "decision-making", "hiring"],
   "jason-lemkin": ["sales", "hiring", "fundraising", "growth"],

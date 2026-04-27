@@ -70,9 +70,9 @@ Questions are classified by mode — pointed, coaching, review, drafting, emerge
 
 ## Available experts
 
-38 experts across five domains. Browse and pick at [superdojo.xyz](https://superdojo.xyz/).
+39 experts across five domains. Browse and pick at [superdojo.xyz](https://superdojo.xyz/).
 
-**Operators** — Andrew Carnegie · Andy Grove · Brian Chesky · Chris Voss · Elon Musk · Jason Lemkin · Jeff Bezos · Jensen Huang · Keith Rabois · Patrick Collison · Steve Jobs · Tobi Lütke · Wes Kao
+**Operators** — Andrew Carnegie · Andy Grove · Brian Chesky · Chris Voss · Danny Meyer · Elon Musk · Jason Lemkin · Jeff Bezos · Jensen Huang · Keith Rabois · Patrick Collison · Steve Jobs · Tobi Lütke · Wes Kao
 
 **Investors** — Ben Horowitz · Marc Andreessen · Naval Ravikant · Paul Graham · Peter Thiel
 
