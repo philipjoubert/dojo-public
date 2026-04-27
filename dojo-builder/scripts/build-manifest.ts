@@ -84,6 +84,7 @@ const TOPIC_MAP: Record<string, Topic[]> = {
   "andrew-carnegie": ["engineering", "pricing", "strategy", "wealth"],
   "brian-chesky": ["hiring", "culture", "org design", "design"],
   "chris-voss": ["negotiation", "sales"],
+  "andy-grove": ["org design", "engineering", "decision-making", "strategy"],
   "elon-musk": ["engineering", "decision-making", "hiring"],
   "jason-lemkin": ["sales", "hiring", "fundraising", "growth"],
   "jeff-bezos": ["strategy", "org design", "product", "decision-making"],
@@ -92,6 +93,7 @@ const TOPIC_MAP: Record<string, Topic[]> = {
   "patrick-collison": ["engineering", "product", "culture", "career"],
   "steve-jobs": ["product", "design", "hiring", "positioning"],
   "toby-lutke": ["culture", "org design", "product", "mental models"],
+  "wes-kao": ["writing", "career", "PR & comms"],
   // investors
   "ben-horowitz": ["culture", "hiring", "org design", "decision-making"],
   "marc-andreessen": ["strategy", "fundraising", "hiring", "sales"],
@@ -107,6 +109,7 @@ const TOPIC_MAP: Record<string, Topic[]> = {
   "harry-dry": ["copywriting", "positioning", "design"],
   "lulu-cheng": ["PR & comms", "positioning", "career"],
   // thinking
+  "annie-duke": ["decision-making", "mental models", "strategy"],
   "charlie-munger": ["mental models", "decision-making", "wealth"],
   "clayton-christensen": ["strategy", "mental models", "product", "career"],
   "david-deutsch": ["mental models", "decision-making", "strategy"],

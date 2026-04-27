@@ -177,8 +177,9 @@ def split_audio(audio_path: Path, max_size_mb: int = 24) -> list[Path]:
     ], capture_output=True, text=True)
     duration = float(result.stdout.strip())
 
-    # Calculate chunk duration (aim for ~20MB chunks)
-    num_chunks = int(file_size_mb / 20) + 1
+    # Calculate chunk duration (aim for ~16MB chunks — Whisper hard-limits at 25MB
+    # and constant bitrate splits drift; 16MB target leaves real headroom).
+    num_chunks = int(file_size_mb / 16) + 1
     chunk_duration = duration / num_chunks
 
     chunks = []
