@@ -14,7 +14,7 @@
 import { writeFileSync, mkdirSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { PERSONAS, DOMAIN_META, type Domain } from "../src/lib/personas.generated";
+import { BUCKETS, PERSONAS, DOMAIN_META, type Domain } from "../src/lib/personas.generated";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -83,7 +83,7 @@ function buildLlmsTxt(): string {
 
   sections.push("## Available skills");
 
-  const domainOrder: Domain[] = ["decide", "build", "sell", "say", "fund"];
+  const domainOrder: Domain[] = BUCKETS;
   for (const domain of domainOrder) {
     const list = byDomain.get(domain);
     if (!list?.length) continue;

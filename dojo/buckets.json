@@ -1,0 +1,40 @@
+{
+  "_doc": "Single source of truth for bucket structure. ALL scripts (build-manifest.ts, build-granular-skills.ts, build-llms-txt.ts, generate-domain-skills.py, gap-check.py, sync-public.sh) read from this file. To rename, reorder, or add a bucket, edit here and re-run sync. Order in this file is the canonical display order.",
+  "buckets": {
+    "decide": {
+      "label": "Decide",
+      "description": "Panel for the hard call — mental models, strategy, decision-making under uncertainty.",
+      "trigger_use": "Use when the question is \"should I?\" / \"how do I think about this?\" / \"what's the right call?\"",
+      "named_examples": "\"ask Munger\", \"what would Taleb say\", \"ask Decide with Galef and Helmer\"",
+      "primary_expert_header": "Munger"
+    },
+    "build": {
+      "label": "Build",
+      "description": "Panel for running the company — founders, operators, organizational design, hiring, culture, product.",
+      "trigger_use": "Use when the question is \"how do I run this?\" — company, team, product, deal.",
+      "named_examples": "\"ask Bezos\", \"what would Chesky say\", \"ask Build with Bezos and Musk\"",
+      "primary_expert_header": "Bezos"
+    },
+    "sell": {
+      "label": "Sell",
+      "description": "Panel for getting and keeping customers — positioning, growth, marketing, customer research.",
+      "trigger_use": "Use when the question is \"how do I get / keep / understand customers?\"",
+      "named_examples": "\"ask Dunford\", \"what would Chen say\", \"ask Sell with Ries and Verna\"",
+      "primary_expert_header": "Dunford"
+    },
+    "say": {
+      "label": "Say",
+      "description": "Panel for the craft of words — writing, editing, voice, copywriting, comms, PR.",
+      "trigger_use": "Use when the question is \"how do I write / pitch / present this?\"",
+      "named_examples": "\"ask Zinsser\", \"what would Ogilvy say\", \"ask Say with Schwartz and Cheng\"",
+      "primary_expert_header": "Zinsser"
+    },
+    "fund": {
+      "label": "Fund",
+      "description": "Panel for money — fundraising, investing, capital allocation, wealth, leverage.",
+      "trigger_use": "Use when the question is \"how do I raise / invest / build wealth?\"",
+      "named_examples": "\"ask Naval\", \"what would Andreessen say\", \"ask Fund with Graham and Thiel\"",
+      "primary_expert_header": "Marc"
+    }
+  }
+}

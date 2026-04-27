@@ -37,7 +37,25 @@ const __dirname = path.dirname(__filename);
 const APP_ROOT = path.resolve(__dirname, "..");
 const REPO_ROOT = path.resolve(APP_ROOT, "..");
 const DOJO_DIR = path.join(REPO_ROOT, "dojo");
+const BUCKETS_JSON_PATH = path.join(DOJO_DIR, "buckets.json");
 const OUT_PATH = path.join(APP_ROOT, "src", "lib", "personas.generated.ts");
+
+// Single source of truth for bucket structure. Edit dojo/buckets.json to
+// rename, reorder, or add a bucket — all scripts (this one, build-granular,
+// build-llms-txt, generate-domain-skills, gap-check, sync-public) read it.
+interface BucketConfig {
+  label: string;
+  description: string;
+  trigger_use: string;
+  named_examples: string;
+  primary_expert_header: string;
+}
+function loadBuckets(): { order: string[]; config: Record<string, BucketConfig> } {
+  const raw = JSON.parse(readFileSync(BUCKETS_JSON_PATH, "utf-8"));
+  const config = raw.buckets as Record<string, BucketConfig>;
+  return { order: Object.keys(config), config };
+}
+const { order: BUCKETS_RAW, config: BUCKET_CONFIG } = loadBuckets();
 
 // Tagline contract — hand-authored via persona.md `routing_keywords`
 // (Phase 8 of DOJO-PERSONA-PROCESS.md). Used in the SKILL.md EXPERTS
@@ -51,8 +69,8 @@ const TAGLINE_MAX_ITEMS = 50;
 // Topic-file expectation — personas without topic files are suspicious.
 const MIN_TOPIC_FILES = 3;
 
-const BUCKETS = ["decide", "build", "sell", "say", "fund"] as const;
-type Bucket = (typeof BUCKETS)[number];
+const BUCKETS = BUCKETS_RAW as readonly string[];
+type Bucket = string;
 
 const TOPICS = [
   "hiring",
@@ -460,13 +478,15 @@ export interface Persona {
   sizeKb: number;
 }
 
-export const DOMAIN_META: Record<Domain, { label: string }> = {
-  decide: { label: "Decide" },
-  build: { label: "Build" },
-  sell: { label: "Sell" },
-  say: { label: "Say" },
-  fund: { label: "Fund" },
-};
+export const BUCKETS: Domain[] = ${JSON.stringify(BUCKETS)};
+
+export const DOMAIN_META: Record<Domain, { label: string; description: string }> = ${JSON.stringify(
+    Object.fromEntries(
+      BUCKETS.map((b) => [b, { label: BUCKET_CONFIG[b].label, description: BUCKET_CONFIG[b].description }]),
+    ),
+    null,
+    2,
+  )};
 
 export const TOPICS: Topic[] = ${JSON.stringify(TOPICS, null, 2)};
 

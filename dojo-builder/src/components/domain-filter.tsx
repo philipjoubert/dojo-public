@@ -1,16 +1,9 @@
 "use client";
 
-import { DOMAIN_META, type Domain } from "@/lib/personas.generated";
+import { BUCKETS, DOMAIN_META, type Domain } from "@/lib/personas.generated";
 import { filteredPersonas, useDojo } from "./dojo-state";
 
-const DOMAINS: Array<Domain | null> = [
-  null,
-  "decide",
-  "build",
-  "sell",
-  "say",
-  "fund",
-];
+const DOMAINS: Array<Domain | null> = [null, ...BUCKETS];
 
 export function DomainFilter() {
   const { state, dispatch, personas } = useDojo();

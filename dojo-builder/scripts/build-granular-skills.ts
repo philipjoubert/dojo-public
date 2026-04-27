@@ -17,7 +17,7 @@ import {
 } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { PERSONAS, type Persona } from "../src/lib/personas.generated";
+import { BUCKETS, PERSONAS, type Persona } from "../src/lib/personas.generated";
 import { renderSkillMd } from "../src/lib/skill-builder";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -29,13 +29,8 @@ const SKILLS_DIR = path.join(REPO_ROOT, "skills");
 const TEMPLATE_PATH = path.join(APP_ROOT, "templates", "skill-template.md.tmpl");
 const MARKETPLACE_PATH = path.join(REPO_ROOT, ".claude-plugin", "marketplace.json");
 
-const DOMAIN_SKILL_PATHS = [
-  "./dojo/decide/skill",
-  "./dojo/build/skill",
-  "./dojo/sell/skill",
-  "./dojo/say/skill",
-  "./dojo/fund/skill",
-];
+// Derived from dojo/buckets.json via the generated manifest — single source of truth.
+const DOMAIN_SKILL_PATHS = BUCKETS.map((b) => `./dojo/${b}/skill`);
 
 function personaSourceDir(p: Persona): string {
   return path.join(DOJO_DIR, p.domain, "skill", "personas", p.slug);

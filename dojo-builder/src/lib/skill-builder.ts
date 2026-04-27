@@ -1,4 +1,4 @@
-import type { Domain, Persona } from "./personas.generated";
+import { BUCKETS, DOMAIN_META, type Domain, type Persona } from "./personas.generated";
 
 export interface RenderInput {
   personas: Persona[];
@@ -6,21 +6,11 @@ export interface RenderInput {
   template: string;
 }
 
-const DOMAIN_ORDER: Domain[] = [
-  "decide",
-  "build",
-  "sell",
-  "say",
-  "fund",
-];
+const DOMAIN_ORDER: Domain[] = BUCKETS;
 
-const DOMAIN_HEADING: Record<Domain, string> = {
-  decide: "Decide",
-  build: "Build",
-  sell: "Sell",
-  say: "Say",
-  fund: "Fund",
-};
+const DOMAIN_HEADING: Record<Domain, string> = Object.fromEntries(
+  BUCKETS.map((b) => [b, DOMAIN_META[b].label]),
+) as Record<Domain, string>;
 
 function shortName(fullName: string): string {
   const parts = fullName.trim().split(/\s+/);

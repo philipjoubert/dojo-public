@@ -1,7 +1,7 @@
 ---
 name: dojo-say
 description: |
-  Panel for the craft of words — writing, editing, voice, copywriting, comms, PR. Use when the question is "how do I write / pitch / present this?" Trigger phrases: "ask dojo", "ask the writers", or any loaded expert by name.
+  Panel for the craft of words — writing, editing, voice, copywriting, comms, PR. Use when the question is "how do I write / pitch / present this?" Trigger phrases: "ask dojo", or any loaded expert by name.
   Loaded: William Zinsser (clarity as moral act, simplicity, cut every word that doesn't earn its place, find the human, voice as the writer himself, rewriting as the work, write for one reader); David Ogilvy (direct-response copy, brand, long-copy, Big Idea, research-driven creative, headline-is-80-cents, positioning); Eugene Schwartz (copywriting, direct-response, headlines, leads, Mass Desire, States of Awareness/Sophistication); Harry Dry (copywriting craft, landing pages, headlines, the three tests (visualise/falsify/unique), iceberg positioning, enemy positioning, juxtaposition, rhetorical toolkit, abstract-word-bingo diagnosis, doorstep test, content-as-launch distribution, personal brand); Wes Kao (executive communication, managing up, sharp writing, spiky POV, cohort-based courses); Lulu Cheng (comms, PR, crisis, founder positioning, going direct, narrative). More experts added over time.
 ---
 

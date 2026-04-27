@@ -1,7 +1,7 @@
 ---
 name: dojo-sell
 description: |
-  Panel for getting and keeping customers — positioning, growth, marketing, customer research. Use when the question is "how do I get / keep / understand customers?" Trigger phrases: "ask dojo", "ask the marketers", or any loaded expert by name.
+  Panel for getting and keeping customers — positioning, growth, marketing, customer research. Use when the question is "how do I get / keep / understand customers?" Trigger phrases: "ask dojo", or any loaded expert by name.
   Loaded: April Dunford (positioning, sales pitch, differentiated value, competitive alternatives, market category, first-call pitch); Al Ries (positioning, marketing warfare, brand focus, line-extension trap, category divergence, own a word, perception over product); Andrew Chen (network effects, Cold Start Problem, atomic networks, marketplaces, consumer PMF/retention, viral loops, power user curve); Elena Verna (growth, PLG, product-led sales, activation, retention, monetization, reverse trials, growth loops, experimentation, AI-native growth); Rob Fitzpatrick (the Mom Test, customer interviews, idea validation, commitment and currencies, finding conversations, founder-led research). More experts added over time.
 ---
 
