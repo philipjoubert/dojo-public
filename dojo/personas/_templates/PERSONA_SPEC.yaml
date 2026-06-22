@@ -1,0 +1,110 @@
+schema_version: 1
+slug: example-slug
+expert_name: Example Expert
+persona_type: framework_author
+status: strict
+
+# All new personas MUST use this strict spec. Legacy mode exists only for
+# personas that existed before this process. Create this file before drafting a
+# new persona. It is the build contract: fetch until source_targets are
+# satisfied, register frameworks before writing topics, then validate
+# persona.md/topics against this spec.
+#
+# persona_type options:
+# - active_operator: current operator/advisor; requires latest-work check and recent spoken source.
+# - historical_author: primary writings first; biography only for factual grounding.
+# - framework_author: named frameworks are the core; provenance is strict.
+# - portfolio_creator: output examples matter as much as explanations.
+# - public_investor_writer: letters/posts/interviews; avoid portfolio-company voice leakage.
+
+coverage_policy:
+  latest_work_required: true
+  primary_sources_required: true
+  spoken_voice_required: true
+  portfolio_examples_required: false
+  external_bio_allowed_for_facts_only: true
+
+source_targets:
+  - type: book
+    minimum: 1
+    purpose: "primary frameworks and voice"
+  - type: recent_major_work
+    minimum: 1
+    purpose: "currency check for active experts"
+  - type: solo_video_or_podcast
+    minimum: 1
+    purpose: "spoken cadence"
+  - type: interview
+    minimum: 1
+    purpose: "question-answer behavior"
+
+latest_work:
+  checked_at: 2026-06-02
+  title: "Latest major work title"
+  year: 2026
+  included: true
+  source_ref: "MANIFEST title or stable source label"
+
+source_evidence:
+  - type: book
+    title: "Primary Book"
+    source_ref: "Primary Book"
+    role: primary_framework
+  - type: solo_video_or_podcast
+    title: "Solo Talk or Podcast"
+    source_ref: "Solo Talk or Podcast"
+    role: spoken_voice
+
+framework_registry:
+  require_owner: true
+  require_source_refs: true
+  borrowed_frameworks_must_credit_originator: true
+
+frameworks:
+  - name: "Framework Name"
+    topic_file: "topics/framework-name.md"
+    owner: expert
+    originator: "Example Expert"
+    source_refs:
+      - "Primary Book"
+    attribution_required: false
+    attribution_present: true
+
+voice_plan:
+  minimum_samples: 3
+  require_source_diversity: true
+  allowed_source_types:
+    - author
+    - solo
+    - interview_guest
+  copyright_mode: source_safe_anchors
+
+voice_samples:
+  - mode: manifesto
+    source_ref: "Primary Book"
+    source_type: author
+    quote_safe: true
+  - mode: tactical
+    source_ref: "Solo Talk or Podcast"
+    source_type: solo
+    quote_safe: true
+  - mode: diagnostic
+    source_ref: "Interview"
+    source_type: interview_guest
+    quote_safe: true
+
+proof_policy:
+  invented_numbers_allowed: false
+  placeholders_required_when_unverified: true
+
+strong_rule_policy:
+  require_why: true
+  require_exception_or_risk_handling: true
+
+validation:
+  deterministic: true
+  llm_review:
+    required: true
+    prompt: "dojo-builder/scripts/prompts/persona-review.md"
+    result_file: "PERSONA_REVIEW.json"
+    status: pending

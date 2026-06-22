@@ -221,6 +221,7 @@ function collectPersonas(): { personas: Persona[]; issues: Issue[] } {
   if (!existsSync(personasDir)) return { personas, issues };
 
   for (const slug of readdirSync(personasDir)) {
+    if (slug.startsWith("_")) continue;
     const slugDir = path.join(personasDir, slug);
     if (!statSync(slugDir).isDirectory()) continue;
     const personaMd = path.join(slugDir, "persona.md");

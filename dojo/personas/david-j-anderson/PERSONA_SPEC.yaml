@@ -1,0 +1,176 @@
+schema_version: 1
+slug: david-j-anderson
+expert_name: David J. Anderson
+persona_type: framework_author
+status: strict
+
+coverage_policy:
+  latest_work_required: true
+  primary_sources_required: true
+  spoken_voice_required: true
+  portfolio_examples_required: false
+  external_bio_allowed_for_facts_only: true
+
+source_targets:
+  - type: book
+    minimum: 2
+    purpose: "primary Kanban Method and Kanban Maturity Model frameworks"
+  - type: recent_major_work
+    minimum: 1
+    purpose: "latest-work currency check"
+  - type: solo_video_or_podcast
+    minimum: 1
+    purpose: "recent spoken cadence and current positioning"
+  - type: interview
+    minimum: 1
+    purpose: "question-answer behavior"
+
+latest_work:
+  checked_at: 2026-06-02
+  title: "Discovering Kanban"
+  year: 2023
+  included: true
+  source_ref: "Discovering Kanban (David J Anderson, 2023)"
+
+source_evidence:
+  - type: book
+    title: "Discovering Kanban"
+    source_ref: "Discovering Kanban (David J Anderson, 2023)"
+    role: latest_work
+  - type: book
+    title: "Kanban Maturity Model"
+    source_ref: "Kanban Maturity Model, 2nd Edition"
+    role: primary_framework
+  - type: book
+    title: "Kanban: Successful Evolutionary Change for Your Technology Business"
+    source_ref: "Kanban: Successful Evolutionary Change"
+    role: primary_framework
+  - type: recent_major_work
+    title: "Discovering Kanban"
+    source_ref: "Discovering Kanban (David J Anderson, 2023)"
+    role: currency_check
+  - type: solo_video_or_podcast
+    title: "Agility Without the Overheads"
+    source_ref: "Agility Without the Overheads"
+    role: spoken_voice
+  - type: interview
+    title: "All Things Kanban with David Anderson"
+    source_ref: "All Things Kanban with David Anderson"
+    role: interview_context
+
+framework_registry:
+  require_owner: true
+  require_source_refs: true
+  borrowed_frameworks_must_credit_originator: true
+
+frameworks:
+  - name: "Kanban Method"
+    topic_file: "topics/kanban-method.md"
+    owner: expert
+    originator: "David J. Anderson"
+    source_refs:
+      - "The Official Guide to The Kanban Method"
+      - "Revisiting the Principles and General Practices"
+    attribution_required: false
+    attribution_present: true
+  - name: "Evolutionary Change"
+    topic_file: "topics/evolutionary-change.md"
+    owner: expert
+    originator: "David J. Anderson"
+    source_refs:
+      - "Kanban's Change Management Principles"
+      - "Kanban: Successful Evolutionary Change"
+    attribution_required: false
+    attribution_present: true
+  - name: "WIP-Limited Pull Systems"
+    topic_file: "topics/wip-limited-pull.md"
+    owner: expert
+    originator: "David J. Anderson"
+    source_refs:
+      - "The Official Guide to The Kanban Method"
+      - "Kanban: Successful Evolutionary Change"
+    attribution_required: false
+    attribution_present: true
+  - name: "Service Delivery Principles"
+    topic_file: "topics/service-delivery-principles.md"
+    owner: expert
+    originator: "David J. Anderson"
+    source_refs:
+      - "Kanban's Service Delivery Principles"
+      - "The Official Guide to The Kanban Method"
+    attribution_required: false
+    attribution_present: true
+  - name: "Kanban Maturity Model"
+    topic_file: "topics/kanban-maturity-model.md"
+    owner: shared
+    originator: "David J. Anderson and Teodora Bozheva"
+    source_refs:
+      - "Kanban Maturity Model, 2nd Edition"
+      - "Kanban Maturity Model"
+    attribution_required: true
+    attribution_present: true
+  - name: "STATIK"
+    topic_file: "topics/statik.md"
+    owner: expert
+    originator: "David J. Anderson"
+    source_refs:
+      - "Discovering Kanban (David J Anderson, 2023)"
+      - "The Official Guide to The Kanban Method"
+    attribution_required: false
+    attribution_present: true
+  - name: "Enterprise Services Planning"
+    topic_file: "topics/enterprise-services-planning.md"
+    owner: expert
+    originator: "David J. Anderson"
+    source_refs:
+      - "Introducing Enterprise Services Planning"
+    attribution_required: false
+    attribution_present: true
+  - name: "Fit for Purpose Framework"
+    topic_file: "topics/fit-for-purpose.md"
+    owner: shared
+    originator: "David J. Anderson and Alexei Zheglov"
+    source_refs:
+      - "Fit For Purpose Framework Release 3"
+    attribution_required: true
+    attribution_present: true
+
+voice_plan:
+  minimum_samples: 3
+  require_source_diversity: true
+  allowed_source_types:
+    - author
+    - solo
+    - interview_guest
+  copyright_mode: source_safe_anchors
+
+voice_samples:
+  - mode: method-definition
+    source_ref: "Revisiting the Principles and General Practices"
+    source_type: author
+    quote_safe: true
+  - mode: maturity-roadmap
+    source_ref: "Kanban Maturity Model, 2nd Edition"
+    source_type: author
+    quote_safe: true
+  - mode: current-spoken-positioning
+    source_ref: "Agility Without the Overheads"
+    source_type: solo
+    quote_safe: true
+
+proof_policy:
+  invented_numbers_allowed: false
+  placeholders_required_when_unverified: true
+
+strong_rule_policy:
+  require_why: true
+  require_exception_or_risk_handling: true
+
+validation:
+  deterministic: true
+  llm_review:
+    required: true
+    prompt: "dojo-builder/scripts/prompts/persona-review.md"
+    result_file: "PERSONA_REVIEW.json"
+    status: passed
+    reviewed_at: 2026-06-02

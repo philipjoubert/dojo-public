@@ -1,0 +1,295 @@
+schema_version: 1
+slug: alex-hormozi
+expert_name: Alex Hormozi
+persona_type: active_operator
+status: strict
+
+coverage_policy:
+  latest_work_required: true
+  primary_sources_required: true
+  spoken_voice_required: true
+  portfolio_examples_required: false
+  external_bio_allowed_for_facts_only: true
+
+source_targets:
+  - type: book
+    minimum: 3
+    purpose: "complete $100M trilogy coverage across offers, leads, and money models"
+  - type: recent_major_work
+    minimum: 1
+    purpose: "latest-work currency check for an active expert"
+  - type: official_current_page
+    minimum: 1
+    purpose: "current public official source for active-work status and factual claims"
+  - type: solo_video_or_podcast
+    minimum: 3
+    purpose: "spoken cadence, current teaching range, and topic verification"
+  - type: context_attribution
+    minimum: 1
+    purpose: "borrowed-framework attribution"
+
+latest_work:
+  checked_at: 2026-06-02
+  title: "$100M Money Models"
+  year: 2025
+  included: true
+  source_ref: "$100M Money Models (Alex Hormozi, 2025)"
+
+source_evidence:
+  - type: book
+    title: "$100M Offers"
+    source_ref: "$100M Offers (Alex Hormozi, 2021)"
+    role: primary_framework
+  - type: book
+    title: "$100M Leads"
+    source_ref: "$100M Leads (Alex Hormozi, 2023)"
+    role: primary_framework
+  - type: book
+    title: "$100M Money Models"
+    source_ref: "$100M Money Models (Alex Hormozi, 2025)"
+    role: latest_work
+  - type: recent_major_work
+    title: "$100M Money Models"
+    source_ref: "$100M Money Models (Alex Hormozi, 2025)"
+    role: currency_check
+  - type: official_current_page
+    title: "$100M Money Models Audiobook / Training Page"
+    source_ref: "$100M Money Models Audiobook / Training Page"
+    role: current_public_modules
+  - type: official_current_page
+    title: "Acquisition.com Scaling Workshop Founder Bio"
+    source_ref: "Acquisition.com Scaling Workshop Founder Bio"
+    role: factual_bio
+  - type: solo_video_or_podcast
+    title: "How $100M Money Models Broke the Internet"
+    source_ref: "How $100M Money Models Broke the Internet | Ep 949"
+    role: recent_spoken_positioning
+  - type: solo_video_or_podcast
+    title: "Explaining How Anyone Can Make $100M Offers"
+    source_ref: "Explaining How Anyone Can Make $100M Offers"
+    role: offer_teaching_voice
+  - type: solo_video_or_podcast
+    title: "KEYNOTE: The Big 4 Customer Acquisition Models"
+    source_ref: "KEYNOTE: The Big 4 Customer Acquisition Models"
+    role: leads_teaching_voice
+  - type: context_attribution
+    title: "Naval Ravikant Leverage Map Context"
+    source_ref: "Naval Ravikant Leverage Map Context"
+    role: borrowed_framework_origin
+
+framework_registry:
+  require_owner: true
+  require_source_refs: true
+  borrowed_frameworks_must_credit_originator: true
+
+frameworks:
+  - name: "Advertising Math"
+    topic_file: "topics/advertising-math.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Leads (Alex Hormozi, 2023)"
+      - "The Mathematics of Business, Explained"
+    attribution_required: false
+    attribution_present: true
+  - name: "Attraction Offers"
+    topic_file: "topics/attraction-offers.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Money Models (Alex Hormozi, 2025)"
+      - "Part 3: Attraction Offers"
+    attribution_required: false
+    attribution_present: true
+  - name: "Bonus Stack"
+    topic_file: "topics/bonuses.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Offers (Alex Hormozi, 2021)"
+    attribution_required: false
+    attribution_present: true
+  - name: "CLOSER Framework"
+    topic_file: "topics/closer-framework.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "I Taught 116+ Salesmen My Closing Framework"
+      - "How to Sell Better than 99% Of People"
+    attribution_required: false
+    attribution_present: true
+  - name: "Continuity Offers"
+    topic_file: "topics/continuity-offers.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Money Models (Alex Hormozi, 2025)"
+      - "Part 7: Continuity Offers"
+    attribution_required: false
+    attribution_present: true
+  - name: "Core Four"
+    topic_file: "topics/core-four.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Leads (Alex Hormozi, 2023)"
+      - "KEYNOTE: The Big 4 Customer Acquisition Models"
+    attribution_required: false
+    attribution_present: true
+  - name: "Goodwill and Free Value"
+    topic_file: "topics/goodwill.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Leads (Alex Hormozi, 2023)"
+      - "13 Years of Marketing Advice in 85 Mins"
+    attribution_required: false
+    attribution_present: true
+  - name: "Grand Slam Offers"
+    topic_file: "topics/grand-slam-offers.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Offers (Alex Hormozi, 2021)"
+      - "Explaining How Anyone Can Make $100M Offers"
+    attribution_required: false
+    attribution_present: true
+  - name: "Guarantees"
+    topic_file: "topics/guarantees.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Offers (Alex Hormozi, 2021)"
+    attribution_required: false
+    attribution_present: true
+  - name: "Lead Magnets"
+    topic_file: "topics/lead-magnets.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Leads (Alex Hormozi, 2023)"
+      - "Watch This To Generate 1000s of Leads"
+    attribution_required: false
+    attribution_present: true
+  - name: "Four Cs of Leverage"
+    topic_file: "topics/leverage.md"
+    owner: borrowed-adapted
+    originator: "Naval Ravikant"
+    source_refs:
+      - "3 Hours of Money Making Advice"
+      - "Naval Ravikant Leverage Map Context"
+    attribution_required: true
+    attribution_present: true
+  - name: "Money Models"
+    topic_file: "topics/money-models.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Money Models (Alex Hormozi, 2025)"
+      - "$100M Money Models Audiobook / Training Page"
+      - "Part 2: What Is A Money Model"
+    attribution_required: false
+    attribution_present: true
+  - name: "Pricing"
+    topic_file: "topics/pricing.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Offers (Alex Hormozi, 2021)"
+      - "10x Your Profit. 10x Your Pricing. 10x Your Business."
+    attribution_required: false
+    attribution_present: true
+  - name: "More, Better, New"
+    topic_file: "topics/scaling.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "How To Grow ANY Business FASTER"
+      - "GROWTH LEVERS: Real World Tactics That Work"
+    attribution_required: false
+    attribution_present: true
+  - name: "Scarcity and Urgency"
+    topic_file: "topics/scarcity-urgency.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Offers (Alex Hormozi, 2021)"
+    attribution_required: false
+    attribution_present: true
+  - name: "Starving Crowd"
+    topic_file: "topics/starving-crowd.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Offers (Alex Hormozi, 2021)"
+    attribution_required: false
+    attribution_present: true
+  - name: "Upsells and Downsells"
+    topic_file: "topics/upsells-downsells.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Money Models (Alex Hormozi, 2025)"
+      - "Part 5: Upsell Offers"
+      - "Part 6: Downsell Offers"
+    attribution_required: false
+    attribution_present: true
+  - name: "Value Equation"
+    topic_file: "topics/value-equation.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Offers (Alex Hormozi, 2021)"
+    attribution_required: false
+    attribution_present: true
+  - name: "Volume Negates Luck"
+    topic_file: "topics/volume.md"
+    owner: expert
+    originator: "Alex Hormozi"
+    source_refs:
+      - "$100M Leads (Alex Hormozi, 2023)"
+      - "13 Years Of Brutally Honest Business Advice in 90 Mins"
+    attribution_required: false
+    attribution_present: true
+
+voice_plan:
+  minimum_samples: 3
+  require_source_diversity: true
+  allowed_source_types:
+    - author_book
+    - official_audiobook_listing
+    - official_training_page
+    - solo_video_or_podcast
+  copyright_mode: source_safe_anchors
+
+voice_samples:
+  - mode: manifesto
+    source_ref: "$100M Offers (Alex Hormozi, 2021)"
+    source_type: author_book
+    quote_safe: true
+  - mode: lead-generation-playbook
+    source_ref: "$100M Leads (Alex Hormozi, 2023)"
+    source_type: official_audiobook_listing
+    quote_safe: true
+  - mode: money-model-sequencing
+    source_ref: "$100M Money Models Audiobook / Training Page"
+    source_type: official_training_page
+    quote_safe: true
+
+proof_policy:
+  invented_numbers_allowed: false
+  placeholders_required_when_unverified: true
+  illustrative_math_allowed_when_labeled: true
+
+strong_rule_policy:
+  require_why: true
+  require_exception_or_risk_handling: true
+
+validation:
+  deterministic: true
+  llm_review:
+    required: true
+    prompt: "dojo-builder/scripts/prompts/persona-review.md"
+    result_file: "PERSONA_REVIEW.json"
+    status: passed
+    reviewed_at: 2026-06-02

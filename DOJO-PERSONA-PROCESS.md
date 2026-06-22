@@ -89,6 +89,7 @@ Every persona is an advisor to a founder trying to succeed — strategic, operat
 
 ```
 dojo/personas/<slug>/
+  PERSONA_SPEC.yaml    # strict build contract for new personas; legacy personas may omit it.
   persona.md           # Everything Claude needs to BE them. ~300 lines.
                        # Frontmatter declares: bucket, headline, topics, blurbs, modes.
   topics/              # Their frameworks, self-contained. ~10–25 files.
@@ -97,6 +98,54 @@ dojo/personas/<slug>/
 ```
 
 That's the complete deliverable. Everything else in this doc is the process to get there.
+
+---
+
+## Phase -1 — Build contract (`PERSONA_SPEC.yaml`)
+
+All new personas MUST use this strict process. Legacy mode exists only for personas that existed before the strict process and have not yet been materially reworked. Shipping a new persona without `PERSONA_SPEC.yaml`, deterministic validation, and a passing `PERSONA_REVIEW.json` is a process failure, not a legacy exception.
+
+Before fetching sources or drafting prose, create `dojo/personas/<slug>/PERSONA_SPEC.yaml` from `dojo/personas/_templates/PERSONA_SPEC.yaml`.
+
+This file is the contract for the new persona. It answers the questions that otherwise get discovered too late:
+
+- What type of persona is this? (`active_operator`, `historical_author`, `framework_author`, `portfolio_creator`, `public_investor_writer`)
+- What source coverage is required before drafting?
+- Is a latest-work check required?
+- Which source types must be represented?
+- Which frameworks are owned by the expert, borrowed, adapted, shared, or merely context?
+- Which voice source types are allowed?
+- Are unverified numbers allowed? (Normally no.)
+- Do strong rules require `Why` and an exception/risk-handling path?
+
+**Strict vs legacy:**
+
+- Personas with `PERSONA_SPEC.yaml` run in **strict** validation mode.
+- Personas without it are treated as **legacy** and only produce warnings if they already existed before the strict process.
+- Do not mass-migrate existing personas just to satisfy the new process. Add the spec when a persona is new or materially reworked.
+
+The spec should be filled progressively:
+
+1. Start with persona type and source targets.
+2. During Phase 0, fill `source_evidence` and `latest_work`.
+3. During Phase 4, register every topic/framework in `frameworks`.
+4. During Phase 5, register the voice plan and voice samples.
+5. During Phase 10, write the LLM review result to `PERSONA_REVIEW.json` and mark `validation.llm_review.status: passed`.
+6. Before shipping, run the validator:
+
+```bash
+cd dojo-builder
+npm run validate:persona -- <slug>
+```
+
+For all personas:
+
+```bash
+cd dojo-builder
+npm run validate:personas
+```
+
+`validate:personas` warns on legacy personas. It fails only when a strict persona violates its spec.
 
 ---
 
@@ -111,6 +160,8 @@ That's the complete deliverable. Everything else in this doc is the process to g
 4. **Atomic units at the natural grain.** Framework-based thinkers get one file per framework. Principle-based thinkers get fewer, denser files. Don't force one grain onto a persona whose work has a different shape.
 
 5. **Protect against voice contamination.** When an expert is interviewed alongside a guest — their own podcast, a panel, a co-host show — the source contains more than one voice and more than one set of frameworks. Without an explicit guard, the guest's phrasing and ideas leak into the persona and it stops sounding like the expert. The corpus must be tagged at fetch time so extraction agents know which sources are single-voice (safe for direct quotation) and which are mixed (context only). See Phase 0 for the tagging, Phase 4 for the provenance rule, Phase 5 for the sourcing rule.
+
+6. **Spec before prose.** For new strict personas, the `PERSONA_SPEC.yaml` exists before drafting. The spec is not an after-the-fact checklist; it is the build contract. If the source targets, latest-work check, framework ownership, voice plan, or proof policy are unknown, pause and fill the spec rather than burying assumptions in `persona.md`.
 
 ---
 
@@ -141,6 +192,8 @@ Note: the skill output lives at `dojo/skill/personas/<name>/`, NOT inside `perso
 ---
 
 ## Phase 0 — Inbox, fetch, and manifest
+
+Start by reading `dojo/personas/<slug>/PERSONA_SPEC.yaml` if it exists. The inbox is not "done" merely because it is empty; it is done when the spec's `source_targets`, `latest_work`, and `source_evidence` can be satisfied and traced to `content/MANIFEST.md` / `sources/<slug>/MANIFEST.md`.
 
 ### What the inbox actually is
 
@@ -278,6 +331,8 @@ For each successfully fetched item, in order:
 Skipped items get logged in MANIFEST under `## Skipped` with a reason and removed from the inbox. The generator preserves the `## Skipped` section verbatim across runs.
 
 **Invariant:** after Phase 0 completes, `inbox/` is empty (aside from a `README.md` and optionally an empty `sources.md`). Anything in it is unprocessed work.
+
+For strict personas, a second invariant also holds: every source used to satisfy the spec is listed in `PERSONA_SPEC.yaml` under `source_evidence`, and every `source_ref` is findable in the persona's MANIFEST.
 
 ### Corpus prioritization
 
@@ -422,6 +477,8 @@ A single index: `extractions/example-index.md`. One entry per artifact in the co
 
 ### Framework provenance rule — guards against guest-leakage
 
+For strict personas, every topic file you intend to ship must be registered in `PERSONA_SPEC.yaml` under `frameworks` before or during drafting. The registry records `owner`, `originator`, `source_refs`, and whether attribution is required. This is what lets the validator catch framework leakage before review.
+
 For any framework that lands in a topic file, its origin must be traceable to:
 
 - the expert's own book/article/essay, OR
@@ -489,6 +546,15 @@ related:
 - Techniques nested inside a framework usually stay inside that framework's file. Only split into their own file if they're reusable across multiple frameworks.
 
 **Destination:** `dojo/skill/personas/<name>/topics/<framework-name>.md`
+
+After Phase 4, run:
+
+```bash
+cd dojo-builder
+npm run validate:persona -- <slug>
+```
+
+Expect draft-stage failures for voice or examples if those phases are not written yet. Framework/source errors should be fixed before moving on.
 
 ---
 
@@ -726,6 +792,15 @@ Add a line under AVAILABLE EXPERTS in `dojo/skill/SKILL.md`:
 ---
 
 ## Phase 10 — Test
+
+For strict personas, run the deterministic contract validator before user-mode testing:
+
+```bash
+cd dojo-builder
+npm run validate:persona -- <slug>
+```
+
+If `validation.llm_review.required` is true in `PERSONA_SPEC.yaml`, build an LLM review pack from the spec, manifest, `persona.md`, and topic files, then review with `dojo-builder/scripts/prompts/persona-review.md`. Save the JSON response to the configured `validation.llm_review.result_file` (normally `PERSONA_REVIEW.json`) and mark `validation.llm_review.status: passed` only when the review returns `"status": "pass"`, all checks are true, and no high/medium findings remain. Deterministic validation catches structural misses and verifies the review artifact; the LLM review catches judgment failures such as attribution leakage, newest-work omissions, invented proof, weak voice range, and overbroad rules.
 
 Run one question per mode through dojo, routed to the new persona:
 
